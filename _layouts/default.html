@@ -39,32 +39,23 @@ layout: table_wrappers
   {% endif %}
   <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Ensure the theme toggle button exists in the DOM
   const themeToggle = document.getElementById('theme-toggle');
   if (!themeToggle) return;
 
-  // Ensure the jtd object and setTheme function are available
   if (typeof jtd === 'undefined' || typeof jtd.setTheme !== 'function') {
     console.error('jtd.setTheme is not available');
     return;
   }
 
   themeToggle.addEventListener('click', () => {
-    // Determine the current theme
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light'; // Default to light if not set
-
-    // Toggle the theme using jtd.setTheme
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light'; 
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     jtd.setTheme(newTheme);
 
-    // Update the button text
     themeToggle.textContent = newTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-
-    // Save the new theme preference
     localStorage.setItem('theme', newTheme);
   });
 
-  // Apply the saved theme preference from localStorage, if any
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
     jtd.setTheme(savedTheme);
