@@ -1,10 +1,21 @@
 <nav aria-label="Auxiliary" class="aux-nav">
   <ul class="aux-nav-list">
     <li>
-      <button class="btn js-toggle-dark-mode"><i class="fa solid fa-moon fa-3x"></i></button>
-      <button class="btn js-toggle-dark-mode" id="theme-toggle" onclick="modeSwitcher()">☀️</button>
+      <button class="btn js-toggle-dark-mode">*</button>
     </li>
   </ul>
 </nav>
 
+<script>
+  const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
+jtd.addEvent(toggleDarkMode, 'click', function(){
+if (jtd.getTheme() === 'dark' || jtd.getTheme() === 'default') {
+	jtd.setTheme('light');
+	toggleDarkMode.innerHTML = "Moon";
+} else {
+	jtd.setTheme('dark');
+	toggleDarkMode.innerHTML = "Sun";
+	}
+});
+</script>
