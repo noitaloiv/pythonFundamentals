@@ -2,10 +2,13 @@
   box-shadow: none;
 }
 
-[data-theme="dark"] button {
+{% if site.color_scheme = "dark" %}
+
+button {
   background-color: rgb(39, 38, 43);
 }
-
-[data-theme="light"] button {
+{% else %}
+button {
   background-color: rgb(255, 255, 255);
 }
+{% endif %}
