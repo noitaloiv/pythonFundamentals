@@ -1,0 +1,40 @@
+{% capture search_placeholder %}{% include search_placeholder_custom.html %}{% endcapture %}
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="{{ search_placeholder | strip_html | strip }}" aria-label="{{ search_placeholder | strip_html| strip }}" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <button id="theme-toggle">Toggle Light/Dark Mode</button>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('theme-toggle');
+
+  themeToggle.addEventListener('click', () => {
+    // Determine the current theme by checking the document's data-theme attribute or other indicators used by the theme
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+
+    // Use the jtd.setTheme function to switch themes
+    if (currentTheme === 'dark') {
+      jtd.setTheme('light');
+      themeToggle.textContent = 'Switch to Dark Mode'; // Update button text accordingly
+    } else {
+      jtd.setTheme('dark');
+      themeToggle.textContent = 'Switch to Light Mode'; // Update button text accordingly
+    }
+
+    // Optionally, save the new theme preference to localStorage to remember the user's choice
+    localStorage.setItem('theme', currentTheme === 'dark' ? 'light' : 'dark');
+  });
+
+  // Optional: Set the initial theme based on user's preference saved in localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    jtd.setTheme(savedTheme);
+    themeToggle.textContent = savedTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+  }
+});
+</script>
