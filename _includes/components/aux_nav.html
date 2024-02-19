@@ -21,9 +21,11 @@
   jtd.addEvent(toggleDarkMode, 'click', function(){
     if (jtd.getTheme() === 'dark') {
       jtd.setTheme('light');
+      jtd.style = "background-color: #fff;"
       toggleDarkMode.textContent = '🌙';
     } else {
       jtd.setTheme('dark');
+      jtd.style = "background-color: #27262b;"
       toggleDarkMode.textContent = '☀️';
     }
   });
