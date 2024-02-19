@@ -1,0 +1,30 @@
+<nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    {% for link in site.aux_links %}
+      <li class="aux-nav-list-item">
+        <a href="{{ link.last }}" class="site-button"
+          {% if site.aux_links_new_tab %}
+          target="_blank" rel="noopener noreferrer"
+          {% endif %}
+        >
+          {{ link.first }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+<button class="btn js-toggle-dark-mode">🌙</button>
+
+<script>
+  const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+  
+  jtd.addEvent(toggleDarkMode, 'click', function(){
+    if (jtd.getTheme() === 'dark') {
+      jtd.setTheme('light');
+      toggleDarkMode.textContent = '🌙';
+    } else {
+      jtd.setTheme('dark');
+      toggleDarkMode.textContent = '☀️';
+    }
+  });
+</script>
