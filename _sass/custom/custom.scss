@@ -4,8 +4,8 @@
 
 html, html[data-theme="light"] {
 	$link-color: $purple-000;
-  $body-background-color: $white
-  $body-text-color: $grey-dk-100
+  	$body-background-color: $white;
+  	$body-text-color: $grey-dk-100;
 }
 
 html[data-theme="dark"] {
@@ -22,8 +22,8 @@ html[data-theme="dark"] {
     }
 
     html[data-theme="light"] {
-    	$link-color: $purple-000;
-      $body-background-color: $white
-      $body-text-color: $grey-dk-100
+	$link-color: $purple-000;
+  	$body-background-color: $white;
+  	$body-text-color: $grey-dk-100;
   } 
 }
