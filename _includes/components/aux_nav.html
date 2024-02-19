@@ -1,9 +1,6 @@
 <nav aria-label="Auxiliary" class="aux-nav">
   <ul class="aux-nav-list">
-    {% for link in site.aux_links %}
-      <li class="aux-nav-list-item">
-      </li>
-    {% endfor %}
+
   </ul>
 </nav>
 <button class="btn js-toggle-dark-mode">☀️</button>
@@ -14,11 +11,9 @@
   jtd.addEvent(toggleDarkMode, 'click', function(){
     if (jtd.getTheme() === 'dark') {
       jtd.setTheme('light');
-      toggleDarkMode.style = "background-color: #fff; box-shadow:none;";
       toggleDarkMode.textContent = '🌙';
     } else {
       jtd.setTheme('dark');
-      toggleDarkMode.style = "background-color: #27262b; box-shadow:none;";
       toggleDarkMode.textContent = '☀️';
     }
   });
