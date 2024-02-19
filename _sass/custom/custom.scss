@@ -2,7 +2,7 @@
   box-shadow: none;
 }
 
-@if site.color_scheme = "dark"{
+@if site.color_scheme == "dark"{
   button {
     background-color: rgb(39, 38, 43);
   }
