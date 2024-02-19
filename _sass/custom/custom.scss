@@ -1,0 +1,11 @@
+.btn {
+  box-shadow: none;
+}
+
+[data-theme="dark"] button {
+  background-color: rgb(39, 38, 43);
+}
+
+[data-theme="light"] button {
+  background-color: rgb(255, 255, 255);
+}
