@@ -2,13 +2,6 @@
   <ul class="aux-nav-list">
     {% for link in site.aux_links %}
       <li class="aux-nav-list-item">
-        <a href="{{ link.last }}" class="site-button"
-          {% if site.aux_links_new_tab %}
-          target="_blank" rel="noopener noreferrer"
-          {% endif %}
-        >
-          {{ link.first }}
-        </a>
       </li>
     {% endfor %}
   </ul>
@@ -21,11 +14,11 @@
   jtd.addEvent(toggleDarkMode, 'click', function(){
     if (jtd.getTheme() === 'dark') {
       jtd.setTheme('light');
-      jtd.style = "background-color: #fff;"
+      toggleDarkMode.style = "background-color: #fff; box-shadow:none;"
       toggleDarkMode.textContent = '🌙';
     } else {
       jtd.setTheme('dark');
-      jtd.style = "background-color: #27262b;"
+      toggleDarkMode.style = "background-color: #27262b; box-shadow:none;"
       toggleDarkMode.textContent = '☀️';
     }
   });
