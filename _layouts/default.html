@@ -37,31 +37,5 @@ layout: table_wrappers
   {% if site.mermaid %}
     {% include components/mermaid.html %}
   {% endif %}
-  <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const themeToggle = document.getElementById('theme-toggle');
-  if (!themeToggle) return;
-
-  if (typeof jtd === 'undefined' || typeof jtd.setTheme !== 'function') {
-    console.error('jtd.setTheme is not available');
-    return;
-  }
-
-  themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light'; 
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    jtd.setTheme(newTheme);
-
-    themeToggle.textContent = newTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-    localStorage.setItem('theme', newTheme);
-  });
-
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    jtd.setTheme(savedTheme);
-    themeToggle.textContent = savedTheme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-  }
-});
-</script>
 </body>
 </html>
