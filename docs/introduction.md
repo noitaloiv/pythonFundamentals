@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Week 1: Introduction to Python"
+title: "1. Introduktion till Python"
 ---
 
 # Välkommen till den fängslande världen av Python-programmering!
