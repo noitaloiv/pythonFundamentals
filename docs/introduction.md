@@ -59,6 +59,5 @@ Visual Studio Code Extensions-vyn listar installerade tillägg och rekommenderad
 5. Välj "Installera" i panelen Extensions.
 6. När installationen är klar ändras knappen "Installera" till en ikon för "Inställningar ⚙️" i tilläggsvyn. Det här agerar bekräftelse på att du har installerat Python-tillägget.
 
-<div style="padding: 0.5em; background-color: #f9f9f9; border-left: 4px solid #0078D4; margin-bottom: 1em;">
-    <strong>Note:</strong> OBS! Om du arbetar i operativsystemet macOS så kan du se en dialogruta när du installerat tillägget vilken frågar dig om du vill installera kommandoradens utvecklarverktyg. Du bör då välja "Installera". Du måste godkänna licensavtalet för Command Line Tools och installationsprocessen kan ta upp till 20 minuter eller mer, beroende på din internetanslutning. När installationen är klar visas en dialogruta som anger att programvaran är installerad. Välj "Klar" för att fortsätta.
-</div> 
+{: .highlight } 
+OBS! Om du arbetar i operativsystemet macOS så kan du se en dialogruta när du installerat tillägget vilken frågar dig om du vill installera kommandoradens utvecklarverktyg. Du bör då välja "Installera". Du måste godkänna licensavtalet för Command Line Tools och installationsprocessen kan ta upp till 20 minuter eller mer, beroende på din internetanslutning. När installationen är klar visas en dialogruta som anger att programvaran är installerad. Välj "Klar" för att fortsätta.
