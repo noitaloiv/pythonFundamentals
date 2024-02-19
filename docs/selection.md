@@ -97,9 +97,8 @@ Om användaren inte har röstat, d.v.s. att funktionen `hasVoted()` skickar till
 
 Om `isEligible()` skickar tillbaka `true` så vet vi med oss att användaren dels inte har röstat och dels att rösten är legitim. Till skillnad mot tidigare exempel när vi evaluerade två villkor samtidigt så kan vi i detta fall evaluera en förutsättning (huruvida användaren har röstat), utföra en eller flera operationer och sedan avslutningsvis ta emot användarens röstning.
 
-<div style="padding: 0.5em; background-color: #f9f9f9; border-left: 4px solid #0078D4; margin-bottom: 1em;">
-    <strong>OBS!</strong> Vi kommer att prata mer om egendefinierade funktioner (d.v.s. funktioner som du själv definierar) i framtida kapitel. Det är således inget du förväntas ha koll på redan i detta skede utan nyttjades enbart i syfte om att exemplifiera relevansen av nästlade <code>if</code>-satser.
-</div> 
+{: .highlight }
+OBS! Vi kommer att prata mer om egendefinierade funktioner (d.v.s. funktioner som du själv definierar) i framtida kapitel. Det är således inget du förväntas ha koll på redan i detta skede utan nyttjades enbart i syfte om att exemplifiera relevansen av nästlade `if`-satser.
 
 ## Else-satser
 En `else`-sats i Python är ett valfritt tillägg som man använder när man vill att programmet ska utföra en operation i det fall när villkoret i en `if`-sats **inte** uppfylls. D.v.s. vilken kod som ANNARS ska utföras i de fall ett eller flera villkor inte uppfylls.
@@ -158,6 +157,5 @@ else:        # Icke acceptabel syntax
 ```
 Avslutningsvis så är det heller inte möjligt att nästla `else`-satser.
 
-<div style="padding: 0.5em; background-color: #f9f9f9; border-left: 4px solid #0078D4; margin-bottom: 1em;">
-    <strong>Notera</strong> En <code>else</code>-sats representerar ett ANNARS-fall i vårt program, d.v.s. det som ska ske om inget villkor uppfylls. Det är således omöjligt att nästla <code>else</code>-satser eller ange dem utan tillhörande <code>if</code>-satser.
-</div> 
+{: .highlight }
+Notera: En `else`-sats representerar ett **ANNARS**-fall i vårt program, d.v.s. det som ska ske om inget villkor uppfylls. Det är således omöjligt att nästla `else`-satser eller ange dem utan tillhörande `if`-satser.
