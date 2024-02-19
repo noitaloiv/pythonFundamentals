@@ -1,14 +1,3 @@
 .btn {
   box-shadow: none;
 }
-
-@if site.color_scheme == "dark"{
-  button {
-    background-color: rgb(39, 38, 43);
-  }
-}
-@else {
-  button {
-    background-color: rgb(255, 255, 255);
-  }
-}
