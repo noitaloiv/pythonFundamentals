@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "1. Introduktion till Python"
+nav_order: 2
 ---
 
 # Välkommen till den fängslande världen av Python-programmering!
