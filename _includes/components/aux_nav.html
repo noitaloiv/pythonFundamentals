@@ -1,21 +1,28 @@
 <nav aria-label="Auxiliary" class="aux-nav">
   <ul class="aux-nav-list">
     <li>
-      <button class="btn js-toggle-dark-mode"><i>🌙</i></button>
+      <button class="btn js-toggle-dark-mode" id="theme-toggle">🌙</button>
     </li>
   </ul>
 </nav>
 
 <script>
-  const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+  function toggleTheme() {
+      const currentTheme = jtd.getTheme(); // Fetch current theme
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark'; // Determine new theme
 
-jtd.addEvent(toggleDarkMode, 'click', function(){
-if (jtd.getTheme() === 'dark' || jtd.getTheme() === 'default') {
-	jtd.setTheme('light');
-	toggleDarkMode.innerHTML = <i>🌙</i>;
-} else {
-	jtd.setTheme('dark');
-	toggleDarkMode.innerHTML = <i>☀️</i>;
-	}
-});
+      jtd.setTheme(newTheme); // Set new theme
+
+      // Update the button icon based on the new theme
+      document.getElementById('theme-toggle').textContent = newTheme === 'light' ? '☀️' : '🌙';
+  }
+
+  // Attach the toggleTheme function to the button
+  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+  // Initialize the theme on page load
+  window.onload = function() {
+      const currentTheme = jtd.getTheme();
+      document.getElementById('theme-toggle').textContent = currentTheme === 'light' ? '☀️' : '🌙';
+  }
 </script>
