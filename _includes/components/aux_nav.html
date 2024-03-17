@@ -1,34 +1,37 @@
 <nav aria-label="Auxiliary" class="aux-nav">
   <ul class="aux-nav-list">
     <li>
-      <button class="btn js-toggle-dark-mode" id="theme-toggle" style="background: transparent;">🌙</button>
+      <button class="btn js-toggle-dark-mode" id="theme-toggle" style="background: transparent; .btn:hover { box-shadow: none; color: inherit;}">🌙</button>
     </li>
   </ul>
 </nav>
 
 <script>
-  function toggleTheme() {
-      let currentTheme = jtd.getTheme();
-      if (currentTheme === 'default') {
-          currentTheme = 'dark';
-      }
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark'; 
+    function setTheme(newTheme) {
+        jtd.setTheme(newTheme); 
+        localStorage.setItem('userTheme', newTheme); 
+        updateThemeStyles(newTheme);
+    }
 
-      jtd.setTheme(newTheme); 
+    function updateThemeStyles(currentTheme) {
+        document.getElementById('theme-toggle').textContent = currentTheme === 'light' ? '☀️' : '🌙';
+    }
 
-      document.getElementById('theme-toggle').textContent = newTheme === 'light' ? '☀️' : '🌙';
-  }
+    function toggleTheme() {
+        const currentTheme = localStorage.getItem('userTheme') === 'light' ? 'dark' : 'light';
+        setTheme(currentTheme);
+    }
 
+    function initializeTheme() {
+        const savedTheme = localStorage.getItem('userTheme') || 'default';
+        if (savedTheme === 'default') {
+            setTheme('dark');
+        } else {
+            setTheme(savedTheme);
+        }
+    }
 
-  document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
-
-  window.onload = function() {
-      let currentTheme = jtd.getTheme();
-      console.log(currentTheme);
-      if (currentTheme === 'default') {
-          currentTheme = 'dark';
-      }
-      document.getElementById('theme-toggle').textContent = currentTheme === 'light' ? '☀️' : '🌙';
-  }
+    window.onload = initializeTheme;
 </script>
