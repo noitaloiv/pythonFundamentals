@@ -42,7 +42,7 @@ Nyckelordet `for` används för att deklarera en s.k. `for-loop` och följs allt
 
 När vi först utför kodraden där `for-loopen` är deklarerad så kommer vi att utvärdera om villkoret uppfylls eller ej. För villkoret i det föregående exemplet så kommer vi med andra ord att kontrollera huruvida 1 är mindre än 11 (1 < 11). Nästa gång kollar vi istället om 2 < 11, osv. När vi avslutningsvis når heltalet 11 så kommer villkoret inte att uppfyllas då 11 inte är mindre än 11, vilket medför att loopen avslutas. Detta kan illustreras på följande vis:
 
-![for-loop](https://github.com/noitaloiv/pythonFundamentals/assets/10771017/e1dd2aa3-7973-41bf-8d07-d89dd57e574a)
+![for-loop](../assets/images/for-loop2.png){: .styled-image }
 
 ### Syntax för for-loopar
 `for`-nyckelordet används tillsammans med nyckelordet `in` enligt:
@@ -58,12 +58,12 @@ for letter in word:
   print(letter)
 ```
 <div class="code-example" markdown="1">
-P
+<pre><code>P
 y
 t
 h
 o
-n
+n</code> </pre>
 </div>
 
 Alla rader som är indenterade efter `for-loopen` representerar den operation/de operationer som tillhör `for-loopen` - d.v.s. den kod som ska utföras om villkoret uppfylls. `for-loopen` och dess operationer avslutas på den rad man slutar indentera koden:
@@ -77,7 +77,7 @@ for n in range(1,6):
 print("Loop finished.") # Tillhör inte loopen, d.v.s. att denna kod kommer att utföras vare sig loopen utförs eller ej.
 ```
 <div class="code-example" markdown="1">
-Loop starting.
+<pre><code>Loop starting.
 1
 4
 Number printed
@@ -93,7 +93,7 @@ Number printed
 5
 8
 Number printed
-Loop finished.
+Loop finished.</code> </pre>
 </div>
 
 ### Nästlad iteration för for-loop:ar
@@ -105,10 +105,10 @@ for i in range(4):           # Den yttre loopen hanterar rader
     print()                  # När samtliga *:or har skrivits ut på en rad så tillämpas radbrytning
 ```
 <div class="code-example" markdown="1">
+<pre><code>* * * *
 * * * *
 * * * *
-* * * *
-* * * *
+* * * * </code> </pre>
 </div>
 
 {: .highlight }
@@ -148,7 +148,7 @@ for n in True:
   print("Hello world!")
 ```
 <div class="code-example" markdown="1">
-TypeError: 'bool' object is not iterable
+<pre><code>TypeError: 'bool' object is not iterable </code> </pre>
 </div>
 
 Likt `for-loop:ar` så är alla rader som är indenterade efter loopen den operation/de operationer som tillhör `while-loop:en` - d.v.s. den kod som ska utföras om villkoret uppfylls. `while-loop:en` och dess operationer avslutas på den rad man slutar indentera koden:
@@ -164,7 +164,7 @@ while n < 6:
 print("Loop finished.") # Tillhör inte loopen, d.v.s. att denna kod kommer att utföras vare sig loopen utförs eller ej.
 ```
 <div class="code-example" markdown="1">
-Loop starting.
+<pre><code>Loop starting.
 1
 4
 Number printed
@@ -180,7 +180,7 @@ Number printed
 5
 8
 Number printed
-Loop finished.
+Loop finished. </code> </pre>
 </div>
 
 ### Nästlad iteration för while-loop:ar
@@ -197,10 +197,10 @@ while i < 5:                 # Den yttre loopen hanterar rader
     j = 1                    # "nollställ" j efter varje rad för att kunna köra den inre loop:en.
 ```
 <div class="code-example" markdown="1">
-* * * *
-* * * *
-* * * *
-* * * *
+<pre><code>****
+****
+****
+**** </code> </pre>
 </div>
 
 ### Nyckelordet break
@@ -213,13 +213,10 @@ for n in range(1,101):
   print(n)
 ```
 <div class="code-example" markdown="1">
-
-</div>
-```markdown
-Enter a value: 3
+<pre><code>Enter a value: 3
 1
-2
-```
+2 </code> </pre>
+</div>
 
 {: .highlight }
 Notera att det är full möjligt att tillämpa selektion såväl som nästlad selektion inuti en loop.
@@ -234,8 +231,7 @@ for n in range(1,101):
   print(n)
 ```
 <div class="code-example" markdown="1">
-  <pre style="white-space: no-wrap">
-<code>Enter a value: 3
+<pre><code>Enter a value: 3
 1
 2
 4
