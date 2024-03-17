@@ -233,14 +233,16 @@ for n in range(1,101):
     continue
   print(n)
 ```
-<div class="code-example highlight" markdown="1">
-
+<div class="code-example" markdown="1">
+  <pre>
+    <code>
+  Enter a value: 3
+  1
+  2
+  4
+  5
+  # Osv.
+    </code>
+  </pre>
 </div>
-```markdown
-Enter a value: 3
-1
-2
-4
-5
-# Osv.
-```
+
