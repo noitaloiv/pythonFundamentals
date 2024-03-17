@@ -231,12 +231,7 @@ for n in range(1,101):
   print(n)
 ```
 <div class="code-example highlight" markdown="1">
-Enter a value: 3
-1
-2
-4
-5
-# Osv.
+
 </div>
 ```markdown
 Enter a value: 3
