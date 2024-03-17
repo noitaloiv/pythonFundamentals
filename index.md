@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Welcome to Our Python Course"
+nav_order: 1
 ---
 
 # Welcome to Our Python Course
