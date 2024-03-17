@@ -1,18 +1,20 @@
 <nav aria-label="Auxiliary" class="aux-nav">
   <ul class="aux-nav-list">
     <li>
-      <button class="btn js-toggle-dark-mode" id="theme-toggle">🌙</button>
+      <button class="btn js-toggle-dark-mode" id="theme-toggle" style="background: transparent;">🌙</button>
     </li>
   </ul>
 </nav>
 
 <script>
   function toggleTheme() {
-      const currentTheme = jtd.getTheme(); 
+      let currentTheme = jtd.getTheme();
+      if (currentTheme === 'default') {
+          currentTheme = 'dark';
+      }
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark'; 
 
       jtd.setTheme(newTheme); 
-
 
       document.getElementById('theme-toggle').textContent = newTheme === 'light' ? '☀️' : '🌙';
   }
@@ -22,7 +24,10 @@
 
 
   window.onload = function() {
-      const currentTheme = jtd.getTheme();
+      let currentTheme = jtd.getTheme();
+      if (currentTheme === 'default') {
+          currentTheme = 'dark';
+      }
       document.getElementById('theme-toggle').textContent = currentTheme === 'light' ? '☀️' : '🌙';
   }
 </script>
