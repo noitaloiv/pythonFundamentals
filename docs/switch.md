@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "9. Switch-sats"
+nav_order: 10
 ---
 
 # Switch-satsen

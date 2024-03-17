@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "3. Syntax"
+nav_order: 4
 ---
 
 # Syntax

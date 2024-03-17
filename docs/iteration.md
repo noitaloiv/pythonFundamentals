@@ -213,10 +213,13 @@ for n in range(1,101):
   print(n)
 ```
 <div class="code-example" markdown="1">
+
+</div>
+```markdown
 Enter a value: 3
 1
 2
-</div>
+```
 
 {: .highlight }
 Notera att det är full möjligt att tillämpa selektion såväl som nästlad selektion inuti en loop.

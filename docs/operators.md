@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "5. Operatorer"
+nav_order: 6
 ---
 
 # Operatorer och operander 

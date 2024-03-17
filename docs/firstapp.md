@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "2. Ditt första program"
+nav_order: 3
 ---
 
 # Skriv din första Python-applikation

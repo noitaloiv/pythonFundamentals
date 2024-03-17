@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "7. Input och output"
+nav_order: 8
 ---
 
 # Input och output i Python 
