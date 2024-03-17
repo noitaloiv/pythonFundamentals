@@ -8,19 +8,19 @@
 
 <script>
   function toggleTheme() {
-      const currentTheme = jtd.getTheme(); // Fetch current theme
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark'; // Determine new theme
+      const currentTheme = jtd.getTheme(); 
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark'; 
 
-      jtd.setTheme(newTheme); // Set new theme
+      jtd.setTheme(newTheme); 
 
-      // Update the button icon based on the new theme
+
       document.getElementById('theme-toggle').textContent = newTheme === 'light' ? '☀️' : '🌙';
   }
 
-  // Attach the toggleTheme function to the button
+
   document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
-  // Initialize the theme on page load
+
   window.onload = function() {
       const currentTheme = jtd.getTheme();
       document.getElementById('theme-toggle').textContent = currentTheme === 'light' ? '☀️' : '🌙';
