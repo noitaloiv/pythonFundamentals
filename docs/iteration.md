@@ -234,15 +234,12 @@ for n in range(1,101):
   print(n)
 ```
 <div class="code-example" markdown="1">
-  <pre>
-    <code>
-  Enter a value: 3
-  1
-  2
-  4
-  5
-  # Osv.
-    </code>
-  </pre>
+  <pre style="white-space: no-wrap">
+<code>Enter a value: 3
+1
+2
+4
+5
+# Osv. </code> </pre>
 </div>
 
