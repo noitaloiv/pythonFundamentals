@@ -31,7 +31,11 @@ Där vi kommer att få utskriften `"1020"` + det värde som användaren anger, v
 
 Observera att det är ett mellanslag i uppmaningen `"Enter a numerical value: "`. Detta är för att få ett mellanrum mellan uppmaningen och värdet som anges, vilket gör programmet lite mer stilrent. Vi kan i detta fall även se hur programmet stannar upp och väntar på input från användaren innan programmet fortsätter:
 
+<div align="center">
+
 <img src="../assets/images/runInput.gif" alt="visualizationOfInput">
+
+</div>
 
 Som du kan se i GIF:en så kommer utskriften att bli `"102030"` (om `30` anges som input), vilket kan tänkas vara en svårtolkad input. Avser vi exempelvis ett enda värde, en talföljd eller tre individuella värden? Det kan därför vara fördelaktigt att _formatera_ vår utskrift.
 
@@ -73,9 +77,11 @@ För att hantera sådana problem så behöver vi _konvertera_ vårt inputvärde 
 I Python använder man typkonvertering för att konvertera (casta) en datatyp till en annan. Det är exempelvis vanligt att konvertera en `string` till en `int` eller vise versa. Detta kan göras med inbyggda funktioner såsom `int()`, `str()` eller `float()`.
 
 #### Python är ett starkt och dynamiskt typat programmeringsspråk
-Python är ett _starkt typat språk_ (strongly typed language) vilket innebär att det spelar roll vilken datatyp en variabel innehåller. Det är exempelvis skillnad på strängen `"1"` och siffran `1`. Som vi såg i föregående exempel så skulle vi därför stöta på problem om vi exempelvis försöker utföra en matematisk operation på textuella värden.
+Python är ett _starkt typat språk_ (strongly typed language) vilket innebär att det spelar roll vilken datatyp en variabel innehåller. Det är exempelvis skillnad på strängen `"1"` och siffran `1`. Som vi såg i föregående exempel så skulle vi därför stöta på problem om vi exempelvis försöker utföra en matematisk operation på textuella värden och vice versa.
 
-Python är även ett _dynamiskt typat språk_ (dynamically typed language) vilket innebär att du inte specificerar datatypen för de variabler du skapar. Exempelvis kan vi lagra ett textvärde i variabeln number1, trots att namnet indikerar att det är ett heltal. 
+Python är dessutom ett _dynamiskt typat språk_ (dynamically typed language) vilket innebär att du **inte** specificerar datatypen för de variabler du skapar. Exempelvis kan vi lagra ett textvärde i variabeln `number1`, trots att namnet indikerar att det är ett heltal. 
+
+Detta fungerar då Python alla datatyper som _objekt_, oavsett om det är enkel data såsom heltal och decimaltal eller mer komplexa typer såsom listor och klassinstanser. När du lagrar ett objekt i en variabel så etableras en _referens_ till objektet, inte det _faktiska objektet_. Det är denna mekanism som gör det möjligt att inte fastställa datatypen på förhand, då referensen alltid kan utvärderas i efterhand.
 
 Fördelen med detta är att koden blir något mer abstrakt, lättare att förstå och argumenterbart enklare att skriva - med nackdelen att du själv behöver ha kontroll på vad för slags datatyp en variabel innehåller.
 

@@ -78,8 +78,10 @@ Vanligtvis utför man jämförelseoperationer i `if`-satser där man vill att n�
 ### Vanliga sätt att jämföra variabler
 Nedan visas de vanligaste sätten att jämföra två variabler:
 
+<div align="center">
+
 | Jämförelse                | Notation | Exempel där A = 5, B = 10 |
-| --------------------------| ---------|---------------------------- 
+| :-: | :-:|:-:
 | Mindre än                 | <        | A < B   #true             |
 | Större än                 | >        | B > A   #true             |
 | Mindre än eller lika med  | <=       | A <= B  #true             |
@@ -87,16 +89,22 @@ Nedan visas de vanligaste sätten att jämföra två variabler:
 | Lika med                  | ==       | A == B  #false            |
 | Inte lika med             | !        | A != B  #true             |
 
+</div>
+
 Vi får alltså tillbaka `True` eller `False` beroende på om påståendet är sant eller falskt.
 
 ### Logiska operatorer i Python
 Det finns även logiska operatorer i Python. Med dessa kan vi avgöra om flera påstående är sanna eller falska samtidigt.
 
+<div align="center">
+
 | Operator  | Syntax          | Exempel där A = 5, B = 10     |
-| ----------| ----------------|-------------------------------- 
+| :-:| :-:|:-:
 | OCH       | `and` alt. `&`  | A == 10 & B == 10     #false  |
 | ELLER     | `or` alt. \|    | A > 1 | B == 20       #true   |
 | INTE      | `not` alt. `!`  | A > 5 and not B == 5  #true   |
+
+</div>
 
 ### Exempel på logiska jämförelser i Python
 Nedan kommer ett par exempel på logiska operationer och vad utskriften blir.

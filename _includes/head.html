@@ -18,6 +18,17 @@ Should not be cached, because included files depend on page.
 
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}"
     id="jtd-head-nav-stylesheet">
+  <style>
+    #theme-toggle {
+      background: transparent;
+      font-size: 1rem; 
+      padding-top: 30%;
+      .btn:focus:hover, .btn.selected:focus {
+        color: inherit;
+        box-shadow: none; 
+      }
+    }
+  </style>
 
   <style id="jtd-nav-activation">
     {
@@ -45,6 +56,7 @@ Should not be cached, because included files depend on page.
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
   <script>
+    initializeTheme();
     function setTheme(newTheme) {
       jtd.setTheme(newTheme);
       localStorage.setItem('userTheme', newTheme);
@@ -68,8 +80,6 @@ Should not be cached, because included files depend on page.
         setTheme(savedTheme);
       }
     }
-
-    window.onload = initializeTheme;
   </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
