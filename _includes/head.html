@@ -29,6 +29,11 @@ Should not be cached, because included files depend on page.
         color: inherit;
         box-shadow: none;
       }
+
+      #theme-icon{
+        height: 1rem;
+        width: 1rem;
+      }
     }
   </style>
 
@@ -58,7 +63,7 @@ Should not be cached, because included files depend on page.
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
   <script>
-    //initializeTheme();
+    initializeTheme();
     function setTheme(newTheme) {
       jtd.setTheme(newTheme);
       localStorage.setItem('userTheme', newTheme);
