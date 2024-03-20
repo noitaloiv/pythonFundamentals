@@ -2,7 +2,7 @@
 layout: default
 title: "11. for-loop:en"
 nav_order: 12
-parent: iteration
+parent: 10. Iteration
 ---
 
 # for-loop:en
