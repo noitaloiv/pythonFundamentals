@@ -2,8 +2,24 @@
   <ul class="aux-nav-list">
     <li>
       <button id="theme-toggle" onclick="toggleTheme()">
-        <img id="theme-icon" src="../assets/images/moon.svg" alt="Theme Toggle">
+        <svg>
+          <use href="" id="theme-icon"></use>
+        </svg>
+        <!--<img id="theme-icon" src="" alt="Theme Toggle">-->
       </button>
     </li>
   </ul>
 </nav>
+
+<script>
+  function setInitialSymbol(){
+    theme = jtd.getTheme();
+    themeIcon = document.getElementById('theme-icon');
+    if(theme === 'light'){
+      themeIcon.href = '../assets/images/sun.svg'
+    }
+    else{
+      themeIcon.href = '../assets/images/moon.svg';
+    }
+  }
+</script>

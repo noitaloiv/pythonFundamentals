@@ -28,29 +28,21 @@ Alternativt så kan du nyttja alternativet File -> Open Folder från gränssnitt
 Med Visual Studio Code öppet från din tomma mapp skapar du nu en Python-fil för att visa meddelandet: Hello world.
 
 * Inuti Explorer-vyn, där du ser den tomma mappens namn (hello-world), välj alternativet "Ny fil" (se Figur 1).
-<div align="center">
 
 ![Extensions in VSCode](../assets/images/vsCode_newFile.png){: .styled-image }
 
-</div>
-
 * Namnge den nya filen hello.py genom att ange det i textrutan och tryck på Enter (se Figur 2).
-<div align="center">
 
 ![Extensions in VSCode](../assets/images/vsCodeNewFile.png){: .styled-image }
 
-</div>
 Genom att använda filtillägget .py berättar du för VS Code att det ska tolka den här filen som ett Python-program, så att den utvärderar innehållet med Python-tillägget.
 
 * Ange följande Python-kod i redigeringspanelen. Detta kommando använder utskriftsfunktionen för att visa texten `Hello, world!` när din applikation körs.
 `print('Hello, World!')`
 
 * Spara filen genom att välja File och Save (eller Ctrl+S/⌘ + S).
-<div align="center">
 
 ![Extensions in VSCode](../assets/images/saveFileVSCode.png){: .styled-image }
-
-</div>
 
 {: .highlight }
 **OBS!** Det är viktigt att alltid spara ändringar i sin kod innan man kör koden. Du kan identifiera huruvida du har osparade ändringar i en fil genom den vita prick som som blir synlig när ändringar sker i fil-fliken.
@@ -58,20 +50,14 @@ Genom att använda filtillägget .py berättar du för VS Code att det ska tolka
 ## Steg 3 - Kör ditt första program
 
 Du kan nu köra din applikation inifrån VS Code. Du gör detta genom att öppna den inbyggda terminalen i VS Code (View -> Terminal).
-<div align="center">
 
 ![Extensions in VSCode](../assets/images/openTerminalVsCode.png){: .styled-image }
-
-</div>
 
 I terminalfönstret så skriver du sedan följande kommando, följt av enter, för att köra Python-koden:
 python3 hello.py
 
 Vilket, för denna applikation, ger oss följande resultat:
-<div align="center">
 
 ![Extensions in VSCode](../assets/images/pythonRan.png){: .styled-image }
-
-</div>
 
 Du har nu skapat din första Python-applikation och kört applikationen för att generera en output! För att förstå hur vi kan skriva mer avancera applikationer, exempelvis ett mindre spel, så behöver vi först förstå de olika beståndsdelarna som vi kan arbeta med i Python.

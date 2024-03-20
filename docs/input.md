@@ -72,15 +72,6 @@ För att hantera sådana problem så behöver vi _konvertera_ vårt inputvärde 
 
 I Python använder man typkonvertering för att konvertera (casta) en datatyp till en annan. Det är exempelvis vanligt att konvertera en `string` till en `int` eller vise versa. Detta kan göras med inbyggda funktioner såsom `int()`, `str()` eller `float()`.
 
-#### Python är ett starkt och dynamiskt typat programmeringsspråk
-Python är ett _starkt typat språk_ (strongly typed language) vilket innebär att det spelar roll vilken datatyp en variabel innehåller. Det är exempelvis skillnad på strängen `"1"` och siffran `1`. Som vi såg i föregående exempel så skulle vi därför stöta på problem om vi exempelvis försöker utföra en matematisk operation på textuella värden och vice versa.
-
-Python är dessutom ett _dynamiskt typat språk_ (dynamically typed language) vilket innebär att du **inte** specificerar datatypen för de variabler du skapar. Exempelvis kan vi lagra ett textvärde i variabeln `number1`, trots att namnet indikerar att det är ett heltal. 
-
-Detta fungerar då Python alla datatyper som _objekt_, oavsett om det är enkel data såsom heltal och decimaltal eller mer komplexa typer såsom listor och klassinstanser. När du lagrar ett objekt i en variabel så etableras en _referens_ till objektet, inte det _faktiska objektet_. Det är denna mekanism som gör det möjligt att inte fastställa datatypen på förhand, då referensen alltid kan utvärderas i efterhand.
-
-Fördelen med detta är att koden blir något mer abstrakt, lättare att förstå och argumenterbart enklare att skriva - med nackdelen att du själv behöver ha kontroll på vad för slags datatyp en variabel innehåller.
-
 #### Konvertera (casta) en datatyp
 Problemet med olika datatyper löser man genom att casta (konvertera) en datatyp till en annan. Python har inbyggda funktioner som gör att man direkt konverterar en datatyp till en annan. Några av de vanligaste funktionerna för att konvertera datatyper är:
 
