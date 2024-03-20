@@ -21,9 +21,9 @@ Should not be cached, because included files depend on page.
   <style>
     #theme-toggle {
       background: transparent;
-      font-size: 1rem;
-      padding-top: 30%;
-
+      padding-top: 50%;
+      border: none;
+    }
       .btn:focus:hover,
       .btn.selected:focus {
         color: inherit;
@@ -34,7 +34,6 @@ Should not be cached, because included files depend on page.
         height: 1rem;
         width: 1rem;
       }
-    }
   </style>
 
   <style id="jtd-nav-activation">
@@ -67,12 +66,13 @@ Should not be cached, because included files depend on page.
     function setTheme(newTheme) {
       jtd.setTheme(newTheme);
       localStorage.setItem('userTheme', newTheme);
-      updateThemeStyles(newTheme);
+      if(document.getElementById('theme-icon') != null){
+        updateThemeStyles(newTheme);
+      }
     }
 
     function updateThemeStyles(currentTheme) {
       const themeIcon = document.getElementById('theme-icon');
-      console.log(themeIcon);
       themeIcon.src = currentTheme === 'light' ? '../assets/images/sun.svg' : '../assets/images/moon.svg';
     }
 

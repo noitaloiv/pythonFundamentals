@@ -31,11 +31,7 @@ Där vi kommer att få utskriften `"1020"` + det värde som användaren anger, v
 
 Observera att det är ett mellanslag i uppmaningen `"Enter a numerical value: "`. Detta är för att få ett mellanrum mellan uppmaningen och värdet som anges, vilket gör programmet lite mer stilrent. Vi kan i detta fall även se hur programmet stannar upp och väntar på input från användaren innan programmet fortsätter:
 
-<div align="center">
-
 <img src="../assets/images/runInput.gif" alt="visualizationOfInput">
-
-</div>
 
 Som du kan se i GIF:en så kommer utskriften att bli `"102030"` (om `30` anges som input), vilket kan tänkas vara en svårtolkad input. Avser vi exempelvis ett enda värde, en talföljd eller tre individuella värden? Det kan därför vara fördelaktigt att _formatera_ vår utskrift.
 

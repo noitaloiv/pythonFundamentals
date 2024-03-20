@@ -12,6 +12,7 @@ print(2)
 print(3)
 # Osv. för resterande heltal
 ```
+{: .highlight }
 Detta skulle dock vara något tradigt att som utvecklare skriva och det skulle dessutom vara svårt att underhålla och tolka för andra utvecklare. Säg att vi exempelvis vill skriva ut heltalen 1-100 följt av heltalen 75-1000 och sedan 20-30, vi skulle då ha skrivit minst 1035 rader kod!
 
 Det finns således ett bättre tillvägagångssätt i de fall vi vill upprepa en instruktion eller en sekvens av instruktioner - **Iteration**. Iteration är ett grundläggande koncept inom programmering som möjliggör utförandet av en eller flera instruktioner baserat på ett angivet _villkor_. Likt hur vi tidigare har arbetat med `if`-satser och deras villkor, t.ex. i stil med `"OM 5 > 10, gör X"` så kan vi med iteration påtala att något t.ex. ska upprepas `"SÅLÄNGE SOM x < 10"`.
@@ -34,7 +35,7 @@ for x in range(1,11):
 10</code></pre>
 </div>
 
-{: .highlight }
+{: .text-center }
 Notera gärna att variabelnamnet `x` kan vara vilket giltigt variabelnamn som helst. Exempelvis skulle vi kunna skriva `a`, `iterator` eller något helt annat. Notera även att `range()`-funktionen kan nyttjas för att ange ett specifikt intervall, vilket i detta fall är heltal från 1 till 11. För varje iteration som utförs (d.v.s. efter varje utskrift) så kommer värdet på `x` att öka med 1. Detta tillåter oss att utföra koden som tidigare hade krävt minst 10 rader på enbart 2 rader, vilket ökar läsbarheten i koden enormt.
 
 ## for-loopen

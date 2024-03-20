@@ -27,3 +27,14 @@ html[data-theme="dark"] {
   	$body-text-color: $grey-dk-100;
   } 
 }
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.main-header{
+  position: sticky;
+}

@@ -133,15 +133,11 @@ Du kan ha noterat att `Systemutveckling` lades till i slutet av listan när funk
 ### Indexering
 Indexering är ett grundläggande koncept inom programmering som gör det möjligt att komma åt, referera till och manipulera data inom ordnade samlingar, såsom listor och strängar i Python. Indexering innebär att använda ett _index_ för att nå ett specifikt element inom en ordnad samling. I Python, liksom i många andra programmeringsspråk, börjar indexeringen från **0**. Det betyder att det första elementet i en samling har index 0, det andra elementet har index 1 o.s.v. En visualisering av listindexering kan tänkas se ut enligt:
 
-<div align="center">
-
 | Element                | Indexposition |
 | :-:| :-: | 
 | Datastrukturer                | 0       | 
 | Programmering i Python                 | 1       | 
 | Systemutveckling  | 2       |
-
-</div>
 
 Exempelvis kan vi peka på en specifik indexposition för att uthämta elementet på den angivna positionen enligt: 
 ```python
