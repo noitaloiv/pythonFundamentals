@@ -67,7 +67,9 @@ Should not be cached, because included files depend on page.
 
     function updateThemeStyles(currentTheme) {
       const themeIcon = document.getElementById('theme-icon');
+      console.log(themeIcon);
       themeIcon.src = currentTheme === 'light' ? '../../assets/images/sun.svg' : '../../assets/images/moon.svg';
+      console.log(themeIcon.src);
     }
 
     function toggleTheme() {
