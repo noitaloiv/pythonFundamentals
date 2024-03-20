@@ -58,7 +58,7 @@ Should not be cached, because included files depend on page.
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
   <script>
-    initializeTheme();
+    //initializeTheme();
     function setTheme(newTheme) {
       jtd.setTheme(newTheme);
       localStorage.setItem('userTheme', newTheme);
@@ -69,7 +69,6 @@ Should not be cached, because included files depend on page.
       const themeIcon = document.getElementById('theme-icon');
       console.log(themeIcon);
       themeIcon.src = currentTheme === 'light' ? '../assets/images/sun.svg' : '../assets/images/moon.svg';
-      console.log(themeIcon.src);
     }
 
     function toggleTheme() {
