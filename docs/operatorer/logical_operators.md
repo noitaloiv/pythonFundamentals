@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "10. Logiska operatorer"
-nav_order: 11
-parent: 8. Operatorer
+title: "11. Logiska operatorer"
+nav_order: 12
+parent: 9. Operatorer
 ---
 
 # Logiska operatorer i Python
