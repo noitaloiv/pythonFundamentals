@@ -2,6 +2,7 @@
 layout: default
 title: "15. Tuples"
 nav_order: 16
+parent: collections
 ---
 
 # Tuples

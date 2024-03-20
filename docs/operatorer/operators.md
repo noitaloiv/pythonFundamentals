@@ -2,6 +2,7 @@
 layout: default
 title: "7. Operatorer"
 nav_order: 8
+has_children: true
 ---
 
 # Operatorer och operander 

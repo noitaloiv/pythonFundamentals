@@ -2,6 +2,7 @@
 layout: default
 title: "5. Värden och typer"
 nav_order: 6
+parent: syntax
 ---
 
 # Värden och typer

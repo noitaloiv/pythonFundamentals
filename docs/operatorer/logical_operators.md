@@ -2,6 +2,7 @@
 layout: default
 title: "9. Logiska operatorer"
 nav_order: 10
+parent: operators
 ---
 
 # Logiska operatorer i Python

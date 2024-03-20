@@ -2,6 +2,7 @@
 layout: default
 title: "12. while-loop:en"
 nav_order: 13
+parent: iteration
 ---
 
 # while-loop:en

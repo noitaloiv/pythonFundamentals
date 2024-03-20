@@ -2,6 +2,7 @@
 layout: default
 title: "8. Jämförande operatorer"
 nav_order: 9
+parent: operators
 ---
 
 # Jämföra värden i Python

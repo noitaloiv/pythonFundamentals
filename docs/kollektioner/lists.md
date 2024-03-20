@@ -2,6 +2,7 @@
 layout: default
 title: "14. Lists"
 nav_order: 15
+parent: collections
 ---
 # Datatypen list
 Listor i Python är en typ av samling som låter oss lagra flera värden i en enda variabel. Detta gör det enklare att hantera och manipulera relaterad data. En lista kan skapas med hjälp av hakparenteser `[]`, och vi kan lägga till så många element vi vill i listan, separerade med kommatecken. Listor är _dynamiska samlingar_ som kan innehålla objekt av olika datatyper. De är _föränderliga_, tillåter _duplicerade element_ och är _ordnade_, .

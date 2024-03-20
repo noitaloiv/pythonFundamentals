@@ -60,7 +60,6 @@ Det är även viktigt att ta i beaktande att all input som ges av input() kommer
 
 Detta är viktigt att ta i beaktande då vi snabbt kan stöta på felmeddelanden om vi exempelvis försöker utföra en matematisk operation på ett inputvärde:
 ```python
-# Exempel 1
 number1 = 10
 number2 = 20
 number3 = input("Enter a numerical value: ")

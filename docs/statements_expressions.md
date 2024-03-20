@@ -9,12 +9,9 @@ Ett påstående är en instruktion som vår kompilator kan utföra. Vi har redan
 
 När du skriver ett påstående i din Python-fil och sedan kör koden via terminalen (alt. kör kod direkt genom terminalen) så kommer Python att kompilera koden och visa eventuella resultat. Med eventuella resultat avses att exempelvis tilldelning i sig självt inte kommer att skriva ut något i terminalen, om inte variabeln efter tilldelningen skrivs ut med hjälp av `print()`.
 ```python
-# Exempel 1
-assignment = "A value"
-# Nothing happens, in terms of output
+assignment = "A value"  # Nothing happens, in terms of output
 
-print(assignment)
-# The value of 'assignment' is printed
+print(assignment)       # The value of 'assignment' is printed
 ```
 <div class="code-example" markdown="1">
 <pre><code>A value</code></pre>
@@ -22,12 +19,11 @@ print(assignment)
 
 Ett Python-skript innehåller generellt sett en _sekvens av påståenden_. Om det finns mer än ett påstående (med tillhörande utskrift) så kommer resultaten att visas ett i taget allteftersom att resp. påstående kompileras/körs - vilket sker i en hierarkisk ordning (d.v.s. från påståendet på den första kodraden till påståendet på den sista kodraden).
 ```python
-# Exempel 2
 number = 10
 print(number)
 number = 20
 number = 30
-print(number) # Will not print 20 since we've overwritten that value
+print(number)           # Will not print 20 since we've overwritten that value
 ```
 <div class="code-example" markdown="1">
 <pre><code>10
@@ -37,7 +33,6 @@ print(number) # Will not print 20 since we've overwritten that value
 # "Uttryck" (expressions)
 Ett uttryck är en kombination av värden, variabler och operatorer. Om du skriver ett uttryck, exempelvis `2 + 2`, så kommer kompilatorn att tolka och visa resultatet:
 ```python
-# Exempel 1
 >>> 2 + 2
 ```
 <div class="code-example" markdown="1">
@@ -51,7 +46,6 @@ Notera att du kan skriva Python-kod direkt i terminalen med kommandot `python`. 
 
 Ett uttryck som sådant måste dock inte innehålla värden, variabler såväl som operatorer för att klassas som ett uttryck. Ett värde eller en variabel i sig kan exempelvis evalueras som ett uttryck:
 ```python
-# Exempel 2
 >>> 10
 >>> number = 5
 >>> number
@@ -63,7 +57,6 @@ Ett uttryck som sådant måste dock inte innehålla värden, variabler såväl s
 
 Att utvärdera ett uttryck är dock inte riktigt samma sak som att skriva ut ett värde, likt hur vi gjort tidigare med funktionen `print()`.
 ```python
-# Exempel 3
 >>> hello = "Hello, world!"
 >>> hello
 >>> print(hello)
@@ -78,7 +71,6 @@ Notera att utskriften ser annorlunda ut i föregående exempel. Detta beror på 
 
 I ett Python-script så kan alla uttryck vara tillåtna sådana (d.v.s. att inga fel genereras), men det betyder inte nödvändigtvis att det resulterar i något som är synligt för en användare. Exempelvis skulle vi kunna skriva något i stil med:
 ```python
-# Exempel 4
 test_1 = "msg"
 test_2 = 22
 test_3 = 4 + 5

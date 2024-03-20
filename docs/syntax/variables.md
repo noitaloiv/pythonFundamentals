@@ -2,6 +2,7 @@
 layout: default
 title: "6. Variabler"
 nav_order: 7
+parent: syntax
 ---
 
 # Variabler

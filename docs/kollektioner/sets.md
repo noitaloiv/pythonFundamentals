@@ -2,6 +2,7 @@
 layout: default
 title: "17. Mängder (sets)"
 nav_order: 18
+parent: collections
 ---
 
 # Mängder (sets)

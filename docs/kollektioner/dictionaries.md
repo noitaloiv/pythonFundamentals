@@ -2,6 +2,7 @@
 layout: default
 title: "16. Dictionaries"
 nav_order: 17
+parent: collections
 ---
 
 # Dictionaries
