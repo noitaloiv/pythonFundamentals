@@ -2,7 +2,7 @@
 layout: default
 title: "8. if-satsen"
 nav_order: 9
-parent: selection
+parent: 8. Selektion
 ---
 
 # if-satser i Python

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "6. Strängar"
-nav_order: 7
+title: "11. Strängar"
+nav_order: 12
 ---
 
 # Operationer på strängar

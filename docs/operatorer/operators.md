@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "7. Operatorer"
-nav_order: 8
+title: "8. Operatorer"
+nav_order: 9
 has_children: true
 ---
 
@@ -73,5 +73,19 @@ else:
 {: .highlight }
 Notera gärna `f`:et i `print()`. Detta kan nyttjas för att formatera utskriften, i detta fall genom att hämta variabelns värde vid utskrift. Hade vi istället försökt skriva `print(number is an even number)` så hade vi skrivit ut `number` snarare än värdet hos variabeln `number`. `if` och `else` är nyckelord som nyttjas vid _selektion_, vilket vi kommer diskutera i framtida kapitel.
 
-Arbeta med Cykliska Strukturer
+### Arbeta med Cykliska Strukturer
 Modulusoperatorn kan användas för att "loopa runt" när du når slutet av en cyklisk struktur. Detta är praktiskt när du hanterar enheter som tiden (0 till 23 timmar) eller veckodagar (1 till 7).
+```python
+current_hour = 23
+hours_to_add = 5
+new_hour = (current_hour + hours_to_add) % 24
+print(f"The new hour is: {new_hour}:00.")
+```
+<div class="code-example" markdown="1">
+<pre><code>The new hour is: 4:00.</code></pre>
+</div>
+
+Modulusoperatorn `%` är ett kraftfullt verktyg i Python som används för att hitta resten av en division mellan två tal. Dess användningsområden sträcker sig från att avgöra om tal är jämna eller udda, till att hantera cykliska strukturer och mycket mer. Att förstå och kunna använda modulusoperatorn är ett viktigt steg för att bli en skickligare programmerare, eftersom det erbjuder eleganta lösningar på vanliga matematiska och logiska problem.
+
+# Sammanfattning
+I detta avsnitt har vi utforskat olika typer av operatorer i Python, inklusive aritmetiska operatorer och modulooperatorn. Vi diskuterade även om operanderna som är värdena som operatorerna verkar på samt hur Python följer en bestämd ordning när operationer utförs i ett uttryck, enligt regeln _PEMDAS_. Detta hjälper oss att förstå och förutsäga resultatet av mer komplexa uttryck.

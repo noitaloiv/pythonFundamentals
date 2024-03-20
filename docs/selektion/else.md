@@ -2,7 +2,7 @@
 layout: default
 title: "8. else-satsen"
 nav_order: 9
-parent: selection
+parent: 8. Selektion
 ---
 
 # else-satser

@@ -2,6 +2,7 @@
 layout: default
 title: "9. Switch-sats"
 nav_order: 10
+parent: 8. Selektion
 ---
 
 # Switch-satsen
