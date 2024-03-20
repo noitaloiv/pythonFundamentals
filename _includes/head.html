@@ -21,11 +21,13 @@ Should not be cached, because included files depend on page.
   <style>
     #theme-toggle {
       background: transparent;
-      font-size: 1rem; 
+      font-size: 1rem;
       padding-top: 30%;
-      .btn:focus:hover, .btn.selected:focus {
+
+      .btn:focus:hover,
+      .btn.selected:focus {
         color: inherit;
-        box-shadow: none; 
+        box-shadow: none;
       }
     }
   </style>
@@ -64,7 +66,8 @@ Should not be cached, because included files depend on page.
     }
 
     function updateThemeStyles(currentTheme) {
-      document.getElementById('theme-toggle').textContent = currentTheme === 'light' ? '☀️' : '🌙';
+      const themeIcon = document.getElementById('theme-icon');
+      themeIcon.src = currentTheme === 'light' ? '../../assets/images/sun.svg' : '../../assets/images/moon.svg';
     }
 
     function toggleTheme() {
@@ -73,11 +76,18 @@ Should not be cached, because included files depend on page.
     }
 
     function initializeTheme() {
-      const savedTheme = localStorage.getItem('userTheme') || 'default';
-      if (savedTheme === 'default') {
-        setTheme('dark');
-      } else {
+      const savedTheme = localStorage.getItem('userTheme');
+
+      if (savedTheme) {
         setTheme(savedTheme);
+      } else {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          setTheme('dark');
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+          setTheme('light');
+        } else {
+          setTheme('dark');
+        }
       }
     }
   </script>
