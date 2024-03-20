@@ -2,9 +2,7 @@
   <ul class="aux-nav-list">
     <li>
       <button id="theme-toggle" onclick="toggleTheme()">
-        <svg>
-          <use href="" id="theme-icon"></use>
-        </svg>
+        <svg id="theme-icon"></svg>
         <!--<img id="theme-icon" src="" alt="Theme Toggle">-->
       </button>
     </li>
@@ -13,13 +11,15 @@
 
 <script>
   function setInitialSymbol(){
-    theme = jtd.getTheme();
-    themeIcon = document.getElementById('theme-icon');
+    let theme = jtd.getTheme();
+    let themeIcon = document.getElementById('theme-icon');
     if(theme === 'light'){
-      themeIcon.href = '../assets/images/sun.svg'
+      themeIcon.innerHTML = '<path d="../assets/images/sun.svg">'; 
     }
     else{
-      themeIcon.href = '../assets/images/moon.svg';
+      themeIcon.innerHTML = '<path d="../assets/images/moon.svg">'; 
     }
   }
+
+  document.addEventListener('DOMContentLoaded', setInitialSymbol);
 </script>
