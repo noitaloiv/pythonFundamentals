@@ -45,6 +45,7 @@ När vi först utför kodraden där `for-loopen` är deklarerad så kommer vi at
 <div align="center">
 
 ![for-loop](../assets/images/for-loop2.png){: .styled-image }
+
 </div>
 
 ### Syntax för for-loopar
