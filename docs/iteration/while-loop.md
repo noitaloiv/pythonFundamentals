@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "12. while-loop:en"
-nav_order: 13
-parent: 10. Iteration
+title: "19. while-loop:en"
+nav_order: 20
+parent: 18. Iteration
 ---
 
 # while-loop:en

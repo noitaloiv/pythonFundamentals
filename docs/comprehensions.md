@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "16. Listförståelse (Comprehensions)"
-nav_order: 17
+title: "25. Listförståelse (Comprehensions)"
+nav_order: 26
 ---
 
 # Kollektionsförståelse (Comprehensions)

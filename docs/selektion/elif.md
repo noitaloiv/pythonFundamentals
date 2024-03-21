@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "8. elif-satsen"
-nav_order: 9
-parent: 8. Selektion
+title: "15. elif-satsen"
+nav_order: 16
+parent: 12. Selektion
 ---
 
 # elif-satser

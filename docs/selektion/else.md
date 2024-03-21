@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "8. else-satsen"
-nav_order: 9
-parent: 8. Selektion
+title: "14. else-satsen"
+nav_order: 15
+parent: 12. Selektion
 ---
 
 # else-satser

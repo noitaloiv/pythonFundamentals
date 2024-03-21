@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "13. Kollektioner"
-nav_order: 14
+title: "20. Kollektioner"
+nav_order: 21
 has_children: true
 ---
 

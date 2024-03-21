@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "11. for-loop:en"
-nav_order: 12
-parent: 10. Iteration
+title: "18. for-loop:en"
+nav_order: 19
+parent: 17. Iteration
 ---
 
 # for-loop:en

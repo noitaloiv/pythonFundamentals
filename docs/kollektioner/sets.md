@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "17. Mängder (sets)"
-nav_order: 18
-parent: 13. Kollektioner
+title: "24. Mängder (sets)"
+nav_order: 25
+parent: 20. Kollektioner
 ---
 
 # Mängder (sets)

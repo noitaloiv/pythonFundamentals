@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "8. if-satsen"
-nav_order: 9
-parent: 8. Selektion
+title: "13. if-satsen"
+nav_order: 14
+parent: 12. Selektion
 ---
 
 # if-satser i Python

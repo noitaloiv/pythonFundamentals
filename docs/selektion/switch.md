@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "9. Switch-sats"
-nav_order: 10
-parent: 8. Selektion
+title: "16. switch-sats"
+nav_order: 17
+parent: 12. Selektion
 ---
 
-# Switch-satsen
+# switch-satsen
 I Python är en `switch`-sats en annan typ av _villkorssats_. Dessa fungerar på så vis att vi tar emot ett input-värde och utvärderar vilket "fall" som matchar denna input. Där vi har en matchning kan vi sedan lägga till relevant kod som ska utföras, likt hur `if`-satser och deras villkor fungerar.
 
 Även `switch`-satser nyttjas därför för att styra logiken i ett program genom att skapa vägval.
