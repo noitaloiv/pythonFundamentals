@@ -61,42 +61,7 @@ Should not be cached, because included files depend on page.
   {% endif %}
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
-  <script>
-    initializeTheme();
-    function setTheme(newTheme) {
-      jtd.setTheme(newTheme);
-      localStorage.setItem('userTheme', newTheme);
-      if(document.getElementById('theme-icon') != null){
-        updateThemeStyles(newTheme);
-      }
-    }
 
-    function updateThemeStyles(currentTheme) {
-      const themeIcon = document.getElementById('theme-icon');
-      themeIcon.src = currentTheme === 'light' ? '../assets/images/sun.svg' : '../assets/images/moon.svg';
-    }
-
-    function toggleTheme() {
-      const currentTheme = localStorage.getItem('userTheme') === 'light' ? 'dark' : 'light';
-      setTheme(currentTheme);
-    }
-
-    function initializeTheme() {
-      const savedTheme = localStorage.getItem('userTheme');
-
-      if (savedTheme) {
-        setTheme(savedTheme);
-      } else {
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          setTheme('dark');
-        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-          setTheme('light');
-        } else {
-          setTheme('dark');
-        }
-      }
-    }
-  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
