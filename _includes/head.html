@@ -24,16 +24,17 @@ Should not be cached, because included files depend on page.
       padding-top: 50%;
       border: none;
     }
-      .btn:focus:hover,
-      .btn.selected:focus {
-        color: inherit;
-        box-shadow: none;
-      }
 
-      #theme-icon{
-        height: 1rem;
-        width: 1rem;
-      }
+    .btn:focus:hover,
+    .btn.selected:focus {
+      color: inherit;
+      box-shadow: none;
+    }
+
+    #theme-icon {
+      height: 1rem;
+      width: 1rem;
+    }
   </style>
 
   <style id="jtd-nav-activation">
@@ -61,7 +62,34 @@ Should not be cached, because included files depend on page.
   {% endif %}
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const themeIcon = document.getElementById('theme-icon');
+      initializeTheme();
 
+      function setTheme(newTheme) {
+        jtd.setTheme(newTheme);
+        localStorage.setItem('userTheme', newTheme);
+        if (themeIcon) {
+          updateThemeStyles(newTheme);
+        }
+      }
+
+      function updateThemeStyles(currentTheme) {
+        themeIcon.src = currentTheme === 'light' ? '../assets/images/sun.svg' : '../assets/images/moon.svg';
+      }
+
+      function toggleTheme() {
+        const currentTheme = localStorage.getItem('userTheme') === 'light' ? 'dark' : 'light';
+        setTheme(currentTheme);
+      }
+
+      function initializeTheme() {
+        let savedTheme = localStorage.getItem('userTheme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        setTheme(savedTheme);
+      }
+    });
+  </script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
