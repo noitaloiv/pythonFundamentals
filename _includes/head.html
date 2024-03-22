@@ -64,19 +64,20 @@ Should not be cached, because included files depend on page.
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      const themeToggleBtn = document.getElementById('theme-toggle');
       const themeIcon = document.getElementById('theme-icon');
       initializeTheme();
+
+      themeToggleBtn.addEventListener('click', toggleTheme);
 
       function setTheme(newTheme) {
         jtd.setTheme(newTheme);
         localStorage.setItem('userTheme', newTheme);
-        if (themeIcon) {
-          updateThemeStyles(newTheme);
-        }
+        updateThemeStyles(newTheme);
       }
 
       function updateThemeStyles(currentTheme) {
-        themeIcon.src = currentTheme === 'light' ? '../assets/images/sun.svg' : '../assets/images/moon.svg';
+        themeIcon.src = currentTheme === 'light' ? '../../assets/images/sun.svg' : '../../assets/images/moon.svg';
       }
 
       function toggleTheme() {
@@ -87,10 +88,6 @@ Should not be cached, because included files depend on page.
       function initializeTheme() {
         let savedTheme = localStorage.getItem('userTheme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         setTheme(savedTheme);
-      }
-
-      if (themeIcon) {
-        themeIcon.addEventListener('click', toggleTheme);
       }
     });
   </script>

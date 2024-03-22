@@ -1,24 +1,9 @@
 <nav aria-label="Auxiliary" class="aux-nav">
   <ul class="aux-nav-list">
     <li>
-      <button id="theme-toggle" onclick="toggleTheme()">
+      <button id="theme-toggle">
         <img id="theme-icon" src="" alt="Theme Icon" width="800" height="800">
       </button>
     </li>
   </ul>
 </nav>
-
-<script>
-  function setInitialSymbol() {
-    let theme = jtd.getTheme();
-    let themeIcon = document.getElementById('theme-icon');
-    if (theme === 'light') {
-      themeIcon.src = "../assets/images/sun.svg";
-    }
-    else {
-      themeIcon.src = "../assets/images/moon.svg";
-    }
-  }
-
-  document.addEventListener('DOMContentLoaded', setInitialSymbol);
-</script>
