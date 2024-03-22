@@ -88,6 +88,10 @@ Should not be cached, because included files depend on page.
         let savedTheme = localStorage.getItem('userTheme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
         setTheme(savedTheme);
       }
+
+      if (themeIcon) {
+        themeIcon.addEventListener('click', toggleTheme);
+      }
     });
   </script>
 
