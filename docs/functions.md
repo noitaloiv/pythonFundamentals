@@ -154,6 +154,7 @@ Python tillåter dig att definiera funktioner som kan ta emot ett obegränsat an
 
 * Positionella Argument (`*args`)
 Användningen av `*args` i en funktionsdefinition möjliggör mottagandet av en variabel lista av _positionella argument_ som en tuple. Detta är användbart när du inte vet i förväg hur många argument som kommer att skickas till funktionen.
+
 ```python
 def add_all(*numbers):      
     total = 0
@@ -171,6 +172,7 @@ print(add_all(5, 10))           # numbers will contain 5, 10
 
 * Nyckelordsspecifika Argument (`**kwargs`)
 Användningen av `**kwargs` gör det möjligt för en funktion att acceptera ett obegränsat antal nyckelordsspecifika parametrar som en dictionary. Detta är användbart när du behöver hantera funktioner som kräver konfigurationsalternativ eller när du inte vet vilka nyckelord som kommer att användas.
+
 ```python
 def user_profile(**kwargs):
     for key, value in kwargs.items():
@@ -190,6 +192,7 @@ age: 22</code> </pre>
 
 * Kombinera `*args` och `**kwargs`
 Du kan även kombinera `*args` och `**kwargs` i samma funktion för att tillåta en funktion att acceptera både en variabel lista av positionella argument och en variabel lista av nyckelordsspecifika argument.
+
 ```python
 def combo_function(*args, **kwargs):
     total = sum(args)
