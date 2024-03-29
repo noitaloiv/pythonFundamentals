@@ -29,7 +29,6 @@ Notera att `#`-symbolen indikerar startpunkten för en kommentar. En kommentar k
 
 Det är möjligt att skriva kommentarer över en eller flera rader där `#`-symbolen nyttjas för enradiga kommentarer och `'''` kan nyttjas för att skriva kommentarer över flera rader, t.ex. enligt: 
 ```python
-# Exempel 2
 print(type("Hello, world!"))
 print(type(23))
 '''

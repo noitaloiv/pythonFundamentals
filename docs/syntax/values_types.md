@@ -21,7 +21,6 @@ Likt hur vi tidigare skrev ut `"Hello, world!"` med hjälp av `print()`-funktion
 Om du skulle vara osäker på vilken typ ett värde har så kan kompilatorn berätta det för dig genom användningen av `type()`-funktionen: 
 
 ``` python
-# Exempel 1
 print(type("Hello, world!"))
 print(type(23))
 ```

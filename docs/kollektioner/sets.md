@@ -8,6 +8,7 @@ parent: 20. Kollektioner
 # Mängder (sets)
 Mängder är en annan typ av kollektion som är mycket användbar när du behöver hantera _unika element_ och utföra operationer såsom `union`, `snitt` och `differens`. Mängder skapas med måsvingar `{}` eller med `set()`-funktionen. Till skillnad från listor och tuples är mängder _oordnade_, vilket innebär att de inte har någon bestämd ordning (d.v.s. att indexering inte kan tillämpas) för sina element och tillåter **inte** för duplicerade element. Mängder är även _oföränderliga_ i det avseendet att vi inte kan ändra på existerande element - men vi kan till skillnad mot tuples lägga till eller ta bort element.
 
+## Mängdmetoder
 Vi kan arbeta med mängder på följande vis:
 ```python
 # Create a set
@@ -36,18 +37,63 @@ TypeError: 'set' object is not subscriptable</code></pre>
 {: .highlight }
 Notera att då mängder är oordnade så kan vi aldrig vara säkra på i vilken ordning elementen kommer att skrivas ut. D.v.s. att den ena körningen kan vi få `red`, `blue`, `yellow` men nästa körning kan det vara `yellow`, `red`, `blue`.
 
-Om du till exempel vill hålla reda på en unik kollektion av studenter som deltar i olika studiegrupper och utföra mängd-operationer (`union`, `snitt`, `differens`), kan mängder vara ett fördelaktigt val:
+## Mängdoperationer
+Mängder stöder flera kraftfulla operationer som gör dem idealiska för att hantera unika element och utföra matematiska mängdoperationer såsom `union`, `snitt` och `differens`. 
+
+* `Union` (`|`): Kombinerar element från två mängder utan dupliceringar.
 ```python
-studiegrupp_a = {"Alice", "Bob", "Charlie"}
-studiegrupp_b = {"Bob", "Diana", "Frank"}
+study_group_a = {"Alice", "Bob", "Charlie"}
+study_group_b = {"Bob", "Diana", "Frank"}
 
-# UNION - Will get students that belongs to both groups
-print(studiegrupp_a & studiegrupp_b)
-
-# DIFFERENCE - Will get students that belongs to A and not B
-print(studiegrupp_a - studiegrupp_b)
+print(study_group_a | study_group_b)
 ```
 <div class="code-example" markdown="1">
-<pre><code>{'Bob'}
-{'Alice', 'Charlie'}</code></pre>
+<pre><code>{'Frank', 'Diana', 'Charlie', 'Bob', 'Alice'}</code></pre>
 </div>
+
+* `Snitt` (`&`): Hittar gemensamma element i två mängder.
+```python
+study_group_a = {"Alice", "Bob", "Charlie"}
+study_group_b = {"Bob", "Diana", "Frank"}
+
+print(study_group_a & study_group_b)
+```
+<div class="code-example" markdown="1">
+<pre><code>{'Bob'}</code></pre>
+</div>
+
+* `Differens` (`-`): Hittar element i en mängd som inte finns i den andra.
+```python
+study_group_a = {"Alice", "Bob", "Charlie"}
+study_group_b = {"Bob", "Diana", "Frank"}
+
+print(study_group_a - study_group_b)
+```
+<div class="code-example" markdown="1">
+<pre><code>{'Alice', 'Charlie'}</code></pre>
+</div>
+
+* `Symmetrisk Differens` (`^`): Hittar element som är unika för varje mängd.
+```python
+study_group_a = {"Alice", "Bob", "Charlie"}
+study_group_b = {"Bob", "Diana", "Frank"}
+
+print(study_group_a ^ study_group_b)
+```
+<div class="code-example" markdown="1">
+<pre><code>{'Alice', 'Diana', 'Charlie', 'Frank'}</code></pre>
+</div>
+
+## Användningsområden för mängder
+Mängder är särskilt användbara i följande scenarier:
+
+* Undvika dupliceringar: Perfekt när du behöver säkerställa att varje element är unikt.
+
+* Effektiv sökningsprestanda: Mängder är optimerade för att snabbt kontrollera om ett element finns, vilket sker mycket snabbare än vad det gör för t.ex. listor.
+
+* Matematiska mängdoperationer: Mängder är idealiska för att lösa problem som involverar `union`, `snitt` och `differens` mellan grupper av data.
+
+# Sammanfattning
+Mängder i Python är en kraftfull datastruktur för hantering av unika element. De erbjuder både flexibiliteten att lägga till och ta bort element (till skillnad från tuples) och har prestandan för snabba sökningar och mängdoperationer. 
+
+Genom att använda mängder och deras inbyggda operationer och metoder, kan du skriva mer effektiv och läsbar kod för att lösa problem som involverar unika element och grupper av data.

@@ -43,3 +43,83 @@ print(course_grades["G"])
 <div class="code-example" markdown="1">
 <pre><code>['Programmering i Python', 'Systemutveckling']</code></pre>
 </div>
+
+## Modifikation av Dictionaries
+Att modifiera dictionaries i Python är argumenterbart en förhållandevis enkel process som involverar tillägg, uppdatering och borttagning av nyckel-värde-par (key-value pairs).
+
+* Tillägg av key-value pairs: Du kan lägga till nya par genom att helt enkelt tilldela ett värde till en ny nyckel. Om nyckeln redan finns, uppdateras det befintliga värdet.
+```python
+course_grades = {}
+course_grades["Databaser"] = "G"
+course_grades["Webbutveckling"] = "VG"
+```
+
+* Uppdatering av värden: För att ändra värdet associerat med en specifik nyckel, tilldela helt enkelt ett nytt värde till nyckeln enligt:
+```python
+course_grades["Databaser"] = "VG"  # Updates the value to VG for the key "Databaser"
+```
+
+* Borttagning av key-value pairs: Använd `del`-nyckelordet eller `pop()`-funktionen för att ta bort ett par. `pop()` returnerar även värdet som togs bort, vilket kan vara användbart.
+```python
+# Removes the key-value pair for the key "Webbutveckling"
+del course_grades["Webbutveckling"]         
+# Removes and returns the value for the key "Databaser"
+removed_grade = course_grades.pop("Databaser")
+print(removed_grade) 
+```
+
+## Iteration över Dictionaries
+Iteration över dictionaries kan utföras på flera sätt, beroende på om du behöver iterera över nycklarna, värdena eller båda.
+
+* Iterera över nycklar: Standardbeteendet när du itererar över en dictionary är att iterera över dess nycklar.
+```python
+course_grades = {
+    "Datastrukturer": "VG",
+    "Programmering i Python": "G",
+    "Systemutveckling": "G"
+}
+for course in course_grades:
+    print(course)
+```
+<div class="code-example" markdown="1">
+<pre><code>Datastrukturer
+Programmering i Python
+Systemutveckling</code></pre>
+</div>
+
+* Iterera över värden: För att iterera över värdena, använd `values()`-funktionen:
+```python
+course_grades = {
+    "Datastrukturer": "VG",
+    "Programmering i Python": "G",
+    "Systemutveckling": "G"
+}
+for grade in course_grades.values():
+    print(grade)
+```
+<div class="code-example" markdown="1">
+<pre><code>VG
+G
+G</code></pre>
+</div>
+
+* Iterera över key-value pairs: Använd `items()`-metoden för att få tillgång till både nycklar och värden samtidigt.
+```python
+course_grades = {
+    "Datastrukturer": "VG",
+    "Programmering i Python": "G",
+    "Systemutveckling": "G"
+}
+for course, grade in course_grades.items():
+    print(f"Course: {course}, Grade: {grade}")
+```
+<div class="code-example" markdown="1">
+<pre><code>Course: Datastrukturer, Grade: VG
+Course: Programmering i Python, Grade: G
+Course: Systemutveckling, Grade: G</code></pre>
+</div>
+
+# Sammanfattning
+Dictionaries i Python är kraftfulla och flexibla kollektioner som tillhandahåller en effektiv mekanism för att lagra och hantera data i nyckel-värde-par (key-value pairs). Deras förmåga att enkelt modifieras och deras stöd för dynamisk datahantering gör dem idealiska för ett brett spektrum av användningsfall, från enkla datakartläggningar till komplexa datamodeller. 
+
+Genom att utnyttja dictionaries kan utvecklare skapa mer organiserad, läsbar och effektiv kod som lätt kan anpassas till ändrade datakrav.

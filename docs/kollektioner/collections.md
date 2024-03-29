@@ -11,7 +11,7 @@ När man programmerar arbetar man ofta med _kollektioner_ av data. Ponera att du
 course1 = "OOP I"
 course2 = "Datastrukturer"
 course3 = "Databaser"
-# Osv. för resp. kurs
+# And so on for each course
 ```
 Men detta tillvägagångssätt skulle snabbt bli ohållbart (eller åtminstone väldigt opraktiskt). Tänk om vi vill lägga till en kurs, `Programmering i Python` som löper samtidigt som `Datastrukturer` (nuvarande `course2`) men långt innan `Databaser` (nuvarande `course3`), ska den då läggas till som `course4` eller behöver vi ändra namnet på våra existerande variabler för att upprätthålla någon form av struktur? Detsamma gäller om vi skulle vilja ta bort en kurs, lista namnet på alla kurser i alfabetisk ordning eller dylikt. Det skulle kräva mycket repeterad och omfattande kod samt att vi eventuellt modifierar existerande kod - vilket vi självfallet vill undvika.
 
@@ -19,7 +19,7 @@ Låt oss därför introducera konceptet kollektioner, mer specifikt _listor_, vi
 ```python
 coursesT1 = ["OOP I", "Datastrukturer", "Programmering i Python"]
 coursesT2 = ["Databaser", "Webbapplikationer"]
-# Osv. för resterande terminer
+# And so on for each term
 ```
 Vi har nu organiserat vår data i kollektioner där resp. lista representerar en grupp av kurser per termin. Detta tillåter oss dels att organisera vår data, men även att utföra operationer på listorna, t.ex. som att skriva ut namnet på alla kurser för en termin genom att tillämpa iteration:
 ```python
@@ -38,6 +38,46 @@ Programmering i Python</code></pre>
 Notera gärna att det är möjligt att skriva ut innehållet i listan utan att tillämpa iteration, d.v.s. genom exempelvis `print(coursesT1)`. Detta kommer dock att resultera i en annorlunda utskrift eftersom att vi skriver ut hela _listan_ snarare än resp. _element i listan_. I detta fall skulle vi få utskriften `['Objektorienterad programmering I', 'Datastrukturer', 'Programmering i Python']`. Nämnvärt är även att detta tillvägagångssätt är något säreget för Python. Om vi skulle försöka utföra motsvarigheten till `print(coursesT1)` i C# eller Java så skulle vi exempelvis istället bara få ut vilken datatyp variabeln avser snarare än dess innehåll. Utgångspunkten bör således vara att tillämpa iteration vid utskrift av element i kollektioner.
 
 Python erbjuder flera inbyggda samlingstyper som är designade för att hantera grupper av objekt på olika sätt. De mest använda samlingstyperna är _listor_, _tupler_, _dictionaries_ och _mängder_.
+
+## Fördelar med Kollektioner
+Kollektioner i Python, såsom listor, tupler, dictionaries och mängder (sets), erbjuder flera fördelar som gör dem oumbärliga i programmering:
+
+* Organisering av Data: Kollektioner tillåter organisering av relaterad data på ett strukturerat sätt. Detta förenklar hanteringen av data och gör det lättare att utföra operationer på datauppsättningar.
+
+* Flexibilitet: Kollektioner kan dynamiskt ändras under körning av programmet, med undantag för tupler som är oföränderliga. Du kan lägga till, ta bort och ändra element, vilket gör dem mycket anpassningsbara till programmets behov.
+
+* Effektivitet i Dataåtkomst: Dictionaries erbjuder snabb åtkomst till data via nycklar, vilket gör det enkelt att hämta och uppdatera värden utan att behöva genomgå hela samlingen.
+
+* Stöd för Iteration: Kollektioner kan enkelt itereras över, vilket möjliggör genomgång och manipulation av varje element i samlingen.
+
+* Inbyggda Operationer: Python erbjuder en mängd inbyggda funktioner och metoder för att arbeta med kollektioner, vilket inkluderar filtrering, sortering, och aggregering av data.
+
+## Användning av Iteration med Kollektioner
+Iteration är en central aspekt när det kommer till arbete med kollektioner i Python. Genom att använda loop:ar, såsom `for`-loop:ar, kan du utföra operationer på varje element i en samling. Exempelvis med listor enligt:
+```python
+vegetables = ["onion", "potato", "carrot"]
+for veggie in vegetables:
+    print(veggie)
+```
+<div class="code-example" markdown="1">
+<pre><code>onion
+potato
+carrot</code></pre>
+</div>
+
+Och med dictionaries enligt:
+```python
+person = {"name": "Eric", "age": 30}
+for key, value in person.items():
+    print(f"{key}: {value}")
+```
+<div class="code-example" markdown="1">
+<pre><code>name: Eric
+age: 30</code></pre>
+</div>
+
+{: .highlight }
+Funktionen `items()` kan nyttjas för att hämta alla nyckel-värde-par (key-value pairs) som lagrats i en dictionary. I ovan exempel itererar vi sedan över resp. par och skriver ut dem enligt formatet: `nyckel: värde`.
 
 ## Dynamiskt typat språk (Dynamically typed language)
 Den dynamiska typningen i Python tillåter variabler att referera till objekt av olika datatyper under programmets körning, vilket ger en stor flexibilitet i hur data kan hanteras och lagras.
@@ -84,7 +124,9 @@ matris = [
     [7, 8, 9]
 ]
 
-print(matris[1][2]) #[1] avser indexpositionen för listan vi vill kolla på och [2] avser indexpositionen för ett element i den listan
+#[1] refers to the index of the list we wish to look at and 
+#[2] refers to the index of an element in that list
+print(matris[1][2]) 
 ```
 <div class="code-example" markdown="1">
 <pre><code>6</code></pre>
@@ -103,3 +145,8 @@ print(person["intressen"][1])
 <div class="code-example" markdown="1">
 <pre><code>cykling</code></pre>
 </div>
+
+# Sammanfattning
+Kollektioner är ett kraftfullt verktyg i Python som möjliggör effektiv hantering och organisation av data. Genom att använda listor, tupler, dictionaries och mängder (sets) kan utvecklare skapa komplexa datastrukturer som speglar de verkliga datamodellerna mer exakt. 
+
+Dynamisk typning i Python tillför ytterligare en nivå av flexibilitet, vilket gör det möjligt att inkludera olika datatyper i samma kollektion. Denna flexibilitet, tillsammans med förmågan att iterera över kollektioner, gör Python till ett kraftfullt språk för datahantering och manipulation.

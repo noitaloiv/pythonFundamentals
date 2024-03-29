@@ -33,6 +33,22 @@ else:
 ```
 `"Transaction failed."` kommer nu enbart att skrivas ut i de fall villkoret för vår `if`-sats ger `false` - d.v.s. i de fall transaktionen misslyckas.
 
+Exempelvis skulle vi, givet nedan kodexempel, skriva ut "`Registration successful`" så länge användaren anger ett värde som är större än 17.
+```python
+age = int(input("Enter your age (1-110): "))
+if age < 18:
+  print("You are not old enough to register an account.")
+else:
+  print("Registration successful.")
+```
+<div class="code-example" markdown="1">
+<pre><code>#If the user enters 10
+You are not old enough to register an account.
+
+#If the user enters 21
+Registration successful.</code></pre>
+</div>
+
 ## Syntaxen för else-satser
 En `else`-sats kan inledningsvis bara existera om det finns en tillhörande `if`-sats. Det är med andra ord inte möjligt att erbjuda ett alternativt vägval om det inte redan finns vägval. 
 
@@ -50,17 +66,24 @@ else:
 
 Då en `else`-sats representerar vad som ska ske om ett villkor inte uppfylls så behövs helt enkelt inga egna villkor. Likt `if`-satser så tillhör samtliga operationer som är indenterade under `else`-satsen det vägvalet. Notera gärna även att `else`-satser anges på samma _hierarkiska nivå_ som den tillhörande `if`-satsen. En `else`-sats anges dessutom alltid EFTER en `if`-sats.
 ```python
-else:       # Icke acceptabel syntax då else är placerat innan if
+else:         # Non-acceptable syntax as else is placed before if
 if 10 > 5: 
 
-if 10 > 5:   # Acceptabel syntax
+if 10 > 5:    # Acceptable syntax
   Operation1
 else
   Operation2
 
-else:        # Icke acceptabel syntax då vi saknar en if
+else:         # Non-acceptable syntax as we're missing an if
 ```
 Avslutningsvis så är det heller inte möjligt att nästla `else`-satser.
 
 {: .highlight }
 Notera: En `else`-sats representerar ett **ANNARS**-fall i vårt program, d.v.s. det som ska ske om inget villkor uppfylls. Det är således omöjligt att nästla `else`-satser eller ange dem utan tillhörande `if`-satser.
+
+# Sammanfattning
+I detta avsnitt har vi utforskat `else`-satser i Python, som används i kombination med `if`-satser för att definiera en block av kod som ska köras om det initiala `if`-villkoret inte uppfylls. `else`-satser är en viktig del av kontrollflödet i ett program och tillåter utvecklare att hantera olika scenarier på ett effektivt sätt.
+
+Genom att använda `else`, kan vi säkerställa att vårt program alltid har en definierad väg att följa, oavsett utfallet av `if`-villkoret, vilket bidrar till mer robust och pålitlig kod.
+
+Att förstå hur man använder `else` tillsammans med `if` och `elif` är avgörande för att skapa flexibla och interaktiva program som kan hantera en mängd olika situationer och användarinteraktioner. Genom att bemästra dessa konstruktioner, kan utvecklare bygga program som inte bara fungerar effektivt, utan också ger en intuitiv och användarvänlig upplevelse.

@@ -51,10 +51,13 @@ Alla rader som är indenterade efter `if`-satsen representerar sedan den operati
 number = input("Enter a value: ")
 
 if int(number) > 5:
-  print(number, " is larger than 5") # Kommer enbart att utföras om talet som anges är större än 5
-  print("Run the application again to check another number!") # Kommer enbart att utföras om talet som anges är större än 5
+  # Will only execute if number is greater than 5.
+  print(number, " is larger than 5") 
+  # Will only execute if number is greater than 5.
+  print("Run the application again to check another number!") 
 
-print("Run the application to check other numbers!") # Tillhör inte if-satsen, d.v.s. att denna kod kommer att utföras vare sig villkoret för if-satsen är sant eller ej.
+# Does not belong to the if-statement and will therefore run regardless of whether the if-statement evaluates to True or False.
+print("Run the application to check other numbers!") 
 ```
 <div class="code-example" markdown="1">
 <pre><code>#If the user enters 10
@@ -120,3 +123,10 @@ Om `isEligible()` skickar tillbaka `true` så vet vi med oss att användaren del
 
 {: .highlight }
 **OBS!** Vi kommer att prata mer om egendefinierade funktioner (d.v.s. funktioner som du själv deklarerar och implementerar) i framtida kapitel. Det är således inget du förväntas ha koll på redan i detta skede utan nyttjades enbart i syfte om att exemplifiera relevansen av nästlade `if`-satser.
+
+# Sammanfattning
+I detta avsnitt har vi utforskat `if`-satser i Python, som är ett grundläggande verktyg för att introducera beslutsfattande i våra program. Genom att använda `if`-satser kan vi leda programmet till olika vägar beroende på om specifika villkor är uppfyllda eller ej. Detta möjliggör skapandet av flexibla och dynamiska applikationer som kan reagera på olika situationer och data.
+
+Vi har sett hur enkla `if`-satser används för att utföra operationer baserat på enkla villkor, hur logiska operatorer kan kombinera flera villkor för mer komplexa tester, och hur nästlade `if`-satser tillåter oss att hantera flernivåvillkor. Dessa konstruktioner är avgörande för att bygga effektiva program som kan hantera en mängd olika scenarier på ett intelligent sätt.
+
+Genom att bemästra användningen av `if`-satser och relaterade konstruktioner, kan utvecklare skapa program som inte bara fungerar effektivt utan också erbjuder en intuitiv och användarvänlig upplevelse.
