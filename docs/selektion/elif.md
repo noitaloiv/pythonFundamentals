@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "15. elif-satsen"
-nav_order: 16
-parent: 12. Selektion
+title: "19. elif-satsen"
+nav_order: 20
+parent: 16. Selektion
 ---
 
-# elif-satser
+# `elif`-satser
 En `elif`-sats i Python är ett valfritt tillägg som man använder när man vill att programmet ska utföra en operation i det fall när villkoret i en `if`-sats **inte** uppfylls, likt en `else`-sats. D.v.s. vilken kod som ANNARS ska utföras i de fall ett eller flera villkor inte uppfylls.
 
 Skillnaden mot en `else`-sats är vi att vi med `elif`-satser kan ange _alternativa_ villkor.
@@ -42,7 +42,7 @@ else:
 
 Vi kontrollerar fortfarande initialt att vi har täckning på kontot för att utföra transaktionen. Om så är fallet så lägger vi senda till en variabel som avser rabatten, `discount`, och ger den det initiala värdet 0. Vi kontrollerar sedan huruvida `priceOfProduct` förhåller sig till en prisnivå och tilldelar ett nytt värde till `discount` beroende vilken prisnivå det gäller. `(priceOfProduct - (priceOfProduct * discount))` kommer att fungera vare sig en prisnivå har uppfyllts eller ej då vi antingen subtraherar 0 eller ett specifikt belopp från produktpriset.
 
-## Syntaxen för elif-satser
+## Syntaxen för `elif`-satser
 En `elif`-sats kan inledningsvis bara existera om det finns en tillhörande `if`-sats. Det är med andra ord inte möjligt att erbjuda ett alternativt vägval om det inte redan finns vägval. 
 
 Syntaxen för en `elif`-sats påminner om syntaxen för `if`-satser:
@@ -74,7 +74,7 @@ Notera att både `elif`- och `else`-satser är frivilliga tillägg till en `if`-
 {: .highlight }
 Notera: En `elif`-sats representerar ett **ANNARS OM**-fall i vårt program, d.v.s. det som ska utvärderas om ett specifikt villkor inte uppfylls. Det är således omöjligt att ange dem utan tillhörande `if`-satser.
 
-## Multipla elif-satser
+## Multipla `elif`-satser
 `elif`, vilket är en förkortning av "else if", används för att skapa en kedja av villkorliga tester efter en initial `if`-sats. När ett `elif`-villkor uppfylls, utförs koden inom det `elif`-blocket, och resten av `elif`-kedjan (samt en eventuell `else`-sats) ignoreras. Detta betyder att endast ett av kodblocken i en `if-elif`-sekvens kan köras.
 ```python
 age = int(input("Enter your age (1-110): "))
@@ -102,7 +102,7 @@ You're in your thirties.</code></pre>
 {: .highlight }
 Notera att efterföljande `elif`-satser eller `else`-satsen inte kommer att exekveras i det fall ett villkor evalueras till `True`, oavsett om de också är sanna eller ej.
 
-### Skillnaden mot multipla if-satser
+### Skillnaden mot multipla `if`-satser
 När du använder flera `if`-satser oberoende av varandra, kommer varje `if`-sats att utvärderas separat. Det betyder att om villkoren för flera `if`-satser är uppfyllda, kommer kodblocken för alla dessa `if`-satser att köras.
 ```python
 age = 20

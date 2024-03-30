@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "14. else-satsen"
-nav_order: 15
-parent: 12. Selektion
+title: "18. else-satsen"
+nav_order: 19
+parent: 16. Selektion
 ---
 
-# else-satser
+# `else`-satser
 En `else`-sats i Python är ett valfritt tillägg som man använder när man vill att programmet ska utföra en operation i det fall när villkoret i en `if`-sats **inte** uppfylls. D.v.s. vilken kod som ANNARS ska utföras i de fall ett eller flera villkor inte uppfylls.
 
 Låt oss återgå till vårt tidigare exempel avseende transaktionskontot och produktköpet. Säg nu att vi vill kunna informera kunden om att transaktionen misslyckades. Vi kan lägga till en `print()` efter `if`-satsen i stil med:
@@ -49,7 +49,7 @@ You are not old enough to register an account.
 Registration successful.</code></pre>
 </div>
 
-## Syntaxen för else-satser
+## Syntaxen för `else`-satser
 En `else`-sats kan inledningsvis bara existera om det finns en tillhörande `if`-sats. Det är med andra ord inte möjligt att erbjuda ett alternativt vägval om det inte redan finns vägval. 
 
 Syntaxen för en `else`-sats påminner om syntaxen för en `if`-sats, med undantaget att vi inte anger något villkor:

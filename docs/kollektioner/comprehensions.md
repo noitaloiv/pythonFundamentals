@@ -1,10 +1,11 @@
 ---
 layout: default
-title: "25. Listförståelse (Comprehensions)"
-nav_order: 26
+title: "29. Kollektionsförståelse (comprehensions)"
+nav_order: 30
+parent: 24. Kollektioner
 ---
 
-# Kollektionsförståelse (Comprehensions)
+# Kollektionsförståelse (comprehensions)
 Kollektionsförståelse i Python är ett kompakt sätt att skapa listor. Tänk dig att du har en stor trädgård och vill skapa en lista över alla röda blommor. Istället för att gå runt i trädgården och manuellt lägga till varje röd blomma i en lista, låter kollektionsförståelse dig göra detta i en enda rad kod. Exempelvis kan vi skapa en lista utifrån en annan lista men med nya värden enligt:
 ```python
 numbers = [1, 2, 3, 4, 5]

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "27. Moduler"
-nav_order: 28
+title: "36. Moduler"
+nav_order: 37
 ---
 
 # Moduler i Python

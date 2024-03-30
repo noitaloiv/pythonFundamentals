@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "19. while-loop:en"
-nav_order: 20
-parent: 17. Iteration
+title: "23. while-loop:en"
+nav_order: 24
+parent: 21. Iteration
 ---
 
-# while-loop:en
+# `while`-loop:en
 En `while-loop` är en alternativ loop till `for-loop` och båda loop:ar har generellt sett sitt eget användningsområde, även om de till stor del är utbytbara. Precis som `for-loop:en` används ett nyckelord (`while`) följt av ett _villkor_. Skillnaden ter sig i hur villkoret uttrycks. För `for-loop:ar` så ter sig villkoret alltid som en _sekvens_, men för `while-loop:ar` ter sig villkoret istället alltid som ett booleskt uttryck - d.v.s. något som kan evalueras till sant ellet falskt. Villkoret för en `while-loop` avser däremot inte ett "vägval" utan istället hur många _iterationer_ som ska utföras, d.v.s. hur många gånger koden som loop:en avser ska utföras. 
 
 Istället för villkoret `x in range(1,11)` - vilket kan översättas till `"SÅ LÄNGE SOM x ÄR INOM INTERVALLET 1-11"` - så skulle vi få något i stil med `number < 11` - vilket kan ersättas till `"SÅ LÄNGE SOM number ÄR MINDRE ÄN 11"`:
@@ -20,7 +20,7 @@ Till skillnad mot `for-loop:en` så deklarerar vi alltså iterator-variabeln uta
 {: .highlight }
 `number += 1` innefattar i praktiken att vi tar det existerande värdet för variabeln `number` och adderar 1. D.v.s. att vi utför följande operation: `number = number + 1`. Detta är även möjligt att tillämpa för subtraktion (`-=`), division (`/=`) eller multiplikation (`*=`).
 
-## Syntax för while-loop:ar
+## Syntax för `while`-loop:ar
 `while`-nyckelordet följt av ett villkor används enligt:
 ```python
 while condition:
@@ -130,7 +130,7 @@ while keepPlaying:
     keepPlaying = CheckIfWinner()
 ```
 
-## Nästlad iteration för while-loop:ar
+## Nästlad iteration för `while`-loop:ar
 Fungerar på samma sätt som för `for-loop:ar`. Exempelvis kan vi formatera utskrifter på samma sätt som tidigare enligt:
 ```python
 i = 1

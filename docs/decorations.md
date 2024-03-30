@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "29. Dekoratörer (Decorations)"
-nav_order: 30
+title: "XX. Dekoratörer (Decorations)"
+nav_order: 40
 ---
 

@@ -31,7 +31,7 @@ print(student_age)
 22</code></pre>
 </div>
 
-## Dynamiskt typat programmeringsspråk
+## Dynamiskt typat programmeringsspråk (Dynamically typed language)
 Som nämnt i föregående kapitel så medför det faktum att Python är ett starkt och dynamiskt typat språk dels att vi måste vara säkra på vilken datatyp en variabel har som värde, d.v.s. att det exempelvis är skillnad på `"1"` och `1` vid utförandet av matematiska operationer. 
 
 Python är dock dessutom ett _dynamiskt typat språk_ (dynamically typed language) vilket innebär att du **inte** specificerar datatypen för de variabler du skapar. Exempelvis kan vi lagra ett textvärde i variabeln `number1`, trots att namnet indikerar att det är ett heltal. 
@@ -88,12 +88,10 @@ I de fall du skriver koden i en faktisk Python-fil inuti Visual Studio Code (d.v
 
 ![Syntax Errors](../../assets/images/syntaxErrors.png){: .styled-image }
 
-`123` är ett otillåtet namn då det inte inleds med en bokstav - därav att `a123` anses vara ett tillåtet namn. `ab$` är ett otillåtet namn då det innehåller specialtecknet `$`, men varför får vi ett syntaxfel i det sista fallet med `if`? Felet beror på att `if` råkar vara ett av 29 st. nyckelord som är integrerade i Python - d.v.s. att det är ord som redan uppfyller ett syfte genom att definiera språkets regler och struktur, vilket medför att de inte kan nyttjas som variabelnamn. Det skulle dock vara tillåtet om vi inte längre representerade nyckelordet genom att bygga vidare på variabelnamnet, t.ex. i stil med:
+`123` är ett otillåtet namn då det inte inleds med en bokstav - därav att `a123` anses vara ett tillåtet namn. `ab$` är ett otillåtet namn då det innehåller specialtecknet `$`, men varför får vi ett syntaxfel i det sista fallet med `if`? Felet beror på att `if` råkar vara ett av de nyckelord som är integrerade i Python - d.v.s. att det är ord som redan uppfyller ett syfte genom att definiera språkets regler och struktur, vilket medför att de inte kan nyttjas som variabelnamn. Det skulle dock vara tillåtet om vi inte längre representerade nyckelordet genom att bygga vidare på variabelnamnet, t.ex. i stil med:
 ```python
 if_old_age = "Sorry, you're too old to be eating of the children's menu"
 ```
-
-Du kommer under denna kurs att stöta på fler nyckelord såsom `and`, `class`, `else`, `for`, etc. men vi kommer att introducera var och ett successivt allt eftersom att vi introducerar fler koncept och byggstenar i språket.
 
 # Sammanfattning
 I detta kapitel har vi utforskat variabler och deras namngivningskonventioner. Vi har diskuterat implikationerna av att Python är ett _dynamiskt typat språk_ och hur det medför att vi bl.a. kan manipulera olika typer av värden genom tilldelning då vi inte måste explicita datatyper. Vi har även diskuterat vikten av att välja meningsfulla variabelnamn och hur Python använder kommentarer för att göra koden mer läsbar.

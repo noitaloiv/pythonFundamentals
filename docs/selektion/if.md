@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "13. if-satsen"
-nav_order: 14
-parent: 12. Selektion
+title: "17. if-satsen"
+nav_order: 18
+parent: 16. Selektion
 ---
 
-# if-satser i Python
+# `if`-satser i Python
 `if`-satsen används som nämnt för att avgöra om ett villkor uppfylls eller ej för att sedan leda programmet till en eller flera olika "vägar". Om ett villkor exempelvis är sant (`true`), så vill vi utföra den kod som `if`-satsen omsluter och om villkoret är falskt (`false`) så vill vi istället gå en annan väg i programmet. Det är av denna anledning som vi har kompletterande satser i form av `elif`- och `else`-satser.
 
 Ponera exempelvis att vi i vårt program vill kontrollera huruvida det finns tillräckligt med täckning på ett transaktionskonto för att genomföra ett köp. Vi kan då nyttja en `if`-sats för att utvärdera detta villkor i stil med:
@@ -27,7 +27,7 @@ Där `account_credit` är en variabel som representerar värdet på transaktions
 
 Om detta villkor inte uppfylls, d.v.s. att villkor utmynnar i värdet `false`, så kommer vi inte genomföra köpet. Varje `if`-sats har med andra ord ett villkor som kan besvaras med `true` eller `false`.
 
-## Syntaxen för if-satser
+## Syntaxen för `if`-satser
 Man skapar en `if`-sats med syntaxten:
 ```python
 if villkor:
@@ -68,7 +68,7 @@ Run the application again to check another number!
 Run the application to check other numbers!</code></pre>
 </div>
 
-## if-satser med flera villkor
+## `if`-satser med flera villkor
 Det är även möjligt att ha flera villkor på samma gång i en `if`-sats genom att nyttja logiska operatorer (`and` och `or`) och jämförelseoperatorer såsom mindre än, större än, osv (`<`, `>`). 
 
 I Python kan man använda nyckelordet `and` (`&`) för att lägga till ett extra villkor. Detta kommer medföra att `if`-satsen kommer att evaluera båda uttryck och enbart utföra de operationer som `if`-satsen avser om båda villkor är sanna.
@@ -104,7 +104,7 @@ if int(number) > 100:
   print("The number is larger than 100!")
 ```
 
-## Nästlade if-satser
+## Nästlade `if`-satser
 Nästlade `if`-satser innebär att man placerar en `if`-sats inuti en annan `if`-sats. Detta möjliggör kontroll av flera villkor i en hierarkisk ordning. Exempelvis kan det tänkas vara relevant att kontrollera huruvida en medlem redan har röstat innan vi ger samma medlem tillgång till enkäten.
 ```python
 user_name = input("Enter your username: ")

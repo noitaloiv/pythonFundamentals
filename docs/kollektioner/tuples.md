@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "22. Tuples"
-nav_order: 23
-parent: 20. Kollektioner
+title: "26. Tuples"
+nav_order: 27
+parent: 24. Kollektioner
 ---
 
 # Tuples

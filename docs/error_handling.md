@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "26. Felhantering"
-nav_order: 27
+title: "34. Felhantering"
+nav_order: 35
 ---
 
 # Felhantering
 Att hantera fel och undantag är en central del av att skriva robusta program. I Python används `try` och `except`-block för att fånga och hantera fel som kan uppstå under programmets körning. Detta gör att programmet kan fortsätta att köra eller ge användaren en förståelig felmeddelande istället för att krascha.
 
-## Grundläggande Felhantering
+## Grundläggande felhantering
 Felhantering i Python börjar med ett `try`-block som innehåller den kod som kan orsaka ett fel. Ett `except`-block följer sedan, som definierar hur programmet ska svara om ett fel uppstår i `try`-blocket.
 ```python
 try:
@@ -19,7 +19,7 @@ except ValueError:
 
 I exemplet ovan försöker programmet att konvertera användarens inmatning till ett heltal. Om användaren anger något som inte kan konverteras till ett heltal, kastas ett `ValueError`, som fångas av `except`-blocket.
 
-### Specifika Undantag
+### Specifika undantag
 Python tillåter dig att fånga specifika typer av fel, vilket ger dig möjlighet att hantera olika fel på olika sätt.
 ```python
 try:
@@ -30,7 +30,7 @@ except FileNotFoundError:
 ```
 I det här exemplet försöker programmet öppna en fil som inte finns. Python kastar då ett `FileNotFoundError`, som hanteras av `except`-blocket.
 
-### Flera Except-block
+### Flera except-block
 Du kan ha flera `except`-block för att hantera olika typer av undantag. Detta är användbart när en del av din kod kan kasta mer än en typ av undantag, och du vill hantera dem på olika sätt.
 ```python
 try:
@@ -55,7 +55,7 @@ finally:
     print("File closed.")
 ```
 
-### "Kasta" exceptions (Raising Exceptions)
+### "Kasta" exceptions (raising exceptions)
 Ibland kan det vara lämpligt att medvetet "kasta" ett undantag i din kod, vilket kan göras med `raise`-satsen. Detta är användbart när du till exempel vill tvinga fram en kontroll av indata.
 ```python
 age = int(input("Enter your age: "))

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "9. Operatorer"
-nav_order: 10
+title: "11. Operatorer"
+nav_order: 12
 has_children: true
 ---
 

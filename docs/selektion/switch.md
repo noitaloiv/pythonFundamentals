@@ -1,16 +1,16 @@
 ---
 layout: default
-title: "16. switch-sats"
-nav_order: 17
-parent: 12. Selektion
+title: "20. switch-sats"
+nav_order: 21
+parent: 16. Selektion
 ---
 
-# switch-satsen
+# `switch`-satsen
 I Python är en `switch`-sats en annan typ av _villkorssats_. Dessa fungerar på så vis att vi tar emot ett input-värde och utvärderar vilket "fall" som matchar denna input. Där vi har en matchning kan vi sedan lägga till relevant kod som ska utföras, likt hur `if`-satser och deras villkor fungerar.
 
 Även `switch`-satser nyttjas därför för att styra logiken i ett program genom att skapa vägval.
 
-## Switch-satser i Python
+## `switch`-satser i Python
 `switch`-satser introducerades i Python 10.0 och används genom nyckelorden `match` resp. `case` för att matcha ett värde mot eller flera "fall", vilka i sin tur agerar olika "vägar" i programmet. Om input exempelvis är `Addition` så kan vi etablera ett "fall" för `Addition` där vi sedan kan utföra addition mellan två heltal. Nästa gång applikationen körs så kanske input istället är `Subtraktion` och då utför vi istället subtraktion, osv.
 
 Ponera exempelvis att vi har skrivit en miniräknare och vi vill att användaren inledningsvis ska få välja vilken operation som ska genomföras:
@@ -54,7 +54,7 @@ else:
 
 Så när vill man nyttja den ena syntaxen över den andra? Svaret är att det i de allra flesta fall inte spelar någon roll, d.v.s. att det är personlig preferens som får styra. Det finns vissa argument för att en `switch`-sats är snabbare än multipla `if`-satser, men skillnaden är oftast minimal. En generell utgångspunkt kan dock tänkas vara att nyttja en `switch`-sats i de fall vi behöver utvärdera fler än 5 påståenden då läsbarheten i koden argumenterbart är högre.
 
-## Matcha Flera Värden Samtidigt
+## Matcha flera värden samtidigt
 Pythons `match`-sats erbjuder en kraftfull mekanism för att hantera situationer där du vill att ett kodblock ska exekveras för flera olika inmatningsvärden för samma `case`. Detta uppnås genom att använda vertikalstreck (`|`) för att separera värdena i ett `case`-block, vilket indikerar att kodblocket ska exekveras om inmatningen matchar något av de angivna värdena. Denna funktion är särskilt användbar för att kondensera kod och undvika upprepning när flera inmatningar leder till samma resultat.
 ```python
 choice = input("Choose operation (Add, Subtract, Multiply, Divide): ")

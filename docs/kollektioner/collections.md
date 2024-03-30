@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "20. Kollektioner"
-nav_order: 21
+title: "24. Kollektioner"
+nav_order: 25
 has_children: true
 ---
 
@@ -37,9 +37,9 @@ Programmering i Python</code></pre>
 {: .highlight }
 Notera gärna att det är möjligt att skriva ut innehållet i listan utan att tillämpa iteration, d.v.s. genom exempelvis `print(coursesT1)`. Detta kommer dock att resultera i en annorlunda utskrift eftersom att vi skriver ut hela _listan_ snarare än resp. _element i listan_. I detta fall skulle vi få utskriften `['Objektorienterad programmering I', 'Datastrukturer', 'Programmering i Python']`. Nämnvärt är även att detta tillvägagångssätt är något säreget för Python. Om vi skulle försöka utföra motsvarigheten till `print(coursesT1)` i C# eller Java så skulle vi exempelvis istället bara få ut vilken datatyp variabeln avser snarare än dess innehåll. Utgångspunkten bör således vara att tillämpa iteration vid utskrift av element i kollektioner.
 
-Python erbjuder flera inbyggda samlingstyper som är designade för att hantera grupper av objekt på olika sätt. De mest använda samlingstyperna är _listor_, _tupler_, _dictionaries_ och _mängder_.
+Python erbjuder flera inbyggda kollektioner som är designade för att hantera grupper av objekt på olika sätt där de mest använda kollektionerna är _listor_, _tupler_, _dictionaries_ och _mängder_.
 
-## Fördelar med Kollektioner
+## Fördelar med kollektioner
 Kollektioner i Python, såsom listor, tupler, dictionaries och mängder (sets), erbjuder flera fördelar som gör dem oumbärliga i programmering:
 
 * Organisering av Data: Kollektioner tillåter organisering av relaterad data på ett strukturerat sätt. Detta förenklar hanteringen av data och gör det lättare att utföra operationer på datauppsättningar.
@@ -52,7 +52,7 @@ Kollektioner i Python, såsom listor, tupler, dictionaries och mängder (sets), 
 
 * Inbyggda Operationer: Python erbjuder en mängd inbyggda funktioner och metoder för att arbeta med kollektioner, vilket inkluderar filtrering, sortering, och aggregering av data.
 
-## Användning av Iteration med Kollektioner
+## Användning av iteration med kollektioner
 Iteration är en central aspekt när det kommer till arbete med kollektioner i Python. Genom att använda loop:ar, såsom `for`-loop:ar, kan du utföra operationer på varje element i en samling. Exempelvis med listor enligt:
 ```python
 vegetables = ["onion", "potato", "carrot"]
@@ -147,6 +147,6 @@ print(person["intressen"][1])
 </div>
 
 # Sammanfattning
-Kollektioner är ett kraftfullt verktyg i Python som möjliggör effektiv hantering och organisation av data. Genom att använda listor, tupler, dictionaries och mängder (sets) kan utvecklare skapa komplexa datastrukturer som speglar de verkliga datamodellerna mer exakt. 
+Kollektioner är ett kraftfullt verktyg i Python som möjliggör effektiv hantering och organisation av data. Genom att använda listor, tuples, dictionaries och mängder (sets) kan utvecklare skapa komplexa datastrukturer som speglar de verkliga datamodellerna mer exakt. 
 
 Dynamisk typning i Python tillför ytterligare en nivå av flexibilitet, vilket gör det möjligt att inkludera olika datatyper i samma kollektion. Denna flexibilitet, tillsammans med förmågan att iterera över kollektioner, gör Python till ett kraftfullt språk för datahantering och manipulation.

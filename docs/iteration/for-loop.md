@@ -1,18 +1,18 @@
 ---
 layout: default
-title: "18. for-loop:en"
-nav_order: 19
-parent: 17. Iteration
+title: "22. for-loop:en"
+nav_order: 23
+parent: 21. Iteration
 ---
 
-# for-loop:en
+# `for`-loop:en
 Nyckelordet `for` används för att deklarera en s.k. `for-loop` och följs alltid av ett _villkor_, likt en `if`-sats. Villkoret för en `for-loop` avser däremot inte ett "vägval" utan istället hur många _iterationer_ som ska utföras, d.v.s. hur många gånger koden som loop:en avser ska utföras. I det föregående exemplet så nyttjades villkoret `x in range(1,11)` - vilket kan översättas till `"SÅ LÄNGE SOM x ÄR INOM INTERVALLET 1-11"`.
 
 När vi först utför kodraden där `for-loop:en` är deklarerad så kommer vi att utvärdera om villkoret uppfylls eller ej. För villkoret i det föregående exemplet så kommer vi med andra ord att kontrollera huruvida 1 är mindre än 11 (1 < 11). Nästa gång kollar vi istället om 2 < 11, osv. När vi avslutningsvis når heltalet 11 så kommer villkoret inte att uppfyllas då 11 inte är mindre än 11, vilket medför att loop:en avslutas. Detta kan illustreras på följande vis:
 
 ![for-loop](../../assets/images/for-loop2.png){: .styled-image }
 
-## Syntax för for-loop:ar
+## Syntax för `for`-loop:ar
 `for`-nyckelordet används tillsammans med nyckelordet `in` enligt:
 ```python
 for variable in sequence:
@@ -64,7 +64,7 @@ Number printed
 Loop finished.</code> </pre>
 </div>
 
-## Nästlad iteration för for-loop:ar
+## Nästlad iteration för `for`-loop:ar
 Nästlad iteration innefattar att man deklarerar en loop inuti en annan loop. Detta medför att den "inre" loop:en kommer att utföras för varje iteration i den "yttre" loop:en. Vi kan exempelvis nyttja detta för att formatera utskrifter enligt:
 ```python
 for i in range(4):           # The outer loop handles rows
@@ -82,7 +82,7 @@ for i in range(4):           # The outer loop handles rows
 {: .highlight }
 `print()` kommer alltid att tillämpa radbrytning som standard. Om man vill frångå detta, d.v.s. om man vill fortsätta skriva mot samma rad, så kan parametern `end` nyttjas för att skriva över standardvärdet - t.ex. med ett `' '` som i ovan exempel.
 
-## range()-funktionen
+## `range()`-funktionen
 `range()`-funktionen i Python spelar en avgörande roll när det kommer till iteration, särskilt i kombination med `for`-loop:ar. Den möjliggör generering av en sekvens av tal, vilket är användbart i många programmeringsscenarier, från att utföra en uppgift ett visst antal gånger till att iterera över index i en lista eller annan datastruktur.
 
 I sin enklaste form tar `range()` en enda parameter och genererar en sekvens från 0 upp till men **inte** inkluderande det angivna talet.

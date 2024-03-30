@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "23. Dictionaries"
-nav_order: 24
-parent: 20. Kollektioner
+title: "27. Dictionaries"
+nav_order: 28
+parent: 24. Kollektioner
 ---
 
 # Dictionaries
