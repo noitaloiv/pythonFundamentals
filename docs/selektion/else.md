@@ -79,7 +79,7 @@ else:         # Non-acceptable syntax as we're missing an if
 Avslutningsvis så är det heller inte möjligt att nästla `else`-satser.
 
 {: .highlight }
-Notera: En `else`-sats representerar ett **ANNARS**-fall i vårt program, d.v.s. det som ska ske om inget villkor uppfylls. Det är således omöjligt att nästla `else`-satser eller ange dem utan tillhörande `if`-satser.
+En `else`-sats representerar ett **ANNARS**-fall i vårt program, d.v.s. det som ska ske om inget villkor uppfylls. Det är således omöjligt att nästla `else`-satser eller ange dem utan tillhörande `if`-satser.
 
 # Sammanfattning
 I detta avsnitt har vi utforskat `else`-satser i Python, som används i kombination med `if`-satser för att definiera en block av kod som ska köras om det initiala `if`-villkoret inte uppfylls. `else`-satser är en viktig del av kontrollflödet i ett program och tillåter utvecklare att hantera olika scenarier på ett effektivt sätt.

@@ -26,7 +26,7 @@ def find_max(number1, number2): # number1 and number2 are parameters
 find_max(10,5)                  # 10 and 5 are arguments
 ```
 
-{ .highlight }
+{: .highlight }
 Parametrar är definierade i _funktionens deklaration_ och används inuti funktionen som variabler. Argument är istället de faktiska värdena som skickas till funktionen vid _anrop_. Ett argument matchar mot en parameter baserat på dess position när funktionen anropas.
 
 ## Matchning av parametrar i anrop och deklaration
