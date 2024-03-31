@@ -29,12 +29,11 @@ print(string1 + string2 + string3)
 <pre><code>'1020' + whatever value the user provides whether its numeric or not.</code> </pre>
 </div>
 
-{ .highlight }
 Observera att det är ett mellanslag i uppmaningen `"Enter a numerical value: "`. Detta är för att få ett mellanrum mellan uppmaningen och värdet som anges, vilket gör programmet lite mer stilrent. 
 
 Vi kan i detta fall även se hur programmet stannar upp och väntar på input från användaren innan programmet fortsätter:
 
-<img src="../assets/images/runInput.gif" alt="visualizationOfInput">
+<img src="../../assets/images/runInput.gif" alt="visualizationOfInput">
 
 Som du kan se i GIF:en så kommer utskriften att bli `"102030"` (om `30` anges som input), vilket kan tänkas vara en svårtolkad input. Avser vi exempelvis ett enda värde, en talföljd eller tre individuella värden? Det kan därför vara fördelaktigt att _formatera_ vår utskrift.
 
