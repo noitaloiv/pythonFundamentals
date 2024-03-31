@@ -80,10 +80,10 @@ Should not be cached, because included files depend on page.
         themeIcon.src = currentTheme === 'light' ? '/pythonFundamentals/assets/images/moon.svg' : '/pythonFundamentals/assets/images/sun.svg';
         if(currentTheme === 'light')
         {
-            themeIcon.style = "filter: invert(1)";
+            themeIcon.style = "filter: none";
         }
         else{
-          themeIcon.style = "filter: none";
+          themeIcon.style = "filter: invert(1)";
         }
       }
 
