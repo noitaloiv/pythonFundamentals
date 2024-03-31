@@ -46,7 +46,7 @@ print(number1 + number2 + int(number3))
 
 Motsvarande operationer går att göra med `str()` som konverterar en variabel till en `string`, eller `float()` som konverterar en variabel till en `float`, osv.
 
-{ .highlight }
+{: .highlight }
 Det är viktigt att hålla koll på vilken typ man försöker konvertera samt typen man försöker konverta till. Detta då alla konverteringar inte kommer att kunna genomföras. Exempelvis kommer vi inte kunna konverta `"11.3"` till ett heltal enligt: `int("11.3")` då `11.3` inte är ett heltal (d.v.s. att `float()` hade behövts istället för `int()`). Vi hade istället behövt konvertera från `str` till `float` och från `float` till `int`. Det är således viktigt att hålla koll på vilken datatyp variabeln representerar när man vill utföra konvertering.
 
 # Sammanfattning

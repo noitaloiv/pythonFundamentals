@@ -29,6 +29,7 @@ print(string1 + string2 + string3)
 <pre><code>'1020' + whatever value the user provides whether its numeric or not.</code> </pre>
 </div>
 
+{: .highlight }
 Observera att det är ett mellanslag i uppmaningen `"Enter a numerical value: "`. Detta är för att få ett mellanrum mellan uppmaningen och värdet som anges, vilket gör programmet lite mer stilrent. 
 
 Vi kan i detta fall även se hur programmet stannar upp och väntar på input från användaren innan programmet fortsätter:
@@ -53,7 +54,7 @@ print(string1, string2)
 
 Kommatecknet används med andra ord för att separera de två variablerna med ett mellanslag.
 
-{ .highlight }
+{: .highlight }
 Kom ihåg att vi även kan nyttja `str.format()` och `f-strängar` för att formatera utseendet på våra utskrifter, t.ex. enligt: `print(f"{string1} {string2}")`.
 
 ### Utskrifter på flera rader
