@@ -69,7 +69,7 @@ Felsökning är en kritisk färdighet inom programmering som hjälper dig att id
 
 * Kontrollera syntaxen: Ett vanligt misstag är att glömma tecken som kolon (`:`), parenteser (`()`, `[]`, `{}`) eller att använda felaktig indentering, vilket är avgörande i Python. Exempelvis kommer vi att stöta på ett syntaxfel om vi modifierar vårt program genom att lägga till extra indentering:
 ```python
-  print("Hello, world!")
+      print("Hello, world!")
 ```
 Vilket resulterar i följande fel:
 ![Execute Python](../assets/images/syntaxError.png){: .styled-image }
