@@ -67,10 +67,12 @@ Vilket gör det enkelt att återskapa en projektmiljö.
 pip list
 ```
 
+* Uppgradera paket:
 ```python
 pip install --upgrade package_name
 ```
 
+* Avinstallera paket:
 ```python
 pip uninstall package_name
 ```
@@ -80,6 +82,7 @@ Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar spr
 
 * `requests`: Enkla HTTP-förfrågningar
 `requests` är ett populärt paket för att göra HTTP-förfrågningar. Det är känt för sin enkelhet och användarvänlighet jämfört med den inbyggda `urllib`.
+
 ```python
 import requests
 
@@ -93,6 +96,7 @@ print(data)
 
 * `pandas`: Kraftfull dataanalys och manipulation
 `pandas` är ett viktigt paket för dataanalys i Python och används för att hantera och analysera strukturerad data.
+
 ```python
 import pandas as pd
 
@@ -104,6 +108,7 @@ print(df.head())
 
 * `numPy`: Vetenskaplig beräkning
 `numPy` erbjuder stöd för stora, flerdimensionella arrayer och matriser, tillsammans med en samling av matematiska funktioner för att arbeta med dessa arrayer.
+
 ```python
 import numpy as np
 
@@ -118,6 +123,7 @@ print(np.linalg.det(arr))
 
 * `matplotlib`: Plottingbibliotek
 `matplotlib` är det mest använda Python-biblioteket för att skapa 2D-plotter och diagram. Det kan användas för att visualisera data och resultat av analys.
+
 ```python
 import matplotlib.pyplot as plt
 
@@ -133,6 +139,7 @@ plt.show()
 
 * `flask`: Webbutveckling
 `flask` är ett mikroramverk för webbutveckling i Python. Det är enkelt att komma igång med och kraftfullt nog för att bygga komplexa webbapplikationer.
+
 ```python
 from flask import Flask
 
