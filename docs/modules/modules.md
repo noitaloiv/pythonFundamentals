@@ -19,34 +19,23 @@ För att använda en modul i ditt Python-skript måste du först 'importera' den
 * Importera hela modulen: Detta gör alla funktioner och klasser inom modulen tillgängliga i ditt skript.
 ```python
 import math
-print(math.sqrt(16))    # Uses the sqrt-function from the math module
+squared = math.sqrt(16)    # Uses the sqrt-function from the math module
 ```
-<div class="code-example" markdown="1">
-<pre><code>4.0</code></pre>
-</div>
 
 * Importera specifika attribut: Om du bara behöver vissa funktioner eller klasser kan du importera dem direkt. Detta kan göra ditt skript mer läsbart och effektivt.
 ```python
 from math import sqrt
-print(sqrt(16))         # Only imports the sqrt function, allowing us to use it without math
+squared = sqrt(16)         # Only imports the sqrt function, allowing us to use it without math
 ```
-<div class="code-example" markdown="1">
-<pre><code>4.0</code></pre>
-</div>
 
 ## Vanliga och nyttiga moduler 
 * `math`: Denna modul innehåller matematiska funktioner. Förutom `sqrt`, har den funktioner som `sin`, `cos`, `log` och många fler.
 ```python
 from math
-print (math.cos(0.00))
-print (math.cos(-1.23))
-print (math.cos(10))
+print (math.cos(0.00))      # 1.0
+print (math.cos(-1.23))     # 0.3342377271245026
+print (math.cos(10))        # -0.8390715290764524
 ```
-<div class="code-example" markdown="1">
-<pre><code>1.0
-0.3342377271245026
--0.8390715290764524</code></pre>
-</div>
 
 * `datetime`: Används för att hantera datum och tider. Med denna modul kan du extrahera den nuvarande tiden, manipulera datum, räkna ut tidsdifferenser, och mer.
 ```python
@@ -60,8 +49,7 @@ import random
 print(random.randint(1, 100))  # Prints random numbers between 1 and 100
 ```
 
-* `os` och `sys`: Dessa moduler används för att interagera med operativsystemet, till exempel för att hantera filvägar, ändra kataloger och hämta information om Python-interpreterns miljö.
-
+* `os` och `sys`: Dessa moduler används för att interagera med operativsystemet, till exempel för att hantera filvägar, ändra kataloger och hämta information om Python-interpreterns miljö. 
 ```python
 import os
 print(os.getcwd())      # Prints the name of the name of the folder where the script is stored
