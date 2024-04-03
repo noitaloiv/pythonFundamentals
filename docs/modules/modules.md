@@ -50,12 +50,9 @@ print(random.randint(1, 100))  # Prints random numbers between 1 and 100
 ```
 
 * `os` och `sys`: Dessa moduler används för att interagera med operativsystemet, till exempel för att hantera filvägar, ändra mappar och hämta information om Python-tolkaren.
-
 ```python
-import os
+import os, sys
 print(os.getcwd())      # Prints the name of the name of the folder where the script is stored
-
-import sys
 print(sys.version)      # Prints the version of the Python interpreter and additional info
 ```
 
