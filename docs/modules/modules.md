@@ -49,7 +49,7 @@ import random
 print(random.randint(1, 100))  # Prints random numbers between 1 and 100
 ```
 
-* `os` och `sys`: Dessa moduler används för att interagera med operativsystemet, till exempel för att hantera filvägar, ändra mappar och hämta information om Python-tolkaren.<br> 
+* `os` och `sys`: Dessa moduler används för att interagera med operativsystemet, till exempel för att hantera filvägar, ändra mappar och hämta information om Python-tolkaren.<br> <br>
 ```python
 import os
 print(os.getcwd())      # Prints the name of the name of the folder where the script is stored
