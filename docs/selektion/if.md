@@ -6,7 +6,7 @@ parent: 16. Selektion
 ---
 
 # `if`-satser i Python
-`if`-satsen används som nämnt för att avgöra om ett villkor uppfylls eller ej för att sedan leda programmet till en eller flera olika "vägar". Om ett villkor exempelvis är sant (`true`), så vill vi utföra den kod som `if`-satsen omsluter och om villkoret är falskt (`false`) så vill vi istället gå en annan väg i programmet. Det är av denna anledning som vi har kompletterande satser i form av `elif`- och `else`-satser.
+`if`-satsen används som nämnt för att avgöra om ett villkor uppfylls eller ej för att sedan leda programmet till en eller flera olika "vägar". Om ett villkor exempelvis är sant (`True`), så vill vi utföra den kod som `if`-satsen omsluter och om villkoret är falskt (`False`) så vill vi istället gå en annan väg i programmet. Det är av denna anledning som vi har kompletterande satser i form av `elif`- och `else`-satser.
 
 Ponera exempelvis att vi i vårt program vill kontrollera huruvida det finns tillräckligt med täckning på ett transaktionskonto för att genomföra ett köp. Vi kan då nyttja en `if`-sats för att utvärdera detta villkor i stil med:
 ```python
@@ -25,7 +25,7 @@ Transaction successful</code></pre>
 
 Där `account_credit` är en variabel som representerar värdet på transaktionskontot och `price_of_product` representerar priset på produkten vi vill köpa. I vårt villkor staterar vi då att täckningen på kontot måste vara större än eller lika med kostnaden på produkten för att köpet ska kunna genomföras.
 
-Om detta villkor inte uppfylls, d.v.s. att villkor utmynnar i värdet `false`, så kommer vi inte genomföra köpet. Varje `if`-sats har med andra ord ett villkor som kan besvaras med `true` eller `false`.
+Om detta villkor inte uppfylls, d.v.s. att villkor utmynnar i värdet `False`, så kommer vi inte genomföra köpet. Varje `if`-sats har med andra ord ett villkor som kan besvaras med `True` eller `False`.
 
 ## Syntaxen för `if`-satser
 Man skapar en `if`-sats med syntaxten:
@@ -36,13 +36,13 @@ if villkor:
   ...
 ```
 
-Man deklarerar alltså inledningsvis en `if`-sats med nyckelordet `if` och ett tillhörande villkor. Detta villkor måste vara av en boolesk natur, d.v.s. att det måste vara något som kan evalueras till `true` eller `false`:
+Man deklarerar alltså inledningsvis en `if`-sats med nyckelordet `if` och ett tillhörande villkor. Detta villkor måste vara av en boolesk natur, d.v.s. att det måste vara något som kan evalueras till `True` eller `False`:
 ```python
 if 10: # An unacceptable condition
 
 if 10 > 5: # An acceptable condition
 
-if true: # Another acceptable condition
+if True: # Another acceptable condition
 ```
 Det är således vanligt förekommande att vi nyttjar jämförande operatorer i kontexten av `if`- och `elif`-satser.
 
@@ -115,11 +115,11 @@ if not hasVoted(userName):
   if isEligible(voteResult):
     print("Thank you for your vote!")
 ```
-I ovan scenario kontrollerar vi först och främst att en användare inte redan har röstat genom `!hasVoted(userName)` där vårt villkor avser att vi vill ha värdet `false` från funktionen `hasVoted()`. OBS! Detta är inte en inbyggd funktion i Python likt `input()` eller `print()` utan avser istället en _egendefinierad funktion_ vars syfte är att kontrollera om en användare har röstat eller ej.
+I ovan scenario kontrollerar vi först och främst att en användare inte redan har röstat genom `!hasVoted(userName)` där vårt villkor avser att vi vill ha värdet `False` från funktionen `hasVoted()`. OBS! Detta är inte en inbyggd funktion i Python likt `input()` eller `print()` utan avser istället en _egendefinierad funktion_ vars syfte är att kontrollera om en användare har röstat eller ej.
 
-Om användaren inte har röstat, d.v.s. att funktionen `hasVoted()` skickar tillbaka `false`, så utför vi en annan egendefinierad funktion - `allowVote()` - som i sin tur skickar tillbaka användarens röstning. I den inre `if`-satsen kontrolleras sedan villkoret `isEligible(voteResult)`, som i sin tur är ytterligare en egendefinierad funktion vars syfte är att kontrollera om en röst är legitim eller ej.
+Om användaren inte har röstat, d.v.s. att funktionen `hasVoted()` skickar tillbaka `False`, så utför vi en annan egendefinierad funktion - `allowVote()` - som i sin tur skickar tillbaka användarens röstning. I den inre `if`-satsen kontrolleras sedan villkoret `isEligible(voteResult)`, som i sin tur är ytterligare en egendefinierad funktion vars syfte är att kontrollera om en röst är legitim eller ej.
 
-Om `isEligible()` skickar tillbaka `true` så vet vi med oss att användaren dels inte har röstat och dels att rösten är legitim. Till skillnad mot tidigare exempel när vi evaluerade två villkor samtidigt så kan vi i detta fall evaluera en förutsättning (huruvida användaren har röstat), utföra en eller flera operationer och sedan avslutningsvis ta emot användarens röstning.
+Om `isEligible()` skickar tillbaka `True` så vet vi med oss att användaren dels inte har röstat och dels att rösten är legitim. Till skillnad mot tidigare exempel när vi evaluerade två villkor samtidigt så kan vi i detta fall evaluera en förutsättning (huruvida användaren har röstat), utföra en eller flera operationer och sedan avslutningsvis ta emot användarens röstning.
 
 {: .highlight }
 **OBS!** Vi kommer att prata mer om egendefinierade funktioner (d.v.s. funktioner som du själv deklarerar och implementerar) i framtida kapitel. Det är således inget du förväntas ha koll på redan i detta skede utan nyttjades enbart i syfte om att exemplifiera relevansen av nästlade `if`-satser.

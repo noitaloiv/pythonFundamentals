@@ -2,12 +2,13 @@
 layout: default
 title: "35. Filhantering"
 nav_order: 36
+has_children: True
 ---
 
 # Filhantering
 Att hantera filer är en grundläggande del av många program, och Python erbjuder en enkel syntax för att öppna, läsa, skriva och stänga filer. Genom att förstå och utnyttja Pythons filhanteringsfunktioner kan du enkelt interagera med filsystemet för att lagra och hämta data.
 
-## Öppna och Stänga Filer
+## Öppna och stänga filer
 Använd `open()`-funktionen för att öppna en fil. `open()` tar två huvudargument: filens sökväg och öppningsläget, som `'r'` för läsning, `'w'` för skrivning (överskriver filens innehåll), `'a'` för att lägga till (skriver till slutet av filen), och `'b'` för binärt läge.
 
 När du är klar med filen, använd `close()`-metoden för att stänga den och frigöra systemresurser.
@@ -17,7 +18,7 @@ file = open('example.txt', 'r') # Open/read the file
 file.close() # Close the file
 ```
 
-### Skriva till Filer
+### Skriva till filer
 Använd `write()`-metoden för att skriva strängar till en fil. Om filen öppnas i `'w'`-läge, kommer innehållet att överskrivas. Använd `'a'`-läge för att lägga till innehåll i slutet av filen.
 ```python
 # Write to a file
@@ -31,7 +32,7 @@ file.write('Another row of text.\n')
 file.close()
 ```
 
-### Läsa från Filer
+### Läsa från filer
 För att läsa en fils innehåll finns det flera metoder, som `read()`, `readline()` och `readlines()`:
 ```python
 # Read the entire file
@@ -45,16 +46,6 @@ file = open('example.txt', 'r')
 for row in file:
     print(row, end='')  # 'end' to avoid double rowbreak
 file.close()
-```
-
-### Använda with-Satsen
-För att undvika problem med att inte stänga filer ordentligt är det rekommenderat att använda `with`-satsen, vilket säkerställer att filen stängs korrekt när blocket är slutfört.
-```python
-# Read the entire file
-with open('exempel.txt', 'r') as file:
-    content = file.read()
-    print(content)
-# File closes automatically here
 ```
 
 ### Hantera Filvägar

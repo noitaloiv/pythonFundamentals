@@ -18,7 +18,7 @@ Där _VILLKOR_ avser ett påstående som kan evalueras till `True` eller `False`
 
 ## Implikationer av Selektion i Programflödet
 
-* Dynamiskt Beteende
+* Dynamiskt beteende
 Selektion gör program dynamiska genom att tillåta dem att agera olika under olika omständigheter. Detta betyder att samma program kan utföra olika uppgifter och ge olika resultat baserat på de data det behandlar eller de villkor som uppfylls vid körningstillfället.
 
 * Användarinteraktion
