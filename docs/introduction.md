@@ -50,7 +50,7 @@ Vi väljer därför att arbeta i ett program som är framtaget just för att skr
 ### Steg 3: Installera tillägget Python i VSCode:
 
 1. Öppna Visual Studio Code på din dator.
-2. Navigera till tilläggsmenyn (Extensions) genom `View -> Extensions` (se Figur 1)
+2. Navigera till tilläggsmenyn (Extensions) genom `View -> Extensions`
 
 ![Extensions in VSCode](../assets/images/Extensions_VSCode.png){: .styled-image }
 
