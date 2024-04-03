@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "12. Jämförande operatorer"
-nav_order: 13
-parent: 11. Operatorer
+title: "14. Jämförande operatorer"
+nav_order: 15
+parent: 13. Operatorer
 ---
 
 # Jämföra värden i Python

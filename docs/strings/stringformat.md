@@ -58,6 +58,29 @@ print(f"In five years, {name} will be {age + 5} years old.")
 <pre><code>In five years, Erik will be 34 years old.</code> </pre>
 </div>
 
+## Flerradiga strängar
+Flerradiga strängar i Python skapas med hjälp av tre dubbla citattecken (`"""`) eller tre enkla citattecken (`'''`). Detta gör det möjligt att skapa strängar som sträcker sig över flera rader, vilket är användbart för att bevara radbrytningar och annat vitt utrymme inom strängen. Dessa flerradiga strängar kan användas för att formatera text på ett mer överskådligt sätt eller inkludera långa textstycken direkt i en enda variabel.
+```python
+welcome_text = """Welcome to the game of GuessTheNumber!
+Please select an option from the menu below to start the game.
+
+The rules are simple; Guess which number between 1-100 has been selected by 
+entering a number. 
+
+You will get 3 chances in total.
+"""
+print(welcome_text)
+```
+<div class="code-example" markdown="1">
+<pre><code>Welcome to the game of GuessTheNumber!
+Please select an option from the menu below to start the game.
+
+The rules are simple; Guess which number between 1-100 has been selected by
+entering a number. 
+
+You will get 3 chances in total.</code> </pre>
+</div>
+
 ## Strängar och Unicode
 I Python representeras strängar som _Unicode_, vilket är en internationell kodningsstandard som tillåter text och symboler från alla skriftsystem i världen att representeras och bearbetas enhetligt. Detta gör Python särskilt kraftfullt när det gäller att hantera internationella applikationer som behöver stödja flerspråkig text.
 
@@ -96,7 +119,7 @@ I detta kapitel har vi diskuterat olika sätt att skapa och formatera strängar 
 Genom att behärska dessa tekniker kan Python-utvecklare effektivt hantera textdata i sina program, vilket är ett kritiskt kompetensområde i många programmeringsprojekt.
 
 # Relevanta länkar
-*  [Python Docs - f-strings](https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals)
+* [Python Docs - f-strings](https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals)
 * [Python Docs - str.format](https://docs.python.org/3/library/stdtypes.html#str.format)
 * [Python Docs - Unicode](https://docs.python.org/3/whatsnew/2.0.html#unicode)
 * [Python Docs - Escape sequences](https://docs.python.org/3/reference/lexical_analysis.html#escape-sequences)

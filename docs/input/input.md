@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "14. Input och output"
-nav_order: 15
+title: "10. Input och output"
+nav_order: 11
 has_children: true
 ---
 
 # Input och output i Python 
-Vi har hittills arbetat med olika variabeltyper och operatorer där vi använt oss av funktionen `print()` för att generera en _output_, d.v.s. ett utfall av den kompilerade koden som en användare kan se. Det kan dock tänkas vara relevant att tillåta en användare att skicka in värden som programmet sedan kan använda sig utav, s.k. _inputs_.
+Vi har hittills arbetat med olika variabeltyper där vi använt oss av funktionen `print()` för att generera en _output_, d.v.s. ett utfall av den kompilerade koden som en användare kan se. Det kan dock tänkas vara relevant att tillåta en användare att skicka in värden som programmet sedan kan använda sig utav, s.k. _inputs_.
 
 Det kan exempelvis vara ett namn, en ålder eller dylik information som programmet behöver veta för att fungera som tänkt. Exempelvis har du säkerligen någon gång angett information i en dialogruta eller ett formulär, t.ex. ditt användarnamn och lösenord när du loggar in via Studium. Denna information måste datorn kunna spara, tolka och eventuellt nyttja och Python har därför förprogrammerade funktioner för att på ett enkelt sätt hantera inputs.
 
@@ -95,5 +95,5 @@ Att förstå dessa koncept är avgörande för att bygga grundläggande interakt
 
 # Relevanta länkar
 
-https://docs.python.org/3/library/functions.html#print
-https://docs.python.org/3/library/functions.html#input
+* [Python Docs - print()](https://docs.python.org/3/library/functions.html#print)
+* [Python Docs - input()](https://docs.python.org/3/library/functions.html#input)

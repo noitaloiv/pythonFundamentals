@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "10. Debugging/felsökning"
-nav_order: 11
+title: "12. Debugging/felsökning"
+nav_order: 13
 ---
 
 # Debuggingtekniker

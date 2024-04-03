@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "11. Operatorer"
-nav_order: 12
+title: "13. Operatorer"
+nav_order: 14
 has_children: true
 ---
 
@@ -57,7 +57,7 @@ I det fall man tillämpar heltalsdivision så kommer kompilatorn alltid avrunda 
 ## Modulo operatorn
 Modulusoperatorn, betecknad med `%` i Python, är en aritmetisk operator som används för att hitta resten när ett tal delas med ett annat. Den är särskilt användbar i situationer där du behöver veta om ett tal är jämnt fördelat eller för att hålla tal inom ett visst intervall, exempelvis när du arbetar med cykliska strukturer som klockslag eller dagar i veckan.
 
-### Användningsområden för Modulusoperatorn
+### Användningsområden för modulusoperatorn
 Ett vanligt användningsområde för modulusoperatorn är att avgöra om ett tal är jämnt eller udda. Ett jämnt tal ger alltid resten `0` när det delas med `2`, medan ett udda tal ger resten `1`.
 ```python
 number = 7
@@ -73,7 +73,7 @@ else:
 {: .highlight }
 Notera gärna `f`:et i `print()`. Detta kan nyttjas för att formatera utskriften, i detta fall genom att hämta variabelns värde vid utskrift. Hade vi istället försökt skriva `print(number is an even number)` så hade vi skrivit ut `number` snarare än värdet hos variabeln `number`. `if` och `else` är nyckelord som nyttjas vid _selektion_, vilket vi kommer diskutera i framtida kapitel.
 
-### Arbeta med Cykliska Strukturer
+### Arbeta med cykliska strukturer
 Modulusoperatorn kan användas för att "loopa runt" när du når slutet av en cyklisk struktur. Detta är praktiskt när du hanterar enheter som tiden (0 till 23 timmar) eller veckodagar (1 till 7).
 ```python
 current_hour = 23

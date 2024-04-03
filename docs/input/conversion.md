@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "15. Typkonvertering"
-nav_order: 16
-parent: 14. Input och output
+title: "11. Typkonvertering"
+nav_order: 12
+parent: 10. Input och output
 ---
 
 # Typkonvertering

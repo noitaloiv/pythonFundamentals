@@ -15,7 +15,7 @@ Python är ett _starkt typat språk_ (strongly typed language) vilket innebär a
 
 Det är således viktigt att vi är medvetna om vilken datatyp vi lagrar och/eller arbetar med för att undvika eventuella fel som kan uppstå alt. ett oväntat beteende i vårt program.
 
-## type()-funktionen
+## `type()`-funktionen
 Likt hur vi tidigare skrev ut `"Hello, world!"` med hjälp av `print()`-funktionen så skulle vi likväl kunna skriva ut ett heltal med: `print(23)`. Detta då allt som hanteras genom terminalen (d.v.s. input och output) automatiskt kommer att behandlas som textuella värden. 
 
 Om du skulle vara osäker på vilken typ ett värde har så kan kompilatorn berätta det för dig genom användningen av `type()`-funktionen: 
@@ -59,11 +59,11 @@ print(type(guess))
 <pre><code>< class 'bool' ></code></pre>
 </div>
 
-* Datetime: En datatyp som måste importeras och som sedan kan nyttjas för att representera datum eller utvinna datumrelaterad information (såsom dagens datum).
+* Datetime: En datatyp som måste _importeras_ och som sedan kan nyttjas för att representera datum eller utvinna datumrelaterad information (såsom dagens datum).
 ```python
-import datetime
+import datetime                 # import is used to import the library 'datetime', which allow us to use datetime objects
 print(type(datetime))
-print(datetime.datetime.now()) # The value will differ depending on when you execute the function
+print(datetime.datetime.now())  # The value will differ depending on when you execute the function
 ```
 <div class="code-example" markdown="1">
 <pre><code>< class 'module' >
