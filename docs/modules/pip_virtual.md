@@ -5,10 +5,10 @@ nav_order: 39
 parent: "37. Moduler"
 ---
 
-# Virtuella Miljöer och pakethantering (package management)
+# Virtuella miljöer och pakethantering (package management)
 När du arbetar med Python-projekt, särskilt de som inkluderar externa bibliotek eller moduler, är det viktigt att hantera beroenden på ett effektivt sätt. Virtuella miljöer och pakethantering är två centrala koncept som hjälper till med detta.
 
-## Virtuella Miljöer
+## Virtuella miljöer
 _Virtuella miljöer_ i Python tillhandahåller en isolerad miljö för Python-projekt. Detta innebär att varje projekt kan ha sina egna beroenden, oavsett andra projektens beroenden. Det är särskilt användbart när två eller fler projekt kräver olika versioner av samma paket. D.v.s. att vi kan lägga till bibliotek och moduler för ett enda Python-projekt utan att riskera att vi påverkar andra Python-projekt på samma dator.
 
 För att skapa en virtuell miljö kan du använda kommandot `python venv` i terminalen från den mapp där du vill skapa den virtuella mappen. Om du t.ex. befinner dig i mappen Desktop i din terminal så kommer du att skapa den virtuella miljön där. som kommer förinstallerad med Python 3.3 och senare. Här är ett grundläggande exempel på hur du skapar och aktiverar en virtuell miljö:
