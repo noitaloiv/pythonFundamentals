@@ -41,6 +41,7 @@ Notera att då mängder är oordnade så kan vi aldrig vara säkra på i vilken 
 Mängder stöder flera kraftfulla operationer som gör dem idealiska för att hantera unika element och utföra matematiska mängdoperationer såsom `union`, `snitt` och `differens`. 
 
 * `Union` (`|`): Kombinerar element från två mängder utan dupliceringar.
+
 ```python
 study_group_a = {"Alice", "Bob", "Charlie"}
 study_group_b = {"Bob", "Diana", "Frank"}
@@ -53,6 +54,7 @@ print(study_group_a | study_group_b)
 </div>
 
 * `Snitt` (`&`): Hittar gemensamma element i två mängder.
+
 ```python
 study_group_a = {"Alice", "Bob", "Charlie"}
 study_group_b = {"Bob", "Diana", "Frank"}
@@ -65,6 +67,7 @@ print(study_group_a & study_group_b)
 </div>
 
 * `Differens` (`-`): Hittar element i en mängd som inte finns i den andra.
+
 ```python
 study_group_a = {"Alice", "Bob", "Charlie"}
 study_group_b = {"Bob", "Diana", "Frank"}
@@ -77,6 +80,7 @@ print(study_group_a - study_group_b)
 </div>
 
 * `Symmetrisk Differens` (`^`): Hittar element som är unika för varje mängd.
+
 ```python
 study_group_a = {"Alice", "Bob", "Charlie"}
 study_group_b = {"Bob", "Diana", "Frank"}
