@@ -47,6 +47,7 @@ study_group_b = {"Bob", "Diana", "Frank"}
 
 print(study_group_a | study_group_b)
 ```
+
 <div class="code-example" markdown="1">
 <pre><code>{'Frank', 'Diana', 'Charlie', 'Bob', 'Alice'}</code></pre>
 </div>
@@ -58,6 +59,7 @@ study_group_b = {"Bob", "Diana", "Frank"}
 
 print(study_group_a & study_group_b)
 ```
+
 <div class="code-example" markdown="1">
 <pre><code>{'Bob'}</code></pre>
 </div>
@@ -69,6 +71,7 @@ study_group_b = {"Bob", "Diana", "Frank"}
 
 print(study_group_a - study_group_b)
 ```
+
 <div class="code-example" markdown="1">
 <pre><code>{'Alice', 'Charlie'}</code></pre>
 </div>
@@ -80,6 +83,7 @@ study_group_b = {"Bob", "Diana", "Frank"}
 
 print(study_group_a ^ study_group_b)
 ```
+
 <div class="code-example" markdown="1">
 <pre><code>{'Alice', 'Diana', 'Charlie', 'Frank'}</code></pre>
 </div>
