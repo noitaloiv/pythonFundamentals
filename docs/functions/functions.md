@@ -110,6 +110,27 @@ print(added_numbers)
 9</code> </pre>
 </div>
 
+Det är även möjligt att definiera funktioner utan returvärden. Detta kan tänkas vara relevant om vi exempelvis enbart vill att funktionen ska utmynna i utskrifter. Ponera exempelvis att vi direkt vill skriva ut summan av heltalen i funktionen `add` istället för att hämta dem så uppnås detta enligt:
+```python
+def add(number1, number2):
+    sum_numbers = number1 + number2
+    print(sum_numbers)
+
+added_numbers = add(5, 10)
+print(added_numbers)
+added_numbers = add(3, 6)
+```
+<div class="code-example" markdown="1">
+<pre><code>15
+None
+9</code> </pre>
+</div>
+
+Huruvida vi nyttjar nyckelordet `return` beror således på _syftet_ bakom funktionen vi implementerar. Vill vi kunna arbeta med värden som en funktion genererar så måste dessa returneras. Om vi inte har detta behov så använder vi inte nyckelordet `return`.
+
+{: .highlight}
+I det fall vi försöker hämta ut värden från en funktion som inte returnerar några värden så kommer vi alltid att ges värdet `None`. Detta är viktigt att komma ta i beaktande vid bl.a. felsökning.
+
 ## Multipla returnvärden
 Funktioner kan returnera olika typer av värden, t.ex. baserat på etablerade villkor eller logik inuti funktionens implementation. Exempelvis kan vi utföra och skicka tillbaka olika area-beräkningar baserat på vilken typ av geometrisk form som angivits som input till funktionen enligt:
 ```python
@@ -129,5 +150,25 @@ print(calculate_area("rectangle", 5, 10))
 50</code> </pre>
 </div>
 
+Det är dessutom möjligt att skicka tillbaka flera värden samtidigt, lagrat som en `tuple`. Exempelvis enligt:
+```python
+def calculate_statistics(numbers):
+    mean = sum(numbers) / len(numbers)
+    minimum = min(numbers)
+    maximum = max(numbers)
+    return mean, minimum, maximum
+
+avg, min_val, max_val = calculate_statistics([10, 20, 30, 40, 50])
+print(type(calculate_statistics([10, 20, 30, 40, 50])))
+print(f"Mean: {avg}, Min: {min_val}, Max: {max_val}")
+```
+<div class="code-example" markdown="1">
+<pre><code>< class 'tuple' >
+Mean: 30.0, Min: 10, Max: 50</code> </pre>
+</div>
+
+{: .highlight }
+Notera att ordningen på variablerna, som alltid, spelar roll vid denna typ av tilldelning. Skulle vi exempelvis revidera anropet enligt: `min_val, avg, max_val = calculate_statistics([10, 20, 30, 40, 50])` så skulle vi få resultatet: `Mean: 10, Min: 30.0, Max: 50`.
+
 # Sammanfattning
-Funktioner i Python ger en robust grund för att strukturera och återanvända kod. Genom att bemästra funktioner, från de grundläggande koncepten till avancerade funktioner såsom dekoratörer (decorations) och rekursiva funktioner, kan du skriva effektiv och lättläst kod. Det är värt att notera att väl designade funktioner kan förenkla komplexa uppgifter och bidra till bättre kodunderhåll och flexibilitet.
+Funktioner i Python ger en robust grund för att strukturera och återanvända kod. Genom att bemästra funktioner, från de grundläggande koncepten såsom funktionsparametrar och funktionsanrop till avancerade funktioner såsom lambda och rekursiva funktioner, kan du skriva effektiv och lättläst kod. Det är värt att notera att väl designade funktioner kan förenkla komplexa uppgifter och bidra till bättre kodunderhåll och flexibilitet.

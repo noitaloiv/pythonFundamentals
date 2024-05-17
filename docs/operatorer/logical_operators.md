@@ -8,10 +8,10 @@ parent: 13. Operatorer
 # Logiska operatorer i Python
 Det finns även logiska operatorer i Python. Med dessa kan vi avgöra om flera påstående är sanna eller falska samtidigt.
 
-| Operator  | Syntax          | Exempel där A = 5, B = 10     | Resultat |
-| :-:| :-:|:-:
+| Operator  | Syntax | Exempel där A = 5, B = 10 | Resultat |
+| :-: | :-:|:-:|:-:
 | OCH       | `and` alt. `&`  | A == 10 & B == 10       | False     |
-| ELLER     | `or` alt. \|    | A > 1 | B == 20          | True | 
+| ELLER     | `or` alt. \|    | A > 1 \| B == 20          | True | 
 | INTE      | `not`  | A > 5 and not B == 5     | True |
 
 ## Lika-med-operatorn
