@@ -110,6 +110,7 @@ När du arbetar med klasshierarkier är det viktigt att noggrant planera din kla
 * Kapsla in _gemensam funktionalitet_ i basklasser: 
 Se till att all gemensam funktionalitet som kan återanvändas av flera underklasser placeras i en lämplig basklass.
 </br>
+
 * Använd `super()` för att anropa basklassmetoder: 
 Detta säkerställer att basklassens konstruktor och metoder anropas korrekt, vilket är viktigt för att initialisera basklassattributen ordentligt.
 
@@ -119,9 +120,11 @@ Arv kan vara fördelaktigt av många anledningar. Exempelvis kan det tillföra:
 * God kodåteranvändning:
 Istället för att skriva ny kod från början för liknande klasser, kan klasser ärva egenskaper från en befintlig klass. Om vi på förhand vet om att vi exempelvis kommer vilja ha flera subtyper som har ett delat beteende så kan vi implementera detta på ett enda ställe i vårt program. Om vi utvecklar ett spel så kanske vi t.ex. kan tänkas vilja en representation av ett bräde i klassen `Board` vilket tillåter oss att sedan skapa flera subtyper vid behov allteftersom att spelet växer - t.ex. `SmallBoard`, `DifficultBoard` och dylikt.
 </br>
+
 * Enklare implementation och underhåll: 
 Arv gör det enklare att skapa och underhålla program då ändringar i basklassen automatiskt förs vidare till underklasser, vilket kan minska mängden kod och underhåll. Om vi exempelvis identifierar en bugg i en funktion som tillhör en klasshierarki så behöver vi sannolikt bara åtgärda problemet på ett enda ställe i programmet.
 </br>
+
 * Skalbarhet: 
 Det är lätt att lägga till fler funktioner till en existerande klasshierarki. Om vi exempelvis skulle vilja lägga till funktionalitet för alla fordon (d.v.s. objekt som är av typen `Vehicle` alt. är av en typ som ärver från klassen `Vehicle`) så behöver vi enbart lägga till denna funktionalitet på ett enda ställe.
 
