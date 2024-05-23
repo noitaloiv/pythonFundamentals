@@ -119,7 +119,6 @@ class Boat:
     def sail(self):
         self.logger.log("The boat is sailing")
 ```
-</br>
 
 * När klasshierarkierna blir för komplexa och svåra att hantera med arv:
 Arv kan snabbt bli komplext och svårhanterligt när klasshierarkier växer och blir väldigt djupa. Denna komplexitet kan göra koden svår att förstå och, i förlängningen, svår att underhålla. Komposition tillåter utvecklare att bygga mer modulära system där klassberoenden är tydligare och mer flexibla.
@@ -146,7 +145,6 @@ class Boat:
         self.engine.start()
         print("The boat is starting...")
 ```
-</br>
 
 * När arv introducerar för mycket tätt kopplad (tightly coupled) kod som kan vara svår att modifiera i efterhand:
 Arv skapar en stark koppling mellan basklasser och underklasser, vilket kan leda till problem när program utvecklas och behöver ändras. Komposition tillhandahåller en lösning på detta problem genom att reducera beroendet mellan klasserna, vilket gör det enklare att göra ändringar i en klass utan att det samtidigt påverka andra delar av programmet.
