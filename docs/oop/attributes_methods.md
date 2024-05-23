@@ -95,6 +95,7 @@ Metoder är som tidigare nämnt funktioner definierade inom en klass och som anv
 
 * Instansmetoder: 
 Dessa kräver en instans av klassen för att kunna anropas och arbetar med data som är specifikt för den instansen. Exempelvis kan vi skapa en metod som skriver ut _information om _instansen__ enligt:
+
 ```python
 class Car:
     number_of_wheels = 4  
@@ -115,6 +116,7 @@ car_a.display_info()
 
 * Klassmetoder:
 Dessa metoder är istället bundna till klassen snarare än instanser av klassen. De kan därför anropas på klassnivå och har tillgång till eventuella klassattribut men inte till instansattribut. Exempelvis skulle vi från ett tidigare exempel ha tillgång till attributet `number_of_wheels` men inte `make` i en klassmetod.
+
 ```python
 class Car:
     number_of_wheels = 4
