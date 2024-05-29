@@ -45,7 +45,7 @@ Genom att använda filtillägget _.py_ berättar du för VS Code att det ska tol
 ![Save File](../assets/images/saveFileVSCode.png){: .styled-image }
 
 {: .highlight }
-**OBS!** Det är viktigt att alltid spara ändringar i sin kod innan man kör koden. Du kan identifiera huruvida du har osparade ändringar i en fil genom den vita prick som som blir synlig när ändringar sker i fil-fliken (se bilden ovan).
+Det är viktigt att alltid spara ändringar i sin kod innan man kör koden. Du kan identifiera huruvida du har osparade ändringar i en fil genom den vita prick som som blir synlig när ändringar sker i fil-fliken (se bilden ovan).
 
 ## Steg 3 - Kör ditt första program
 
@@ -81,11 +81,14 @@ Som vi kan se i bilden så indikerar VSCode vart felet uppstår (där `Ln 1` t.e
 # Utforska dokumentationen
 Python-dokumentationen är en omfattande resurs som innehåller information om Pythons syntax, standardbibliotek och mer:
 
-* Officiella dokumentationen: Börja med [Pythons officiella dokumentation](https://docs.python.org/3/). Den är välstrukturerad och innehåller tutorials, modulindex och sökfunktioner för att snabbt hitta det du behöver.
+* Officiella dokumentationen: 
+Börja med [Pythons officiella dokumentation](https://docs.python.org/3/). Den är välstrukturerad och innehåller tutorials, modulindex och sökfunktioner för att snabbt hitta det du behöver.
 
-* Modulindex: Utforska de [inbyggda modulerna](https://docs.python.org/3/py-modindex.html) för att se vilka funktioner och klasser som finns tillgängliga. Detta kan bredda din förståelse för vad som är möjligt med Python och hur du kan utöka funktionaliteten i dina program.
+* Modulindex: 
+Utforska de [inbyggda modulerna](https://docs.python.org/3/py-modindex.html) för att se vilka funktioner och klasser som finns tillgängliga. Detta kan bredda din förståelse för vad som är möjligt med Python och hur du kan utöka funktionaliteten i dina program.
 
-* [FAQ](https://docs.python.org/3/faq/general.html) och [The Python Tutorial](https://docs.python.org/3/tutorial/index.html#tutorial-index): Dessa sidor kan vara särskilt användbara för att få praktiska tips och svar på vanliga frågor.
+* [FAQ](https://docs.python.org/3/faq/general.html) och [The Python Tutorial](https://docs.python.org/3/tutorial/index.html#tutorial-index): 
+Dessa sidor kan vara särskilt användbara för att få praktiska tips och svar på vanliga frågor.
 
 # Sammanfattning
 Att skapa din första Python-applikation är ett spännande första steg in i programmeringsvärlden. Genom att följa stegen för att konfigurera din utvecklingsmiljö, skriva och köra ditt första skript, har du lagt grunden för din programmeringsresa. Kom ihåg att praktik är nyckeln till framgång; fortsätt experimentera med din kod, utforska nya funktioner och bygga på din förståelse för Python. Som med alla färdigheter, utvecklas din programmeringsförmåga med tiden och praktiken, så var tålmodig och fortsätt att utforska och lära dig.

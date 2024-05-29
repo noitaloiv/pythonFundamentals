@@ -22,7 +22,7 @@ Avseende felkontrollen så agerar kompilatorn även rollen som korrekturläsare 
 
 Python är dock ett _tolkat språk_, till skillnad mot kompilerade språk såsom C eller Java. Detta innebär att koden du skriver _tolkas_ och _exekveras_ direkt av Python-tolken istället för att först kompileras till maskinkod. Även i Python sker en form av kompilering, fast i en lite annorlunda bemärkelse. Låt oss utforska detta djupare.
 
-## Kompilering och Tolkningsprocessen i Python
+## Kompilering och tolkningsprocessen i Python
 När du kör ett Python-skript, går din kod igenom två huvudsakliga steg: ett _kompileringssteg_ och ett _exekveringssteg_.
 
 ### "Kompilering"
@@ -34,7 +34,7 @@ Efter att koden har kompilerats till _bytecode_, tolkas och exekveras denna _byt
 ### Jämförelse mot kompilerade språk
 Till skillnad mot kompilerade språk, där koden kompileras direkt till maskinkod som kan exekveras direkt av datorns CPU, kompileras alltså Python-kod först till en "mellannivå" (_bytecode_) som sedan exekveras av Python-tolken. Detta tillåter Python att vara plattformsoberoende - samma Python-kod kan köras på vilket operativsystem som helst - så länge det finns en Python-tolk installerad - utan att behöva kompileras om för varje plattform.
 
-### Fördelar och Nackdelar
+### Fördelar och nackdelar
 ++ Plattformsoberoende: Python-kod kan köras på alla system där en Python-tolk är installerad utan behov av omkompilering.
 
 ++ Flexibilitet och Dynamik: Python tillåter dynamiska datatyper och sena bindningar, vilket gör det enklare att skriva flexibel kod.

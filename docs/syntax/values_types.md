@@ -32,7 +32,9 @@ print(type(23))
 ## Andra datatyper
 Det finns självfallet även andra typer av värden som inte riktigt passar som varken ett heltal eller en sträng. 
 
-* Float: Exempelvis behandlas decimaltal annorlunda än heltal och klassificeras därför som typen `float`.
+* Float: 
+Exempelvis behandlas decimaltal annorlunda än heltal och klassificeras därför som typen `float`.
+
 ```python
 print(type(3.2))
 ```
