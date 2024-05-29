@@ -68,8 +68,8 @@ Python erbjuder en mängd inbyggda metoder för strängmanipulation som gör det
    ```
    <div class="code-example" markdown="1">
    <pre><code>Hello World
-   Hello    World
-      Hello World</code></pre>
+Hello    World
+   Hello World</code></pre>
    </div>
 
 * `replace()` kan nyttjas för att ersätta en delsträng med en annan i en sträng.

@@ -18,19 +18,19 @@ Där _VILLKOR_ avser ett påstående som kan evalueras till `True` eller `False`
 
 ## Implikationer av selektion i programflödet
 
-* Dynamiskt beteende:
+* Dynamiskt beteende: <br>
 Selektion gör program dynamiska genom att tillåta dem att agera olika under olika omständigheter. Detta betyder att samma program kan utföra olika uppgifter och ge olika resultat baserat på de data det behandlar eller de villkor som uppfylls vid körningstillfället.
 
-* Användarinteraktion
+* Användarinteraktion: <br>
 I applikationer där användarinteraktion är central, såsom webbapplikationer eller mobilappar, styr selektion hur programmet svarar på användarens handlingar. Till exempel kan en if-sats avgöra vad som händer när en användare klickar på en knapp eller fyller i ett formulär.
 
-* Felhantering
+* Felhantering: <br>
 Selektion är avgörande för effektiv felhantering i program. Genom att använda villkorliga uttalanden kan program känna igen potentiella fel, ogiltig data eller undantagstillstånd och hantera dem på ett lämpligt sätt, antingen genom att visa felmeddelanden, be om ny inmatning eller avbryta operationer.
 
-* Optimering av programlogik
+* Optimering av programlogik: <br>
 Selektion kan användas för att optimera program genom att se till att endast nödvändig kod körs. Genom att selektivt utföra vissa kodblock baserat på relevanta villkor, kan man minska onödig beräkning och resursanvändning.
 
-* Sekvenskontroll
+* Sekvenskontroll: <br>
 I komplexa programflöden, där flera steg eller operationer måste utföras i en specifik ordning, styr selektion vilka delar av programmet som ska köras och när. Detta är särskilt viktigt i scenarier som dataanalysprocesser, spellogik och arbetsflöden inom programvara.
 
 # Sammanfattning av selektion
