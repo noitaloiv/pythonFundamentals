@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Programmering i Python"
+nav_exclude: true
 ---
 
 # Välkommen till Programmering i Python!
