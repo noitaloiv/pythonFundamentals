@@ -13,7 +13,6 @@ Attribut är variabler som är bundna till de klasser eller objekt de definieras
 
 * Instansattribut: 
 Dessa attribut är specifika för varje _instans_ av en klass. D.v.s. att alla objekt av klassen `Car` har attributet `make`, men värdet på attributet kommer vara unikt för varje instans. Vi har tidigare sett exempel på detta när vi har arbetat med konstruktorn (`__init__`):
-
     ```python
     class Car:
         def __init__(self, make, model):
@@ -23,7 +22,6 @@ Dessa attribut är specifika för varje _instans_ av en klass. D.v.s. att alla o
 
 * Klassattribut: 
 Dessa attribut är istället _gemensamma_ för alla instanser av en klass. D.v.s. att alla objekt av klassen `Car` skulle kunna ha attributet `number_of_wheels` med värdet `4` då detta är något som delas av hela _klassen_. Exempelvis enligt:
-
     ```python
     class Car:
         number_of_wheels = 4        ## Class attribute
@@ -94,8 +92,8 @@ Värdet på `number_of_wheels` ändras enbart för `car_a` i ovan exempel. När 
 ## Metoder i klasser
 Metoder är som tidigare nämnt funktioner definierade inom en klass och som används för att definiera objekts beteenden. Precis som attribut kan metoder vara av typen _instansmetoder_ eller _klassmetoder_.
 
-* Instansmetoder: 
-Dessa kräver en instans av klassen för att kunna anropas och arbetar med data som är specifikt för den instansen. Exempelvis kan vi skapa en metod som skriver ut _information om _instansen__ enligt:
+* Instansmetoder: <br>
+Dessa kräver en instans av klassen för att kunna anropas och arbetar med data som är specifikt för den instansen. Exempelvis kan vi skapa en metod som skriver ut _information om instansen_ enligt:
 
     ```python
     class Car:
@@ -115,7 +113,7 @@ Dessa kräver en instans av klassen för att kunna anropas och arbetar med data 
     <pre><code>This car is a: Volvo S60</code></pre>
     </div>
 
-* Klassmetoder:
+* Klassmetoder: <br>
 Dessa metoder är istället bundna till klassen snarare än instanser av klassen. De kan därför anropas på klassnivå och har tillgång till eventuella klassattribut men inte till instansattribut. Exempelvis skulle vi från ett tidigare exempel ha tillgång till attributet `number_of_wheels` men inte `make` i en klassmetod.
 
     ```python
@@ -142,8 +140,7 @@ Dessa metoder är istället bundna till klassen snarare än instanser av klassen
     ```
     <div class="code-example" markdown="1">
     <pre><code>0
-    2</code></pre>
-    </div>
+2</code></pre></div>
 
 ### `cls` och `@classmethod`
 För att deklarera en klassmetod så anger man dekoratorn `@classmethod` över metoddeklarationen. Vi måste göra detta för att särskilja en klassmetod från en instansmetod, annars kommer Pythontolkaren inte att förstå att vi försöker deklarera funktionalitet på klassnivå.
