@@ -23,6 +23,7 @@ class Car:
 
 * Klassattribut: 
 Dessa attribut är istället _gemensamma_ för alla instanser av en klass. D.v.s. att alla objekt av klassen `Car` skulle kunna ha attributet `number_of_wheels` med värdet `4` då detta är något som delas av hela _klassen_. Exempelvis enligt:
+
 ```python
 class Car:
     number_of_wheels = 4        ## Class attribute
