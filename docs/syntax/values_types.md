@@ -34,13 +34,12 @@ Det finns självfallet även andra typer av värden som inte riktigt passar som 
 
 * Float: 
 Exempelvis behandlas decimaltal annorlunda än heltal och klassificeras därför som typen `float`.
-
-```python
-print(type(3.2))
-```
-<div class="code-example" markdown="1">
-<pre><code>< class 'float' ></code></pre>
-</div>
+    ```python
+    print(type(3.2))
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>< class 'float' ></code></pre>
+    </div>
 
 Vi skulle nu även kunna testa vårt påstående avseende att datorn tolkar strängar som de värden som anges inom situationstecken. Exempelvis kan vi genom `type`-funktionen se att `"3.2"` och `3.2` inte är samma typ:
 ``` python

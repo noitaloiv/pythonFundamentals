@@ -27,11 +27,11 @@ Alternativt så kan du nyttja alternativet File -> Open Folder från gränssnitt
 
 Med Visual Studio Code öppet från din tomma mapp skapar du nu en Python-fil för att visa meddelandet: Hello world.
 
-* Inuti Explorer-vyn, där du ser den tomma mappens namn (_hello-world_), välj alternativet "Ny fil" (se Figur 1).
+* Inuti Explorer-vyn, där du ser den tomma mappens namn (_hello-world_), välj alternativet "Ny fil".
 
 ![New File](../assets/images/vsCode_newFile.png){: .styled-image }
 
-* Namnge den nya filen _hello.py_ genom att ange det i textrutan och tryck på Enter (se Figur 2).
+* Namnge den nya filen _hello.py_ genom att ange det i textrutan och tryck på Enter.
 
 ![File Explorer](../assets/images/vsCodeNewFile.png){: .styled-image }
 
