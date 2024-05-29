@@ -39,12 +39,12 @@ Nedan visas de vanligaste sätten att jämföra två variabler:
 
 | Jämförelse                | Notation | Exempel där A = 5, B = 10 |
 | :-: | :-:|:-:
-| Mindre än                 | <        | A < B   #true             |
-| Större än                 | >        | B > A   #true             |
-| Mindre än eller lika med  | <=       | A <= B  #true             |
-| Större än eller lika med  | >=       | B >= A  #true             |
-| Lika med                  | ==       | A == B  #false            |
-| Inte lika med             | !        | A != B  #true             |
+| Mindre än                 | <        | A < B   # True             |
+| Större än                 | >        | B > A   # True             |
+| Mindre än eller lika med  | <=       | A <= B  # True            |
+| Större än eller lika med  | >=       | B >= A  # True             |
+| Lika med                  | ==       | A == B  # False            |
+| Inte lika med             | !        | A != B  # True             |
 
 Vi får alltså tillbaka `True` eller `False` beroende på om påståendet är sant eller falskt.
 

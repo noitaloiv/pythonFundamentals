@@ -71,10 +71,10 @@ else:
 </div>
 
 {: .highlight }
-Notera gärna `f`:et i `print()`. Detta kan nyttjas för att formatera utskriften, i detta fall genom att hämta variabelns värde vid utskrift. Hade vi istället försökt skriva `print(number is an even number)` så hade vi skrivit ut `number` snarare än värdet hos variabeln `number`. `if` och `else` är nyckelord som nyttjas vid _selektion_, vilket vi kommer diskutera i framtida kapitel.
+`if` och `else` är båda nyckelord som tillämpas vid _selektion_, vilket vi kommer diskutera i framtida kapitel. I korta drag innefattar det att vi säger att programmet, i detta fall, att kolla __OM__ `number` är jämnt delbart med 2 (d.v.s. att det inte finns någon rest vid division) så vill vi skriva ut att det är ett jämnt tal. __ANNARS__ vill vi skriva ut att det är ett udda tal.
 
 ### Arbeta med cykliska strukturer
-Modulusoperatorn kan användas för att "loopa runt" när du når slutet av en cyklisk struktur. Detta är praktiskt när du hanterar enheter som tiden (0 till 23 timmar) eller veckodagar (1 till 7).
+Modulusoperatorn kan användas för att "loopa runt" när du når slutet av en cyklisk struktur. Detta är praktiskt när du hanterar enheter såsom tid (säg t.ex. 0 till 23 timmar) eller veckodagar (1 till 7).
 ```python
 current_hour = 23
 hours_to_add = 5
