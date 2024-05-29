@@ -80,23 +80,21 @@ pip uninstall package_name
 ## Vanliga Python-paket och deras användningsområden
 Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar språkets funktionalitet. Nedan är några populära paket som ofta används inom olika områden:
 
-* `requests`: Enkla HTTP-förfrågningar
+* `requests`: Enkla HTTP-förfrågningar <br>
 `requests` är ett populärt paket för att göra HTTP-förfrågningar. Det är känt för sin enkelhet och användarvänlighet jämfört med den inbyggda `urllib`.
+    ```python
+    import requests
 
-```python
-import requests
+    response = requests.get('https://api.example.com/data')
+    data = response.json()  # Assuming the response is in a JSON-format
+    print(data)
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>{'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@reqres.in', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://reqres.in/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://reqres.in/img/faces/2-image.jpg'}, {'id': 3, 'email': 'emma.wong@reqres.in', 'first_name': 'Emma', 'last_name': 'Wong', 'avatar': 'https://reqres.in/img/faces/3-image.jpg'}, {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}, {'id': 5, 'email': 'charles.morris@reqres.in', 'first_name': 'Charles', 'last_name': 'Morris', 'avatar': 'https://reqres.in/img/faces/5-image.jpg'}, {'id': 6, 'email': 'tracey.ramos@reqres.in', 'first_name': 'Tracey', 'last_name': 'Ramos', 'avatar': 'https://reqres.in/img/faces/6-image.jpg'}], 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}</code></pre>
+    </div>
 
-response = requests.get('https://api.example.com/data')
-data = response.json()  # Assuming the response is in a JSON-format
-print(data)
-```
-<div class="code-example" markdown="1">
-<pre><code>{'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@reqres.in', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://reqres.in/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://reqres.in/img/faces/2-image.jpg'}, {'id': 3, 'email': 'emma.wong@reqres.in', 'first_name': 'Emma', 'last_name': 'Wong', 'avatar': 'https://reqres.in/img/faces/3-image.jpg'}, {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}, {'id': 5, 'email': 'charles.morris@reqres.in', 'first_name': 'Charles', 'last_name': 'Morris', 'avatar': 'https://reqres.in/img/faces/5-image.jpg'}, {'id': 6, 'email': 'tracey.ramos@reqres.in', 'first_name': 'Tracey', 'last_name': 'Ramos', 'avatar': 'https://reqres.in/img/faces/6-image.jpg'}], 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}</code></pre>
-</div>
-
-* `pandas`: Kraftfull dataanalys och manipulation
+* `pandas`: Kraftfull dataanalys och manipulation <br>
 `pandas` är ett viktigt paket för dataanalys i Python och används för att hantera och analysera strukturerad data.
-
 ```python
 import pandas as pd
 
@@ -106,40 +104,37 @@ df = pd.read_csv('data.csv')
 print(df.head())
 ```
 
-* `numPy`: Vetenskaplig beräkning
+* `numPy`: Vetenskaplig beräkning <br>
 `numPy` erbjuder stöd för stora, flerdimensionella arrayer och matriser, tillsammans med en samling av matematiska funktioner för att arbeta med dessa arrayer.
+    ```python
+    import numpy as np
 
-```python
-import numpy as np
+    # Create a 2x2 numPy array
+    arr = np.array([[1, 2], [3, 4]])
+    # Calculate the determinant
+    print(np.linalg.det(arr))
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>-2.0000000000000004</code></pre>
+    </div>
 
-# Create a 2x2 numPy array
-arr = np.array([[1, 2], [3, 4]])
-# Calculate the determinant
-print(np.linalg.det(arr))
-```
-<div class="code-example" markdown="1">
-<pre><code>-2.0000000000000004</code></pre>
-</div>
+* `matplotlib`: Plottingbibliotek <br>
+`matplotlib` är sannolikt det mest använda Python-biblioteket för att skapa 2D-plotter och diagram. Det kan bl.a. användas för att visualisera data och resultat av en analys.
+    ```python
+    import matplotlib.pyplot as plt
 
-* `matplotlib`: Plottingbibliotek
-`matplotlib` är det mest använda Python-biblioteket för att skapa 2D-plotter och diagram. Det kan användas för att visualisera data och resultat av analys.
+    x = [1, 2, 3, 4]
+    y = [10, 20, 25, 30]
 
-```python
-import matplotlib.pyplot as plt
+    plt.plot(x, y)
+    plt.show()
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code><img src="../../assets/images/matplotlib.png" alt="plot example"></code></pre>
+    </div>
 
-x = [1, 2, 3, 4]
-y = [10, 20, 25, 30]
-
-plt.plot(x, y)
-plt.show()
-```
-<div class="code-example" markdown="1">
-<pre><code><img src="../../assets/images/matplotlib.png" alt="plot example"></code></pre>
-</div>
-
-* `flask`: Webbutveckling
+* `flask`: Webbutveckling <br>
 `flask` är ett mikroramverk för webbutveckling i Python. Det är enkelt att komma igång med och kraftfullt nog för att bygga komplexa webbapplikationer.
-
 ```python
 from flask import Flask
 

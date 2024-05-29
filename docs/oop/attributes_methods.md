@@ -11,7 +11,7 @@ Attribut och metoder är centrala komponenter i objektorienterad programmering (
 ## Vad är attribut?
 Attribut är variabler som är bundna till de klasser eller objekt de definieras i och i Python finns det två huvudtyper av attribut: _instansattribut_ och _klassattribut_.
 
-* Instansattribut: 
+* Instansattribut: <br>
 Dessa attribut är specifika för varje _instans_ av en klass. D.v.s. att alla objekt av klassen `Car` har attributet `make`, men värdet på attributet kommer vara unikt för varje instans. Vi har tidigare sett exempel på detta när vi har arbetat med konstruktorn (`__init__`):
     ```python
     class Car:
@@ -20,7 +20,7 @@ Dessa attribut är specifika för varje _instans_ av en klass. D.v.s. att alla o
             self.model = model      ## Instance attribute
     ```
 
-* Klassattribut: 
+* Klassattribut: <br>
 Dessa attribut är istället _gemensamma_ för alla instanser av en klass. D.v.s. att alla objekt av klassen `Car` skulle kunna ha attributet `number_of_wheels` med värdet `4` då detta är något som delas av hela _klassen_. Exempelvis enligt:
     ```python
     class Car:

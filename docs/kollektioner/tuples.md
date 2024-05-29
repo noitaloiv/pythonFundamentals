@@ -62,24 +62,27 @@ print(y)
 ## Användningsområden
 Trots sin oföränderlighet är tuples mycket användbara:
 
-* Funktioner som returnerar flera värden: Funktioner kan använda tuples för att returnera flera värden på en gång.
-```python
-def min_max(numbers):
-    return min(numbers), max(numbers)
+* Funktioner som returnerar flera värden: <br>
+Funktioner kan använda tuples för att returnera flera värden på en gång.
+    ```python
+    def min_max(numbers):
+        return min(numbers), max(numbers)
 
-min_num, max_num = min_max([1, 2, 3, 4, 5])
-print(min_num, max_num)
-```
-<div class="code-example" markdown="1">
-<pre><code>1 5</code></pre>
-</div>
+    min_num, max_num = min_max([1, 2, 3, 4, 5])
+    print(min_num, max_num)
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>1 5</code></pre>
+    </div>
 
 {: .highlight }
 `def min_max(numbers)` är ett exempel på en egendefinierad funktion, d.v.s. en funktion som vi själva deklarerar och implementerar istället för att nyttja en "inbyggd funktion" - likt `range()`, `print()` och `max()`. Vi kommer att introducera och diskutera konceptet vidare i framtida avsnitt.
 
-* Skyddad data: När du vill säkerställa att dataintegriteten upprätthålls och skyddas från ändringar.
+* Skyddad data: <br>
+När du vill säkerställa att dataintegriteten upprätthålls och skyddas från ändringar.
 
-* Som nycklar i dictionaries: Till skillnad från listor kan tuples användas som nycklar i en dictionary på grund av deras oföränderlighet.
+* Som nycklar i dictionaries: <br>
+Till skillnad från listor kan tuples användas som nycklar i en dictionary på grund av deras oföränderlighet.
 
 # Sammanfattning
 Tuples är en grundläggande datastruktur i Python som tillhandahåller en oföränderlig sekvens av element. Deras oföränderlighet, tillsammans med stöd för "packning" och "uppackning", gör dem till ett värdefullt verktyg för situationer där datasekvensens integritet är avgörande. 

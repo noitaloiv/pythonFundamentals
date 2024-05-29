@@ -101,8 +101,8 @@ print(numbers[-1])
 <pre><code>5</code></pre>
 </div>
 
-### Slicing
-Slicing är en teknik som använder index för att "skära ut" och komma åt delar av en kollektion. I Python uppnås detta med funktionen `slice()` som kan ta emot ett **startindex** och ett **slutindex**, separerade av ett kolon, där slutindexet är _exklusivt_. Att slutindexet är exklusivt avser - i kontexten av slicing i Python - att det element som motsvarar slutindexet inte inkluderas i den del av samlingen som du skär ut. Med andra ord, när du specifierar ett intervall med start- och slutindex för att göra en slice av en samling, kommer elementet på positionen för slutindexet inte att vara en del av den resulterande delen - likt hur funktionen `range()` hanterar intervall.
+### "Slicing"
+_Slicing_ är en teknik som använder index för att "skära ut" och komma åt delar av en kollektion. I Python uppnås detta med funktionen `slice()` som kan ta emot ett **startindex** och ett **slutindex**, separerade av ett kolon, där slutindexet är _exklusivt_. Att slutindexet är exklusivt avser - i kontexten av slicing i Python - att det element som motsvarar slutindexet inte inkluderas i den del av samlingen som du skär ut. Med andra ord, när du specifierar ett intervall med start- och slutindex för att göra en slice av en samling, kommer elementet på positionen för slutindexet inte att vara en del av den resulterande delen - likt hur funktionen `range()` hanterar intervall.
 
 Om du exempelvis har en lista och vill skapa en slice av den, kommer du att ange ett start- och slutindex enligt: `lista[start:slut]`. Om du anger `1` som startindex och `4` som slutindex, kommer slicen att inkludera elementen på index `1`, `2` och `3`, men inte elementet på index `4`.
 ```python

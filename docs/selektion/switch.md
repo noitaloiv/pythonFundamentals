@@ -36,7 +36,7 @@ match choice:
 </div>
 
 {: .highlight }
-Notera: `case _:` avser ett "default" fall, d.v.s. vad som ska ske i de fall det inte finns något matchande case. Det fungerar med andra ord på samma sätt som en `else`-sats i den bemärkelsen. Notera gärna även att `int()` behövs för att konvertera värdena vi läser in från användaren till heltal, annars kommer vi inte att kunna utföra någon matematisk operation.
+`case _:` avser ett "default" fall, d.v.s. vad som ska ske i de fall det inte finns något matchande case. Det fungerar med andra ord på samma sätt som en `else`-sats i den bemärkelsen. Notera gärna även att `int()` behövs för att konvertera värdena vi läser in från användaren till heltal, annars kommer vi inte att kunna utföra någon matematisk operation.
 
 Vi hade givetvis kunnat uppnå samma struktur genom att arbeta med `if`-satser, t.ex. enligt:
 ```python
@@ -111,7 +111,7 @@ I detta exempel representerar `point` en punkt i ett tvådimensionellt koordinat
 Om `point` istället hade haft värdena `(0, 3)` så hade vi fått utskriften `The point is on the Y-axle at 3` osv.
 
 {: .highlight }
-Notera att vi inte anger ett "default" fall i detta kodexempel. Detta är tillåtet och kan tänkas vara relevant i de kontexter där vi på förhand kan avgöra alla möjliga utfall. I detta scenario kan exempelvis en punkt i ett tvådimensionellt koordinatsystem enbart förhålla sig till de fall vi etablerat. I tidigare kodexempel har vi istället försökt matcha baserat på användarens input, vilket kan tänkas vara allt möjligt. Praxis kan dock tänkas vara att alltid nyttja `case _:`.
+Vi anger inte ett "default" fall i detta kodexempel. Detta är tillåts i Python och kan tänkas vara relevant i kontexter där vi på förhand kan avgöra alla möjliga utfall. I detta scenario kan exempelvis en punkt i ett tvådimensionellt koordinatsystem enbart förhålla sig till de fall vi etablerat. I tidigare kodexempel har vi istället försökt matcha baserat på användarens input, vilket kan tänkas vara allt möjligt. Praxis kan dock tänkas vara att alltid nyttja `case _:`.
 
 # Sammanfattning
 `switch`-satser, introducerade i Python 10.0 genom `match`- och `case`- nyckelorden, erbjuder en mer strömlinjeformad och lättläst syntax för att hantera flervägs beslutsfattande jämfört med traditionella `if-elif`-kedjor. 

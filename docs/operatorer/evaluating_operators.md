@@ -37,14 +37,14 @@ Vanligtvis utför man jämförelseoperationer i `if`-satser där man vill att n�
 ## Vanliga sätt att jämföra variabler
 Nedan visas de vanligaste sätten att jämföra två variabler:
 
-| Jämförelse                | Notation | Exempel där A = 5, B = 10 |
+| Jämförelse                | Notation | Om A = 5 & B = 10 | Resultat
 | :-: | :-:|:-:
-| Mindre än                 | <        | A < B   # True             |
-| Större än                 | >        | B > A   # True             |
-| Mindre än eller lika med  | <=       | A <= B  # True            |
-| Större än eller lika med  | >=       | B >= A  # True             |
-| Lika med                  | ==       | A == B  # False            |
-| Inte lika med             | !        | A != B  # True             |
+| Mindre än                 | <        | A < B               | True |
+| Större än                 | >        | B > A               |  True |
+| Mindre än eller lika med  | <=       | A <= B              |  True |
+| Större än eller lika med  | >=       | B >= A               |  True |
+| Lika med                  | ==       | A == B              |  False |
+| Inte lika med             | !=        | A != B               |  True |
 
 Vi får alltså tillbaka `True` eller `False` beroende på om påståendet är sant eller falskt.
 

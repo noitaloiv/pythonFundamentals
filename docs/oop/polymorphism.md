@@ -96,78 +96,78 @@ The car is starting...</code></pre>
 ### När ska man använda komposition över arv?
 Komposition bör övervägas när:
 
-* Flera objekt ska dela samma funktionalitet:
+* Flera objekt ska dela samma funktionalitet: <br>
 Komposition är idealiskt när flera olika klasser behöver dela specifik funktionalitet utan att nödvändigtvis tillhöra samma klasshierarki. Genom att definiera dessa funktioner i separata klasser och sedan inkludera dessa klasser som objekt i andra klasser, kan du återanvända kod effektivt.
 
-Om du exempelvis vill ha en funktion för att logga meddelanden, kan du skapa en separat ``Logger``-klass och - istället för att låta varje klass ärva denna klass - tillåta klasserna att själva skapa eller ta emot en instans av ``Logger``-klassen.
-```python
-class Logger:
-    def log(self, message):
-        print(f"Log: {message}")
+    Om du exempelvis vill ha en funktion för att logga meddelanden, kan du skapa en separat ``Logger``-klass och - istället för att låta varje klass ärva denna klass - tillåta klasserna att själva skapa eller ta emot en instans av ``Logger``-klassen.
+    ```python
+    class Logger:
+        def log(self, message):
+            print(f"Log: {message}")
 
-class Car:
-    def __init__(self):
-        self.logger = Logger()
+    class Car:
+        def __init__(self):
+            self.logger = Logger()
 
-    def drive(self):
-        self.logger.log("The car is starting")
+        def drive(self):
+            self.logger.log("The car is starting")
 
-class Boat:
-    def __init__(self):
-        self.logger = Logger()
+    class Boat:
+        def __init__(self):
+            self.logger = Logger()
 
-    def sail(self):
-        self.logger.log("The boat is sailing")
-```
+        def sail(self):
+            self.logger.log("The boat is sailing")
+    ```
 
-* När klasshierarkierna blir för komplexa och svåra att hantera med arv:
+* När klasshierarkierna blir för komplexa och svåra att hantera med arv: <br>
 Arv kan snabbt bli komplext och svårhanterligt när klasshierarkier växer och blir väldigt djupa. Denna komplexitet kan göra koden svår att förstå och, i förlängningen, svår att underhålla. Komposition tillåter utvecklare att bygga mer modulära system där klassberoenden är tydligare och mer flexibla.
 
-Om exempelvis en `Car` och en `Boat` båda har motorer men även olika attribut och metoder som inte är gemensamma kan det vara mer meningsfullt att skapa en `Engine`-klass och använda den som ett attribut för både `Car` och `Boat` genom komposition.
-```python
-class Engine:
-    def start(self):
-        print("The engine is starting...")
+    Om exempelvis en `Car` och en `Boat` båda har motorer men även olika attribut och metoder som inte är gemensamma kan det vara mer meningsfullt att skapa en `Engine`-klass och använda den som ett attribut för både `Car` och `Boat` genom komposition.
+    ```python
+    class Engine:
+        def start(self):
+            print("The engine is starting...")
 
-class Car:
-    def __init__(self):
-        self.engine = Engine()
+    class Car:
+        def __init__(self):
+            self.engine = Engine()
 
-    def start_car(self):
-        self.engine.start()
-        print("The car is starting...")
+        def start_car(self):
+            self.engine.start()
+            print("The car is starting...")
 
-class Boat:
-    def __init__(self):
-        self.engine = Engine()
+    class Boat:
+        def __init__(self):
+            self.engine = Engine()
 
-    def start_boat(self):
-        self.engine.start()
-        print("The boat is starting...")
-```
+        def start_boat(self):
+            self.engine.start()
+            print("The boat is starting...")
+    ```
 
-* När arv introducerar för mycket tätt kopplad (tightly coupled) kod som kan vara svår att modifiera i efterhand:
+* När arv introducerar för mycket tätt kopplad (tightly coupled) kod som kan vara svår att modifiera i efterhand: <br>
 Arv skapar en stark koppling mellan basklasser och underklasser, vilket kan leda till problem när program utvecklas och behöver ändras. Komposition tillhandahåller en lösning på detta problem genom att reducera beroendet mellan klasserna, vilket gör det enklare att göra ändringar i en klass utan att det samtidigt påverka andra delar av programmet.
 
-Om du exempelvis har en `Vehicle`-klass med metoder som är gemensamma för alla typer av fordon, men samtidigt har specifika fordonstyper som i sin tur kräver unika metoder eller attribut kan du använda komposition för att _"sätta ihop"_ dessa unika funktioner på ett flexibelt sätt utan att bryta den befintliga kodbasen.
-```python
-class Vehicle:
-    def general_vehicle_function(self):
-        print("All vehicles have this in common.")
+    Om du exempelvis har en `Vehicle`-klass med metoder som är gemensamma för alla typer av fordon, men samtidigt har specifika fordonstyper som i sin tur kräver unika metoder eller attribut kan du använda komposition för att _"sätta ihop"_ dessa unika funktioner på ett flexibelt sätt utan att bryta den befintliga kodbasen.
+    ```python
+    class Vehicle:
+        def general_vehicle_function(self):
+            print("All vehicles have this in common.")
 
-class CarSpecifics:
-    def car_specific_function(self):
-        print("This is a car specific function.")
+    class CarSpecifics:
+        def car_specific_function(self):
+            print("This is a car specific function.")
 
-class Car:
-    def __init__(self):
-        self.vehicle = Vehicle()
-        self.specifics = CarSpecifics()
+    class Car:
+        def __init__(self):
+            self.vehicle = Vehicle()
+            self.specifics = CarSpecifics()
 
-    def display(self):
-        self.vehicle.general_vehicle_function()
-        self.specifics.car_specific_function()
-```
+        def display(self):
+            self.vehicle.general_vehicle_function()
+            self.specifics.car_specific_function()
+    ```
 
 Komposition ger större flexibilitet och minskar komplexiteten i systemdesign, vilket gör det till ett starkt alternativ till arv i många situationer. Genom att använda komposition kan utvecklare skapa mer underhållbara och skalbara applikationer med bättre kodåteranvändning och mindre risk för buggar relaterade till omfattande klasshierarkier.
 

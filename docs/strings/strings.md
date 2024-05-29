@@ -48,56 +48,56 @@ print("The price for four cups of coffee is:", price*4, "which, with the group d
 Python erbjuder en mängd inbyggda metoder för strängmanipulation som gör det möjligt att utföra vanligt förekommande uppgifter såsom att omvandla strängen till stora (`upper()`) eller små (`lower()`) bokstäver, eliminera whitespace (`strip()`), ersätta delar av en sträng (`replace()`), dela upp en sträng i en lista baserat på en avgränsare (`split()`), kombinera flera strängar i en lista till en enda sträng (`join()`) och många fler.
 
 - `upper()` och `lower()` kan nyttjas för att ersätta samtliga bokstäver i en sträng med dess motsvarande versal respektive gemen.
-```python
-message = "Hello World"
-print(message.lower())                      
-print(message.upper())                       
-```
-<div class="code-example" markdown="1">
-<pre><code>hello world
-HELLO WORLD
-</code></pre>
-</div>
+   ```python
+   message = "Hello World"
+   print(message.lower())                      
+   print(message.upper())                       
+   ```
+   <div class="code-example" markdown="1">
+   <pre><code>hello world
+   HELLO WORLD
+   </code></pre>
+   </div>
 
 * `strip()` och dess varianter `lstrip()` och `rstrip()` kan användas för att ta bort whitespace från början eller slutet av en sträng.
- ```python
-message = "   Hello   "
-print(message.strip(), "World")                       
-print(message.lstrip(), "World")  
-print(message.rstrip(), "World")                    
-```
-<div class="code-example" markdown="1">
-<pre><code>Hello World
-Hello    World
-   Hello World</code></pre>
-</div>
+   ```python
+   message = "   Hello   "
+   print(message.strip(), "World")                       
+   print(message.lstrip(), "World")  
+   print(message.rstrip(), "World")                    
+   ```
+   <div class="code-example" markdown="1">
+   <pre><code>Hello World
+   Hello    World
+      Hello World</code></pre>
+   </div>
 
 * `replace()` kan nyttjas för att ersätta en delsträng med en annan i en sträng.
-```python
-message = "Hello World"
-print(message.replace("World", "there"))                         
-```
-<div class="code-example" markdown="1">
-<pre><code>Hello there</code></pre>
-</div>
+   ```python
+   message = "Hello World"
+   print(message.replace("World", "there"))                         
+   ```
+   <div class="code-example" markdown="1">
+   <pre><code>Hello there</code></pre>
+   </div>
 
 * `split()` kan nyttjas för att dela upp en sträng i en lista av flera strängar baserat på ett angivet separator-tecken. 
-```python
-text = "apple,banana,cherry"
-print(text.split(","))          # Will split the string on ','                  
-```
-<div class="code-example" markdown="1">
-<pre><code>['apple', 'banana', 'cherry']</code></pre>
-</div>
+   ```python
+   text = "apple,banana,cherry"
+   print(text.split(","))          # Will split the string on ','                  
+   ```
+   <div class="code-example" markdown="1">
+   <pre><code>['apple', 'banana', 'cherry']</code></pre>
+   </div>
 
 * `join()` kan nyttjas för att istället sammanfoga elementen i en lista till en enda sträng, separerade med ett angivet separator-tecken.
-```python
-words = ["Python", "is", "awesome"]
-print(" ".join(words))          # Will join with ' '               
-```
-<div class="code-example" markdown="1">
-<pre><code>Python is awesome</code></pre>
-</div>
+   ```python
+   words = ["Python", "is", "awesome"]
+   print(" ".join(words))          # Will join with ' '               
+   ```
+   <div class="code-example" markdown="1">
+   <pre><code>Python is awesome</code></pre>
+   </div>
 
 # Sammanfattning
 I detta kapitel har vi utforskat de grundläggande och avancerade koncepten kring strängar i Python. Vi har sett hur man kan konkatenera (kombinera genom komposition) och upprepa strängar med `+` och `*` operatorerna, samt en mängd användbara strängmetoder som erbjuder kraftfulla möjligheter för att manipulera och interagera med textdata.

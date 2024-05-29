@@ -40,66 +40,65 @@ Notera att då mängder är oordnade så kan vi aldrig vara säkra på i vilken 
 ## Mängdoperationer
 Mängder stöder flera kraftfulla operationer som gör dem idealiska för att hantera unika element och utföra matematiska mängdoperationer såsom `union`, `snitt` och `differens`. 
 
-* `Union` (`|`): Kombinerar element från två mängder utan dupliceringar.
+* `Union` (`|`): <br>
+Kombinerar element från två mängder utan dupliceringar.
+    ```python
+    study_group_a = {"Alice", "Bob", "Charlie"}
+    study_group_b = {"Bob", "Diana", "Frank"}
 
-```python
-study_group_a = {"Alice", "Bob", "Charlie"}
-study_group_b = {"Bob", "Diana", "Frank"}
+    print(study_group_a | study_group_b)
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>{'Frank', 'Diana', 'Charlie', 'Bob', 'Alice'}</code></pre>
+    </div>
 
-print(study_group_a | study_group_b)
-```
+* `Snitt` (`&`): <br>
+Hittar gemensamma element i två mängder.
+    ```python
+    study_group_a = {"Alice", "Bob", "Charlie"}
+    study_group_b = {"Bob", "Diana", "Frank"}
 
-<div class="code-example" markdown="1">
-<pre><code>{'Frank', 'Diana', 'Charlie', 'Bob', 'Alice'}</code></pre>
-</div>
+    print(study_group_a & study_group_b)
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>{'Bob'}</code></pre>
+    </div>
 
-* `Snitt` (`&`): Hittar gemensamma element i två mängder.
+* `Differens` (`-`): <br>
+Hittar element i en mängd som inte finns i den andra.
+    ```python
+    study_group_a = {"Alice", "Bob", "Charlie"}
+    study_group_b = {"Bob", "Diana", "Frank"}
 
-```python
-study_group_a = {"Alice", "Bob", "Charlie"}
-study_group_b = {"Bob", "Diana", "Frank"}
+    print(study_group_a - study_group_b)
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>{'Alice', 'Charlie'}</code></pre>
+    </div>
 
-print(study_group_a & study_group_b)
-```
+* `Symmetrisk Differens` (`^`): <br>
+Hittar element som är unika för varje mängd.
+    ```python
+    study_group_a = {"Alice", "Bob", "Charlie"}
+    study_group_b = {"Bob", "Diana", "Frank"}
 
-<div class="code-example" markdown="1">
-<pre><code>{'Bob'}</code></pre>
-</div>
-
-* `Differens` (`-`): Hittar element i en mängd som inte finns i den andra.
-
-```python
-study_group_a = {"Alice", "Bob", "Charlie"}
-study_group_b = {"Bob", "Diana", "Frank"}
-
-print(study_group_a - study_group_b)
-```
-
-<div class="code-example" markdown="1">
-<pre><code>{'Alice', 'Charlie'}</code></pre>
-</div>
-
-* `Symmetrisk Differens` (`^`): Hittar element som är unika för varje mängd.
-
-```python
-study_group_a = {"Alice", "Bob", "Charlie"}
-study_group_b = {"Bob", "Diana", "Frank"}
-
-print(study_group_a ^ study_group_b)
-```
-
-<div class="code-example" markdown="1">
-<pre><code>{'Alice', 'Diana', 'Charlie', 'Frank'}</code></pre>
-</div>
+    print(study_group_a ^ study_group_b)
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>{'Alice', 'Diana', 'Charlie', 'Frank'}</code></pre>
+    </div>
 
 ## Användningsområden för mängder
 Mängder är särskilt användbara i följande scenarier:
 
-* Undvika dupliceringar: Perfekt när du behöver säkerställa att varje element är unikt.
+* Undvika dupliceringar: <br>
+Perfekt när du behöver säkerställa att varje element är unikt.
 
-* Effektiv sökningsprestanda: Mängder är optimerade för att snabbt kontrollera om ett element finns, vilket sker mycket snabbare än vad det gör för t.ex. listor.
+* Effektiv sökningsprestanda: <br>
+Mängder är optimerade för att snabbt kontrollera om ett element finns, vilket sker mycket snabbare än vad det gör för t.ex. listor.
 
-* Matematiska mängdoperationer: Mängder är idealiska för att lösa problem som involverar `union`, `snitt` och `differens` mellan grupper av data.
+* Matematiska mängdoperationer: <br>
+Mängder är idealiska för att lösa problem som involverar `union`, `snitt` och `differens` mellan grupper av data.
 
 # Sammanfattning
 Mängder i Python är en kraftfull datastruktur för hantering av unika element. De erbjuder både flexibiliteten att lägga till och ta bort element (till skillnad från tuples) och har prestandan för snabba sökningar och mängdoperationer. 

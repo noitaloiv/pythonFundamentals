@@ -70,7 +70,7 @@ print(sorted_students)
 </div>
 
 {: .highlight }
-lambda-uttryck är kraftfulla för kortfattade operationer, men de har begränsningar. En lambda-funktion kan endast innehålla ett uttryck och kan bli svårläst om uttrycket blir för komplicerat. I sådana fall är det bättre att använda en definierad funktion med def för ökad läsbarhet och flexibilitet.
+Lambda-uttryck är kraftfulla för kortfattade operationer, men de har begränsningar. En lambda-funktion kan endast innehålla ett uttryck och kan bli svårläst om uttrycket blir för komplicerat. I sådana fall är det bättre att använda en definierad funktion med def för ökad läsbarhet och flexibilitet.
 
 # Sammanfattning
 Lambda-uttryck erbjuder ett kompakt och kraftfullt sätt att definiera anonyma funktioner i Python. De är idealiska för enkla operationer som kan uttryckas som ett enda uttryck, särskilt när de används tillsammans med funktioner som `map()`, `filter()`, och `sorted()`. Trots deras begränsningar i komplexitet erbjuder lambda-uttryck en elegant lösning för många situationer där korta och engångs funktioner krävs. Det är dock viktigt att balansera användningen av lambda med klarhet och läsbarhet i koden.

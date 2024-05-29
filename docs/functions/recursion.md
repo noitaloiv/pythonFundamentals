@@ -10,9 +10,11 @@ Rekursiva funktioner är funktioner som anropar sig själva för att lösa ett p
 
 En rekursiv funktion består typiskt av två huvudkomponenter:
 
-* Basfall: Det enklaste fallet som inte kräver någon rekursion för att lösas. Det fungerar som ett stoppvillkor för rekursionen för att förhindra oändliga anrop.
+* Basfall: <br>
+Det enklaste fallet som inte kräver någon rekursion för att lösas. Det fungerar som ett stoppvillkor för rekursionen för att förhindra oändliga anrop.
 
-* Rekursiva steg: Där funktionen anropar sig själv med en mindre eller modifierad version av det ursprungliga problemet.
+* Rekursiva steg: <br>
+Där funktionen anropar sig själv med en mindre eller modifierad version av det ursprungliga problemet.
 
 Ett klassiskt exempel är en funktion som beräknar fakulteten på ett givet tal, d.v.s. produkten av alla heltal från 1 till och med sig självt. Givet 1 så skulle fakulteten vara 1 (`1*1`), givet 3 så blir den 6 (`1*2*3`), osv. 
 ```python
@@ -35,14 +37,14 @@ Rekursion kan göra koden mer intuitiv och lättläst för vissa problemtyper, m
 ## Användningsområden
 Rekursiva funktioner är särskilt användbara i följande scenarier:
 
-* Traversering av träd och grafstrukturer: Rekursion förenklar processen att gå igenom strukturer där varje nod kan ha flera undernoder.
+* Traversering av träd och grafstrukturer: <br>
+Rekursion förenklar processen att gå igenom strukturer där varje nod kan ha flera undernoder.
 
-* Dynamisk programmering och delproblem: Rekursion kan användas för att dela upp ett problem i mindre delar, vilket är en grundsten i dynamisk programmering.
+* Dynamisk programmering och delproblem: <br>
+Rekursion kan användas för att dela upp ett problem i mindre delar, vilket är en grundsten i dynamisk programmering.
 
-* Matematiska beräkningar: Problem som faktorialberäkningar, Fibonacci-sekvenser och tornet i Hanoi är naturligt lämpade för rekursiva lösningar.
+* Matematiska beräkningar: <br>
+Problem som faktorialberäkningar, Fibonacci-sekvenser och tornet i Hanoi är naturligt lämpade för rekursiva lösningar.
 
 # Sammanfattning
 Rekursiva funktioner är ett kraftfullt verktyg i programmering som tillåter dig att lösa problem genom att bryta ner dem i mindre, hanterbara delar. De är särskilt användbara för problem som naturligtvis kan delas upp i liknande subproblem. Det är dock viktigt att ta basfall och rekursionens djup i beaktande då det kan leda till problem såsom `stack overflow`-fel eller påverka applikationens effektivitet negativt.
-
-{: .highlight }
-Inom ramen för denna kurs så är detta inget du nödvändigtvis måste tillämpa, men det kan eventuellt vara av intresse i framtiden!

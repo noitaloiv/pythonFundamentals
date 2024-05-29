@@ -35,22 +35,27 @@ Programmering i Python</code></pre>
 </div>
 
 {: .highlight }
-Notera gärna att det är möjligt att skriva ut innehållet i listan utan att tillämpa iteration, d.v.s. genom exempelvis `print(coursesT1)`. Detta kommer dock att resultera i en annorlunda utskrift eftersom att vi skriver ut hela _listan_ snarare än resp. _element i listan_. I detta fall skulle vi få utskriften `['Objektorienterad programmering I', 'Datastrukturer', 'Programmering i Python']`. Nämnvärt är även att detta tillvägagångssätt är något säreget för Python. Om vi skulle försöka utföra motsvarigheten till `print(coursesT1)` i C# eller Java så skulle vi exempelvis istället bara få ut vilken datatyp variabeln avser snarare än dess innehåll. Utgångspunkten bör således vara att tillämpa iteration vid utskrift av element i kollektioner.
+Det är möjligt att skriva ut innehållet i listan utan att tillämpa iteration, exempelvis enligt: `print(coursesT1)`. Detta kommer dock att resultera i en något annorlunda utskrift eftersom att vi skriver ut hela _listan_ snarare än resp. _element i listan_. I detta fall skulle vi alltså få utskriften `['Objektorienterad programmering I', 'Datastrukturer', 'Programmering i Python']`. Nämnvärt är även att detta tillvägagångssätt är något säreget för Python. Om vi skulle försöka utföra motsvarigheten till `print(coursesT1)` i C# eller Java så skulle vi exempelvis istället bara få ut vilken datatyp variabeln avser snarare än dess innehåll. Utgångspunkten bör således vara att tillämpa iteration vid utskrift av element i kollektioner.
 
 Python erbjuder flera inbyggda kollektioner som är designade för att hantera grupper av objekt på olika sätt där de mest använda kollektionerna är _listor_, _tupler_, _dictionaries_ och _mängder_.
 
 ## Fördelar med kollektioner
 Kollektioner i Python, såsom listor, tupler, dictionaries och mängder (sets), erbjuder flera fördelar som gör dem oumbärliga i programmering:
 
-* Organisering av Data: Kollektioner tillåter organisering av relaterad data på ett strukturerat sätt. Detta förenklar hanteringen av data och gör det lättare att utföra operationer på datauppsättningar.
+* Organisering av data: <br>
+Kollektioner tillåter organisering av relaterad data på ett strukturerat sätt. Detta förenklar hanteringen av data och gör det lättare att utföra operationer på datauppsättningar.
 
-* Flexibilitet: Kollektioner kan dynamiskt ändras under körning av programmet, med undantag för tupler som är oföränderliga. Du kan lägga till, ta bort och ändra element, vilket gör dem mycket anpassningsbara till programmets behov.
+* Flexibilitet: <br>
+Kollektioner kan dynamiskt ändras under körning av programmet, med undantag för tupler som är oföränderliga. Du kan lägga till, ta bort och ändra element, vilket gör dem mycket anpassningsbara till programmets behov.
 
-* Effektivitet i Dataåtkomst: Dictionaries erbjuder snabb åtkomst till data via nycklar, vilket gör det enkelt att hämta och uppdatera värden utan att behöva genomgå hela samlingen.
+* Effektivitet i dataåtkomst: <br>
+Dictionaries erbjuder snabb åtkomst till data via nycklar, vilket gör det enkelt att hämta och uppdatera värden utan att behöva genomgå hela samlingen.
 
-* Stöd för Iteration: Kollektioner kan enkelt itereras över, vilket möjliggör genomgång och manipulation av varje element i samlingen.
+* Stöd för iteration: <br>
+Kollektioner kan enkelt itereras över, vilket möjliggör genomgång och manipulation av varje element i samlingen.
 
-* Inbyggda Operationer: Python erbjuder en mängd inbyggda funktioner och metoder för att arbeta med kollektioner, vilket inkluderar filtrering, sortering, och aggregering av data.
+* Inbyggda operationer: <br>
+Python erbjuder en mängd inbyggda funktioner och metoder för att arbeta med kollektioner, vilket inkluderar filtrering, sortering, och aggregering av data.
 
 ## Användning av iteration med kollektioner
 Iteration är en central aspekt när det kommer till arbete med kollektioner i Python. Genom att använda loop:ar, såsom `for`-loop:ar, kan du utföra operationer på varje element i en samling. Exempelvis med listor enligt:
@@ -89,29 +94,32 @@ Föreställ dig att du har en låda där du kan förvara olika saker - en bok, n
 ### Varför är detta viktigt?
 Denna möjlighet att förvara olika datatyper i samma kollektion gör Python mycket kraftfullt och flexibelt:
 
-* Datarepresentation: Du kan skapa kollektioner som mer exakt representerar verklig data. Till exempel kan en lista som representerar en person innehålla en sträng för namnet, ett heltal för åldern och kanske en annan lista för personens intressen.
-```python
-person_info = ["Max Power", 25, ["Walks in the park", "F1"]]
-print(person_info)
-```
-<div class="code-example" markdown="1">
-<pre><code>['Max Power', 25, ['Walks in the park', 'F1']]</code></pre>
-</div>
+* Datarepresentation: <br>
+Du kan skapa kollektioner som mer exakt representerar verklig data. Till exempel kan en lista som representerar en person innehålla en sträng för namnet, ett heltal för åldern och kanske en annan lista för personens intressen.
+    ```python
+    person_info = ["Max Power", 25, ["Walks in the park", "F1"]]
+    print(person_info)
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>['Max Power', 25, ['Walks in the park', 'F1']]</code></pre>
+    </div>
 
-* Förenklad hantering: Istället för att hantera flera separata kollektioner för varje datatyp, kan du gruppera relaterad information i en enda kollektion, vilket förenklar datahanteringen. Givet vårt föregående exempel så skulle vi exempelvis behöva separera datan i olika variabler och kollektioner och sedan själva etablera en koppling mellan dem.
-```python
-name = "Max Power"
-age = 25
-interests = ["Walks in the park", "F1"]
-print(f'{name}, {age}, {interests}')
-```
-<div class="code-example" markdown="1">
-<pre><code>Max Power, 25, ['Walks in the park', 'F1']</code></pre>
-</div>
+* Förenklad hantering: <br>
+Istället för att hantera flera separata kollektioner för varje datatyp, kan du gruppera relaterad information i en enda kollektion, vilket förenklar datahanteringen. Givet vårt föregående exempel så skulle vi exempelvis behöva separera datan i olika variabler och kollektioner och sedan själva etablera en koppling mellan dem.
+    ```python
+    name = "Max Power"
+    age = 25
+    interests = ["Walks in the park", "F1"]
+    print(f'{name}, {age}, {interests}')
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>Max Power, 25, ['Walks in the park', 'F1']</code></pre>
+    </div>
 
-I detta fall var en sådan koppling förhållandevis enkel att etablera, men i andra fall kan vi först behöva utvinna informationen från andra kollektioner och därefter försöka kombinera datan - vilket kan utgöra problem.
+    I detta fall var en sådan koppling förhållandevis enkel att etablera, men i andra fall kan vi först behöva utvinna informationen från andra kollektioner och därefter försöka kombinera datan - vilket kan utgöra problem.
 
-* Flexibilitet i datastrukturer: Du kan skapa komplexa datastrukturer, som nästlade kollektioner (listor i listor, listor i dictionaries, etc.), som kan representera mer komplexa relationer och hierarkier mellan data.
+* Flexibilitet i datastrukturer: <br>
+Du kan skapa komplexa datastrukturer, som nästlade kollektioner (listor i listor, listor i dictionaries, etc.), som kan representera mer komplexa relationer och hierarkier mellan data.
 
 ## Kollektioner i kollektioner
 Python är ett flexibelt språk som tillåter att olika datatyper lagras i samma kollektion, men vi kan även lagra kollektioner inuti andra kollektioner såsom listor i listor eller listor i dictionaries. Detta ger en enorm flexibilitet i hanteringen av datastrukturer och är mycket nyttosamt i kontexten av mer komplexa datastrukturer.

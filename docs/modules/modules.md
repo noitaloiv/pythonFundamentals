@@ -16,20 +16,23 @@ En modul i Python är en fil som innehåller Python-kod. Denna kod kan vara allt
 ## Importera Moduler
 För att använda en modul i ditt Python-skript måste du först 'importera' den med hjälp av nyckelordet `import`. Det finns olika sätt att importera moduler på:
 
-* Importera hela modulen: Detta gör alla funktioner och klasser inom modulen tillgängliga i ditt skript.
+* Importera hela modulen: <br>
+Detta gör alla funktioner och klasser inom modulen tillgängliga i ditt skript.
 ```python
 import math
 squared = math.sqrt(16)    # Uses the sqrt-function from the math module
 ```
 
-* Importera specifika attribut: Om du bara behöver vissa funktioner eller klasser kan du importera dem direkt. Detta kan göra ditt skript mer läsbart och effektivt.
+* Importera specifika attribut: <br>
+Om du bara behöver vissa funktioner eller klasser kan du importera dem direkt. Detta kan göra ditt skript mer läsbart och effektivt.
 ```python
 from math import sqrt
 squared = sqrt(16)         # Only imports the sqrt function, allowing us to use it without math
 ```
 
 ## Vanliga och nyttiga moduler 
-* `math`: Denna modul innehåller matematiska funktioner. Förutom `sqrt`, har den funktioner som `sin`, `cos`, `log` och många fler.
+* `math`: <br>
+Denna modul innehåller matematiska funktioner. Förutom `sqrt`, har den funktioner som `sin`, `cos`, `log` och många fler.
 ```python
 from math
 print (math.cos(0.00))      # 1.0
@@ -37,19 +40,22 @@ print (math.cos(-1.23))     # 0.3342377271245026
 print (math.cos(10))        # -0.8390715290764524
 ```
 
-* `datetime`: Används för att hantera datum och tider. Med denna modul kan du extrahera den nuvarande tiden, manipulera datum, räkna ut tidsdifferenser, och mer.
+* `datetime`: <br>
+Används för att hantera datum och tider. Med denna modul kan du extrahera den nuvarande tiden, manipulera datum, räkna ut tidsdifferenser, och mer.
 ```python
 from datetime import datetime
 print(datetime.now())   # Prints the current date and time
 ```
 
-* `random`: Mycket användbar när du behöver generera slumpmässiga tal för spel, simuleringar eller för att välja ett slumpmässigt element från en lista.
+* `random`: <br>
+Mycket användbar när du behöver generera slumpmässiga tal för spel, simuleringar eller för att välja ett slumpmässigt element från en lista.
 ```python
 import random
 print(random.randint(1, 100))  # Prints random numbers between 1 and 100
 ```
 
-* `os` och `sys`: Dessa moduler används för att interagera med operativsystemet, till exempel för att hantera filvägar, ändra mappar och hämta information om Python-tolkaren.
+* `os` och `sys`: <br>
+Dessa moduler används för att interagera med operativsystemet, till exempel för att hantera filvägar, ändra mappar och hämta information om Python-tolkaren.
 ```python
 import os, sys
 print(os.getcwd())      # Prints the name of the name of the folder where the script is stored
@@ -59,11 +65,14 @@ print(sys.version)      # Prints the version of the Python interpreter and addit
 ## Hitta och lära sig mer om moduler
 Python har ett omfattande standardbibliotek med moduler redo att användas. Dessutom finns det tusentals tredjepartsmoduler tillgängliga. Här är några resurser för att hitta och lära dig om moduler:
 
-* [Python Standard Library](https://docs.python.org/3/tutorial/modules.html): Python-dokumentationen är en utmärkt resurs. Den innehåller en fullständig lista över standardbibliotekets moduler med beskrivningar och exempel.
+* [Python Standard Library](https://docs.python.org/3/tutorial/modules.html): <br>
+Python-dokumentationen är en utmärkt resurs. Den innehåller en fullständig lista över standardbibliotekets moduler med beskrivningar och exempel.
 
-* [PyPI (Python Package Index)](https://pypi.org/): Förutom standardbiblioteket finns det tusentals tredjepartsmoduler tillgängliga på PyPI. Dessa kan installeras med `pip`, Pythons pakethanterare.
+* [PyPI (Python Package Index)](https://pypi.org/): <br>
+Förutom standardbiblioteket finns det tusentals tredjepartsmoduler tillgängliga på PyPI. Dessa kan installeras med `pip`, Pythons pakethanterare.
 
-* Exempel och Tutorials: Det finns många online-resurser, inklusive tutorials och exempel, som visar hur man använder olika moduler.
+* Exempel och tutorials: <br>
+Det finns många online-resurser, inklusive tutorials och exempel, som visar hur man använder olika moduler.
 
 ### Praktiska exempel
 * Använda `random` för att välja ett slumpmässigt element:

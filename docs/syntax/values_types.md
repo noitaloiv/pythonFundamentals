@@ -41,37 +41,37 @@ Exempelvis behandlas decimaltal annorlunda än heltal och klassificeras därför
     <pre><code>< class 'float' ></code></pre>
     </div>
 
-Vi skulle nu även kunna testa vårt påstående avseende att datorn tolkar strängar som de värden som anges inom situationstecken. Exempelvis kan vi genom `type`-funktionen se att `"3.2"` och `3.2` inte är samma typ:
-``` python
-print(type("3.2"))
-print(type(3.2))
-```
-<div class="code-example" markdown="1">
-<pre><code>< class 'str' >
-< class 'float' ></code></pre>
-</div>
+    Vi skulle nu även kunna testa vårt påstående avseende att datorn tolkar strängar som de värden som anges inom situationstecken. Exempelvis kan vi genom `type`-funktionen se att `"3.2"` och `3.2` inte är samma typ:
+    ``` python
+    print(type("3.2"))
+    print(type(3.2))
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>< class 'str' >
+    < class 'float' ></code></pre>
+    </div>
 
 * Booleans: 
 En binär datatyp som enbart kan ges värdena `True` eller `False`.
-```python
-guess = True
-print(type(guess))
-```
-<div class="code-example" markdown="1">
-<pre><code>< class 'bool' ></code></pre>
-</div>
+    ```python
+    guess = True
+    print(type(guess))
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>< class 'bool' ></code></pre>
+    </div>
 
 * Datetime: 
 En datatyp som måste _importeras_ och som sedan kan nyttjas för att representera datum eller utvinna datumrelaterad information (såsom dagens datum).
-```python
-import datetime                 # import is used to import the library 'datetime', which allow us to use datetime objects
-print(type(datetime))
-print(datetime.datetime.now())  # The value will differ depending on when you execute the function
-```
-<div class="code-example" markdown="1">
-<pre><code>< class 'module' >
-2024-03-20 17:00:50.932698</code></pre>
-</div>
+    ```python
+    import datetime                 # import is used to import the library 'datetime', which allow us to use datetime objects
+    print(type(datetime))
+    print(datetime.datetime.now())  # The value will differ depending on when you execute the function
+    ```
+    <div class="code-example" markdown="1">
+    <pre><code>< class 'module' >
+    2024-03-20 17:00:50.932698</code></pre>
+    </div>
 
 Det finns självfallet även många andra datatyper som nyttjas i olika avseenden och med olika syften och vi kommer att stöta på flera typer i framtida kapitel.
 

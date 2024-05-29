@@ -106,7 +106,8 @@ Skulle därför vara körbart, men resultera i att programmet skrivet ut `Hello 
 ## Praktiska användningsfall
 Så varför skulle du vilja använda en `while`-loop över en `for`-loop om det medför risker för bl.a. oändliga loop:ar? `while`-loop:ar är särskilt användbara i scenarier där antalet iterationer inte är känt i förväg. Några praktiska exempel inkluderar:
 
-* Filläsning: Att läsa från en fil eller ström tills slutet nås: En `while`-loop kan användas för att läsa data tills en EOF-markör (End Of File) eller annan slutmarkör detekteras.
+* Filläsning: <br>
+Att läsa från en fil eller ström tills slutet nås: En `while`-loop kan användas för att läsa data tills en EOF-markör (End Of File) eller annan slutmarkör detekteras.
 ```python
 line = file.readline()
 while line:
@@ -114,7 +115,8 @@ while line:
     line = file.readline()
 ```
 
-* Användarinteraktion: Loop:ar kan användas för att be användaren om input upprepade gånger tills giltig input mottas eller användaren väljer att avsluta.
+* Användarinteraktion: <br>
+Loop:ar kan användas för att be användaren om input upprepade gånger tills giltig input mottas eller användaren väljer att avsluta.
 ```python
 answer = input("Do you wish to continue? (Y/N): ")
 while answer.lower() != "N":
@@ -122,7 +124,8 @@ while answer.lower() != "N":
     answer = input("Do you wish to continue? (Y/N): ")
 ```
 
-* Spelloop:ar: I spel och andra interaktiva applikationer används ofta en `while`-loop för att köra spellogiken tills spelaren väljer att avsluta eller spelet når sitt slut.
+* Spelloop:ar: <br>
+I spel och andra interaktiva applikationer används ofta en `while`-loop för att köra spellogiken tills spelaren väljer att avsluta eller spelet når sitt slut.
 ```python
 keepPlaying = True
 while keepPlaying:
