@@ -49,9 +49,9 @@ Python erbjuder en mängd inbyggda metoder för strängmanipulation som gör det
 
 <ul>
    <li> <code>upper()</code> och <code>lower()</code> kan nyttjas för att ersätta samtliga bokstäver i en sträng med dess motsvarande versal respektive gemen.
-   <div class="highlight"><pre class="highlight"><code>message = "Hello World"
+   <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>message = "Hello World"
 print(message.lower())                      
-print(message.upper())</code></pre></div>
+print(message.upper())</code></pre></div></div>
 
 <div class="code-example" markdown="1">
 <pre><code>hello world
