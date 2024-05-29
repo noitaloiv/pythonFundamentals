@@ -83,11 +83,11 @@ Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar spr
 * `requests`: Enkla HTTP-förfrågningar <br>
 `requests` är ett populärt paket för att göra HTTP-förfrågningar. Det är känt för sin enkelhet och användarvänlighet jämfört med den inbyggda `urllib`.
     ```python
-    import requests
+import requests
 
-    response = requests.get('https://api.example.com/data')
-    data = response.json()  # Assuming the response is in a JSON-format
-    print(data)
+response = requests.get('https://api.example.com/data')
+data = response.json()  # Assuming the response is in a JSON-format
+print(data)
     ```
     <div class="code-example" markdown="1">
     <pre><code>{'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@reqres.in', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://reqres.in/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://reqres.in/img/faces/2-image.jpg'}, {'id': 3, 'email': 'emma.wong@reqres.in', 'first_name': 'Emma', 'last_name': 'Wong', 'avatar': 'https://reqres.in/img/faces/3-image.jpg'}, {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}, {'id': 5, 'email': 'charles.morris@reqres.in', 'first_name': 'Charles', 'last_name': 'Morris', 'avatar': 'https://reqres.in/img/faces/5-image.jpg'}, {'id': 6, 'email': 'tracey.ramos@reqres.in', 'first_name': 'Tracey', 'last_name': 'Ramos', 'avatar': 'https://reqres.in/img/faces/6-image.jpg'}], 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}</code></pre>
@@ -95,14 +95,14 @@ Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar spr
 
 * `pandas`: Kraftfull dataanalys och manipulation <br>
 `pandas` är ett viktigt paket för dataanalys i Python och används för att hantera och analysera strukturerad data.
-```python
-import pandas as pd
+    ```python
+    import pandas as pd
 
-# Read a CSV-file and transform it to a DataFrame
-df = pd.read_csv('data.csv')
-# Show the first few rows in the DataFrame
-print(df.head())
-```
+    # Read a CSV-file and transform it to a DataFrame
+    df = pd.read_csv('data.csv')
+    # Show the first few rows in the DataFrame
+    print(df.head())
+    ```
 
 * `numPy`: Vetenskaplig beräkning <br>
 `numPy` erbjuder stöd för stora, flerdimensionella arrayer och matriser, tillsammans med en samling av matematiska funktioner för att arbeta med dessa arrayer.

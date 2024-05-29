@@ -168,7 +168,7 @@ Mean: 30.0, Min: 10, Max: 50</code> </pre>
 </div>
 
 {: .highlight }
-Notera att ordningen på variablerna, som alltid, spelar roll vid denna typ av tilldelning. Skulle vi exempelvis revidera anropet enligt: `min_val, avg, max_val = calculate_statistics([10, 20, 30, 40, 50])` så skulle vi få resultatet: `Mean: 10, Min: 30.0, Max: 50`.
+Ordningen på variablerna spelar, som alltid, roll vid denna typ av tilldelning. Skulle vi exempelvis revidera anropet enligt: `min_val, avg, max_val = calculate_statistics([10, 20, 30, 40, 50])` så skulle vi få resultatet: `Mean: 10, Min: 30.0, Max: 50`.
 
 # Sammanfattning
 Funktioner i Python ger en robust grund för att strukturera och återanvända kod. Genom att bemästra funktioner, från de grundläggande koncepten såsom funktionsparametrar och funktionsanrop till avancerade funktioner såsom lambda och rekursiva funktioner, kan du skriva effektiv och lättläst kod. Det är värt att notera att väl designade funktioner kan förenkla komplexa uppgifter och bidra till bättre kodunderhåll och flexibilitet.

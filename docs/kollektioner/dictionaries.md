@@ -87,8 +87,8 @@ Standardbeteendet när du itererar över en dictionary är att iterera över des
     ```
     <div class="code-example" markdown="1">
     <pre><code>Datastrukturer
-    Programmering i Python
-    Systemutveckling</code></pre>
+Programmering i Python
+Systemutveckling</code></pre>
     </div>
 
 * Iterera över värden: <br>
@@ -104,7 +104,7 @@ För att iterera över värdena, använd `values()`-funktionen:
     ```
     <div class="code-example" markdown="1">
     <pre><code>VG
-    G
+G
 G</code></pre></div>
 
 * Iterera över key-value pairs: <br>
@@ -120,7 +120,7 @@ Använd `items()`-metoden för att få tillgång till både nycklar och värden 
     ```
     <div class="code-example" markdown="1">
     <pre><code>Course: Datastrukturer, Grade: VG
-    Course: Programmering i Python, Grade: G
+Course: Programmering i Python, Grade: G
 Course: Systemutveckling, Grade: G</code></pre>
     </div>
 

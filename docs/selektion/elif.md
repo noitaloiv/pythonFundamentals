@@ -72,7 +72,7 @@ elif 5 > 3:   # Non-acceptable syntax as we're missing an if
 Notera att både `elif`- och `else`-satser är frivilliga tillägg till en `if`-sats. D.v.s. att vi kan ha enbart en `if`-sats, en `if`-sats med en `elif`-sats _utan_ en `else`-sats, en `if`-sats med en `else`-sats _utan_ en `elif`-sats, osv.
 
 {: .highlight }
-Notera: En `elif`-sats representerar ett **ANNARS OM**-fall i vårt program, d.v.s. det som ska utvärderas om ett specifikt villkor inte uppfylls. Det är således omöjligt att ange dem utan tillhörande `if`-satser.
+En `elif`-sats representerar ett **ANNARS OM**-fall i vårt program, d.v.s. det som ska utvärderas om ett specifikt villkor inte uppfylls. Det är således omöjligt att ange dem utan tillhörande `if`-satser.
 
 ## Multipla `elif`-satser
 `elif`, vilket är en förkortning av "else if", används för att skapa en kedja av villkorliga tester efter en initial `if`-sats. När ett `elif`-villkor uppfylls, utförs koden inom det `elif`-blocket, och resten av `elif`-kedjan (samt en eventuell `else`-sats) ignoreras. Detta betyder att endast ett av kodblocken i en `if-elif`-sekvens kan köras.
@@ -100,7 +100,7 @@ You're in your thirties.</code></pre>
 </div>
 
 {: .highlight }
-Notera att efterföljande `elif`-satser eller `else`-satsen inte kommer att exekveras i det fall ett villkor evalueras till `True`, oavsett om de också är sanna eller ej.
+Efterföljande `elif`-satser eller `else`-satsen kommer inte att exekveras i det fall ett villkor evalueras till `True`, oavsett om de också är sanna eller ej.
 
 ### Skillnaden mot multipla `if`-satser
 När du använder flera `if`-satser oberoende av varandra, kommer varje `if`-sats att utvärderas separat. Det betyder att om villkoren för flera `if`-satser är uppfyllda, kommer kodblocken för alla dessa `if`-satser att köras.

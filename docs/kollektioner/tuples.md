@@ -75,8 +75,8 @@ Funktioner kan använda tuples för att returnera flera värden på en gång.
     <pre><code>1 5</code></pre>
     </div>
 
-{: .highlight }
-`def min_max(numbers)` är ett exempel på en egendefinierad funktion, d.v.s. en funktion som vi själva deklarerar och implementerar istället för att nyttja en "inbyggd funktion" - likt `range()`, `print()` och `max()`. Vi kommer att introducera och diskutera konceptet vidare i framtida avsnitt.
+    {: .highlight }
+    `def min_max(numbers)` är ett exempel på en egendefinierad funktion, d.v.s. en funktion som vi själva deklarerar och implementerar istället för att nyttja en "inbyggd funktion" - likt `range()`, `print()` och `max()`. Vi kommer att introducera och diskutera konceptet vidare i framtida avsnitt.
 
 * Skyddad data: <br>
 När du vill säkerställa att dataintegriteten upprätthålls och skyddas från ändringar.

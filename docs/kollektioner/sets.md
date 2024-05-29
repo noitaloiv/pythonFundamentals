@@ -91,8 +91,8 @@ Hittar element som är unika för varje mängd.
 ## Användningsområden för mängder
 Mängder är särskilt användbara i följande scenarier:
 
-* Undvika dupliceringar: <br>
-Perfekt när du behöver säkerställa att varje element är unikt.
+* Undvika duplicerade element: <br>
+Perfekt när du behöver säkerställa att varje element är unikt. Exempelvis kan det vara lämpligt att typkonvertera från en lista till en mängd och sedan tillbaka till en lista om man vill eliminera duplicerade element.
 
 * Effektiv sökningsprestanda: <br>
 Mängder är optimerade för att snabbt kontrollera om ett element finns, vilket sker mycket snabbare än vad det gör för t.ex. listor.

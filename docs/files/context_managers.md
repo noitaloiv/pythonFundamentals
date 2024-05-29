@@ -53,17 +53,22 @@ Vi kommer att prata mer om klasser och objekt i framtida kapitel rörande objekt
 ## Använda Context Managers istället för enbart `with`-block
 Att använda Context Managers i stället för att enbart förlita sig på ett `with`-block med inbyggda funktioner (såsom `open` för filhantering) erbjuder flera fördelar, speciellt när det gäller att hantera egna resurser eller mer komplexa uppgifter. Här är några skäl till varför det kan vara fördelaktigt att implementera egna Context Managers:
 
-* Anpassad resurshantering: Med egna Context Managers kan du skräddarsy hur resurser allokeras och frigörs, vilket är särskilt användbart för resurser som inte har inbyggt stöd för context management eller när standardbeteendet inte passar dina behov.
+* Anpassad resurshantering: <br>
+Med Context Managers kan du skräddarsy hur resurser allokeras och frigörs, vilket är särskilt användbart för resurser som inte har inbyggt stöd för context management eller när standardbeteendet inte passar dina behov.
 
-* Ökad läsbarhet och underhållbarhet: Genom att definiera resurshanteringslogiken i en Context Manager blir din kod mer organiserad och lättläst. Användare av din Context Manager behöver inte oroa sig för detaljerna i resurshanteringen, vilket gör koden enklare att förstå och underhålla.
+* Ökad läsbarhet och underhållbarhet: <br>
+Genom att definiera resurshanteringslogiken i en Context Manager blir din kod mer organiserad och lättläst. Användare av din Context Manager behöver inte oroa sig för detaljerna i resurshanteringen, vilket gör koden enklare att förstå och underhålla.
 
-* Felhantering och städning: Context Managers ger en robust struktur för att hantera undantag och säkerställa att städning alltid sker, oavsett hur blocket avslutas. Detta minskar risken för resursläckor, som kan uppstå vid undantag eller fel.
+* Felhantering och städning: <br>
+Context Managers ger en robust struktur för att hantera undantag och säkerställa att städning alltid sker, oavsett hur blocket avslutas. Detta minskar risken för resursläckor, som kan uppstå vid undantag eller fel.
 
-* Återanvändbarhet: Genom att kapsla resurshanteringen i en Context Manager blir det enklare att återanvända samma logik i olika delar av din kod eller till och med i andra projekt, utan att behöva duplicera kod.
+* Återanvändbarhet: <br>
+Genom att kapsla resurshanteringen i en Context Manager blir det enklare att återanvända samma logik i olika delar av din kod eller till och med i andra projekt, utan att behöva duplicera kod.
 
-* Utökad funktionalitet: En Context Manager kan ge dig möjlighet att lägga till ytterligare funktionalitet runt öppning och stängning av resurser, såsom logging, mätning av exekveringstid, resurspoolning eller andra förberedande och avslutande åtgärder som inte direkt stöds av resursen själv.
+* Utökad funktionalitet: <br>
+En Context Manager kan ge dig möjlighet att lägga till ytterligare funktionalitet runt öppning och stängning av resurser, såsom logging, mätning av exekveringstid, resurspoolning eller andra förberedande och avslutande åtgärder som inte direkt stöds av resursen själv.
 
-Ponera exempelvis att vi vill etablera en databasanslutning. En Context Manager kan då inte bara hantera upprättandet och stängningen av anslutningen utan också säkerställa att transaktioner begås eller återställs på ett korrekt sätt, vilket minskar risken för datainkonsekvens.
+Ponera exempelvis att vi vill etablera en databasanslutning. En Context Manager kan då inte bara hantera upprättandet och stängningen av anslutningen utan också säkerställa att transaktioner begås eller återställs på ett korrekt sätt, vilket minskar risken för inkonsekvent data.
 ```python
 class DatabaseConnection:
     def __enter__(self):
