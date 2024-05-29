@@ -16,11 +16,11 @@ OOP kan sägas stå på tre primära grundläggande principer som hjälper till 
 
 * _Inkapsling_: <br>
 Denna princip handlar om att _dölja_ viss information och funktionalitet i ett objekt och bara exponera vissa delar till andra delar av programmet (såsom andra klasser och objekt). Detta hjälper till att minska systemets komplexitet och ökar återanvändbarheten av komponenter.
-</br>
+
 
 * _Arv_: <br>
 Denna princip är en mekanism där en ny klass kan _ärva_ egenskaper och metoder från en befintlig klass. Den nya klassen, en s.k. "underklass" (sub class), kan lägga till sina egna unika egenskaper och metoder eller modifiera befintliga från den överordnade klassen. Exempelvis kan klassen `Car` ärva fordonsrelaterade egenskaper och metoder från klassen `Vehicle` då en bil är ett fordon. I klassen `Car` så kan vi sedan lägga till egenskaper och metoder som är säreget för just bilar. Detta främjar kodåteranvändning och skapar en naturlig hierarki inom programvarustrukturer.
-</br>
+
 
 * _Polymorfism_: <br>
 Denna princip tillåter exempelvis metoder att göra olika saker baserat på vilket objekt metoderna tillhör. Detta innebär exempelvis att en metod kan ha samma namn men olika beteenden över olika klasser. Exempelvis skulle vi kunna ha en metod som kallas `display_info()` som kan nyttjas av klasserna `Car`, `Truck` och `Bike` men som listar olika typer av information beroende på om objektet är en bil, en lastbil eller en motorcykel. Detta koncept är särskilt användbart för att hantera flera objekt som delar samma gränssnitt (interface) men kräver olika implementeringar.
@@ -30,13 +30,13 @@ Implementering av OOP i programutveckling medför flera fördelar:
 
 * Modularitet: <br>
 Eftersom OOP delar upp program i moduler, eller objekt, blir det enklare att underhålla och förstå kod. Varje objekt kan ses som en egen liten maskin med särskilda uppgifter och interaktioner.
-</br>
+
 * Återanvändbarhet: <br>
 Genom arv kan nya objekt skapas med minimal kod, återanvända och utvidga befintlig kod, vilket sparar tid och resurser.
-</br>
+
 * Skalbarhet: <br>
 OOP underlättar utvecklingen av mer komplexa program genom att bygga vidare på befintliga objekt och klasser, vilket möjliggör en stegvis utvecklingsprocess.
-</br>
+
 * Underhållbarhet: <br>
 Med tydliga moduler och mindre kodupprepning blir systemet enklare att underhålla och felsöka.
 
