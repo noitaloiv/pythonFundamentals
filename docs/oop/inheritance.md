@@ -116,10 +116,10 @@ Detta säkerställer att basklassens konstruktor och metoder anropas korrekt, vi
 ## Fördelar med arv
 Arv kan vara fördelaktigt av många anledningar. Exempelvis kan det tillföra:
 
-* God kodåteranvändning: </br>
+* God kodåteranvändning: <br>
 Istället för att skriva ny kod från början för liknande klasser, kan klasser ärva egenskaper från en befintlig klass. Om vi på förhand vet om att vi exempelvis kommer vilja ha flera subtyper som har ett delat beteende så kan vi implementera detta på ett enda ställe i vårt program. Om vi utvecklar ett spel så kanske vi t.ex. kan tänkas vilja en representation av ett bräde i klassen `Board` vilket tillåter oss att sedan skapa flera subtyper vid behov allteftersom att spelet växer - t.ex. `SmallBoard`, `DifficultBoard` och dylikt.
 
-* Enklare implementation och underhåll: </br>
+* Enklare implementation och underhåll: 
 Arv gör det enklare att skapa och underhålla program då ändringar i basklassen automatiskt förs vidare till underklasser, vilket kan minska mängden kod och underhåll. Om vi exempelvis identifierar en bugg i en funktion som tillhör en klasshierarki så behöver vi sannolikt bara åtgärda problemet på ett enda ställe i programmet.
 
 * Skalbarhet:  </br>

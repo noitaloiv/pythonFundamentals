@@ -14,12 +14,11 @@ Selektion, eller villkorssatser, är fundamentala i programmering eftersom de m�
 
 ![for-loop](../../assets/images/selektion.png){: .styled-image }
 
-Där _VILLKOR_ avser ett påstående som kan evalueras till `True` eller `False` 
+Där _VILLKOR_ avser ett påstående som kan evalueras till `True` eller `False`. Exempelvis i stil med: "OM variabeln number är större än 5", "OM variabeln is_senior_citizen är True" eller dylikt. 
 
 ## Implikationer av selektion i programflödet
 
 * Dynamiskt beteende:
-
 Selektion gör program dynamiska genom att tillåta dem att agera olika under olika omständigheter. Detta betyder att samma program kan utföra olika uppgifter och ge olika resultat baserat på de data det behandlar eller de villkor som uppfylls vid körningstillfället.
 
 * Användarinteraktion
