@@ -52,7 +52,8 @@ print(type(3.2))
 < class 'float' ></code></pre>
 </div>
 
-* Booleans: En binär datatyp som enbart kan ges värdena `True` eller `False`.
+* Booleans: 
+En binär datatyp som enbart kan ges värdena `True` eller `False`.
 ```python
 guess = True
 print(type(guess))
@@ -61,7 +62,8 @@ print(type(guess))
 <pre><code>< class 'bool' ></code></pre>
 </div>
 
-* Datetime: En datatyp som måste _importeras_ och som sedan kan nyttjas för att representera datum eller utvinna datumrelaterad information (såsom dagens datum).
+* Datetime: 
+En datatyp som måste _importeras_ och som sedan kan nyttjas för att representera datum eller utvinna datumrelaterad information (såsom dagens datum).
 ```python
 import datetime                 # import is used to import the library 'datetime', which allow us to use datetime objects
 print(type(datetime))
@@ -72,7 +74,7 @@ print(datetime.datetime.now())  # The value will differ depending on when you ex
 2024-03-20 17:00:50.932698</code></pre>
 </div>
 
-Det finns självfallet även många andra datatyper som nyttjas i olika avseenden och med olika syften, vi kommer att stöta på flera typer i framtida kapitel.
+Det finns självfallet även många andra datatyper som nyttjas i olika avseenden och med olika syften och vi kommer att stöta på flera typer i framtida kapitel.
 
 ## Formatet är viktigt!
 Det är även viktigt att ta formatet på värdet i beaktande när man anger det. Exempelvis så skulle `type(1,000,000)` generera ett oförväntat resultat då det inte kan tolkas som ett giltigt heltal p.g.a. de kommatecken som nyttjas. Det skulle istället snarare tolkas som en kommaseparerad lista som innehåller värdena `1 0 0`, vilket vi kan se ett exempel på om vi försöker skriva ut det enligt:

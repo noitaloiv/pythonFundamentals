@@ -40,7 +40,7 @@ Ett uttryck är en kombination av värden, variabler och operatorer. Om du skriv
 </div>
 
 {: .highlight }
-Notera att du kan skriva Python-kod direkt i terminalen med kommandot `python`. Du kommer då att bemötas av gränssnittet som presenteras nedan där du kan skriva kod efter `>>>` som sedan utförs när du trycker på Enter-tangenten.
+Du kan skriva Python-kod direkt i terminalen med kommandot `python`, vilket kan tänkas vara relevant i de fall man snabbt vill testa sig på behandling av variabler eller dylikt. Du kommer då att bemötas av gränssnittet som presenteras nedan där du kan skriva kod efter `>>>` som sedan utförs när du trycker på Enter-tangenten.
 
 ![Python in terminal](../assets/images/pythonRun.png){: .styled-image }
 
