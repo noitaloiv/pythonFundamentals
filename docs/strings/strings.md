@@ -47,19 +47,17 @@ print("The price for four cups of coffee is:", price*4, "which, with the group d
 ## Strängmetoder
 Python erbjuder en mängd inbyggda metoder för strängmanipulation som gör det möjligt att utföra vanligt förekommande uppgifter såsom att omvandla strängen till stora (`upper()`) eller små (`lower()`) bokstäver, eliminera whitespace (`strip()`), ersätta delar av en sträng (`replace()`), dela upp en sträng i en lista baserat på en avgränsare (`split()`), kombinera flera strängar i en lista till en enda sträng (`join()`) och många fler.
 
-<ul>
-   <li> <code>upper()</code> och <code>lower()</code> kan nyttjas för att ersätta samtliga bokstäver i en sträng med dess motsvarande versal respektive gemen.
-   <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>message = "Hello World"
+- `upper()` och `lower()` kan nyttjas för att ersätta samtliga bokstäver i en sträng med dess motsvarande versal respektive gemen.
+```python
+message = "Hello World"
 print(message.lower())                      
-print(message.upper())</code></pre></div></div>
-
+print(message.upper())                       
+```
 <div class="code-example" markdown="1">
 <pre><code>hello world
 HELLO WORLD
 </code></pre>
 </div>
-</li>
-</ul>
 
 * `strip()` och dess varianter `lstrip()` och `rstrip()` kan användas för att ta bort whitespace från början eller slutet av en sträng.
  ```python
