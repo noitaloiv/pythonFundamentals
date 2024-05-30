@@ -10,9 +10,11 @@ color_scheme: dark
 
 callouts:
   warning:
-    title: Warning
+    title: Varning
     color: red
 
   highlight:
-    title: Note
+    title: Notera
     color: yellow
+
+logo: "/assets/images/logo.png"
