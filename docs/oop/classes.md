@@ -65,7 +65,7 @@ Vilket tillåter oss att skriva ut bilens märke och modell vid behov genom att 
 Nyckelordet `self` måste utgöra den första parametern även i instansmetoder men skrivs i övrigt som en vanlig funktion.
 
 ### Skillnaden mellan _funktioner_ och _metoder_
-Som du kanske har märkt använder vi i detta kapitel begreppet _metod_ istället för _funktion_ när vi pratar om funktionalitet i klasser. Båda begrepp beskriver i praktiken samma sak, d.v.s. att en funktion är en fristående enhet av kod som utför en specifik uppgift. Skillnaden ter sig i hur _anrop_ går till. En funktion kan nämligen anropas oberoende var som helst i ditt program medan en metod å andra sidan är en funktion som är definierad __inom en klass__ och därför enbart kan anropas från ett _objekt av klassen_ i fråga.
+Som du kanske har märkt använder vi i detta kapitel begreppet _metod_ istället för _funktion_ när vi pratar om funktionalitet i klasser. Båda begrepp beskriver i praktiken samma sak, d.v.s. att en funktion är en fristående enhet av kod som utför en specifik uppgift. Skillnaden ter sig i hur _anrop_ går till. En funktion kan nämligen anropas oberoende var som helst i ditt program medan en metod å andra sidan är en funktion som är definierad __inom en klass__ och därför enbart kan anropas från ett _objekt av klassen_ i fråga (eller från klassen själv).
 
 Det vore exempelvis inte möjligt att anropa metoden `display_info()` utan att skapa ett objekt av klassen `Car`. Om vi däremot implementerar en funktion, `display_stuff`, i vårt program så kan denna anropas vart som helst i programfilen.
 ```python

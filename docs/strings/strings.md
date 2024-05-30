@@ -55,7 +55,7 @@ Python erbjuder en mängd inbyggda metoder för strängmanipulation som gör det
    ```
    <div class="code-example" markdown="1">
    <pre><code>hello world
-   HELLO WORLD
+HELLO WORLD
    </code></pre>
    </div>
 
