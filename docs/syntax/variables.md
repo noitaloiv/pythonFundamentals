@@ -83,8 +83,13 @@ SyntaxError: invalid syntax
 SyntaxError: invalid syntax</code></pre>
 </div>
 
+{: .highlight }
+Du kan skriva Python-kod direkt i terminalen med kommandot `python`, vilket kan tänkas vara relevant i de fall man snabbt vill testa sig på behandling av variabler eller dylikt. Du kommer då att bemötas av gränssnittet som presenteras i bilden nedan. I terminalen kan du sedan skriva din python kod efter `>>>` och som då utförs så fort du trycker på Enter-tangenten.
+
+![Python in terminal](../assets/images/pythonRun.png){: .styled-image }
+
 {: .highlight}
-I de fall du skriver koden i en faktisk Python-fil inuti Visual Studio Code (d.v.s. istället för att köra koden direkt från `python`-kommandot i terminalen, d.v.s. utan `>>>`) så kommer du direkt att bemötas av ett felmeddelande, d.v.s. att koden inte ens är körbar. 
+Det bör även nämnas att när du skriver kod i en Python-fil inuti Visual Studio Code (d.v.s. istället för att köra koden direkt från `python`-kommandot i terminalen) så kommer du direkt att bemötas av ett felmeddelande. Koden kommer med andra ord inte ens att vara körbar utan du kommer istället att ges en varning från Visual Studio om dessa problem. 
 
 ![Syntax Errors](../../assets/images/syntaxErrors.png){: .styled-image }
 
