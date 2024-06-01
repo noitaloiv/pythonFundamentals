@@ -10,21 +10,19 @@ Med Python och Python-verktyg installerade kan du nu skapa din första Python-ap
 
 ## Steg 1 - Skapa en ny projektmapp
 
-Många projekt börjar med en tom mapp, vilket är hur du kommer att starta din.
+Många projekt börjar med en tom mapp och det finns olika tillvägagångssätt för hur man skapar denna mapp och sedan öppnar den i Visual Studio Code. Du kan exempelvis manuellt skapa mappen på ditt skrivbord och dra in den i VS Code:
 
-1. Öppna ett nytt terminalfönster i Visual Studio Code genom att välja Terminal -> Ny terminal.
-2. Skapa en tom mapp som heter _"hello-world"_, navigera in till mappen och öppna VS Code från den mappen genom att ange följande kommandon:
-3. Skapa en ny mapp som heter hello-world:\
-  `mkdir hello-world`
-4. Navigera till hello-world-mappen:\
-  `cd hello-world`  
-5. Öppna Visual Studio Code från den mappen:\
-  `code .`
+![Create folder and drag](../assets/images/create_folder_gif.gif){: .styled-image }
 
-Alternativt så kan du nyttja alternativet File -> Open Folder från gränssnittet i VSCode, efter att du skapat mappen (vilket du även kan uppnå genom att exempelvis högerklicka och välja "Skapa ny mapp" på Skrivbordet på din dator).
+Du kan även skapa filen direkt i Visual Studio Code och sedan spara den i vilken mapp du vill, t.ex. Desktop:
+
+![Create file and save](../assets/images/create_file_and_save_gif.gif){: .styled-image }
+
+Du kan även använda dig utav terminalen via VS Code för att både skapa en mapp och sedan öppna upp mappen i VS Code med kommandona `mkdir nameOfFolder`, `cd nameOfFolder` och `code .` eller öppna upp en redan existerande mapp som du skapat på t.ex. skrivbordet genom menyn File -> Open Folder i VS Code.
+
+Hur du vill gå till väga är med andra ord helt upp till dig, men huvudsaken är att vi skapar en mapp för vårt projekt som vi sedan kan arbeta utifrån i VS Code
 
 ## Steg 2 - Starta VS Code med projektmappen
-
 Med Visual Studio Code öppet från din tomma mapp skapar du nu en Python-fil för att visa meddelandet: Hello world.
 
 * Inuti Explorer-vyn, där du ser den tomma mappens namn (_hello-world_), välj alternativet "Ny fil".
@@ -37,10 +35,10 @@ Med Visual Studio Code öppet från din tomma mapp skapar du nu en Python-fil f�
 
 Genom att använda filtillägget _.py_ berättar du för VS Code att det ska tolka den här filen som ett Python-program, så att den utvärderar innehållet med Python-tillägget.
 
-* Ange följande Python-kod i redigeringspanelen. Detta kommando använder utskriftsfunktionen för att visa texten `Hello, world!` när din applikation körs.
+* Ange följande Python-kod i redigeringspanelen. Detta kommando använder utskriftsfunktionen för att visa texten `Hello, world!` i terminalen när din applikation körs.
 `print('Hello, World!')`
 
-* Spara filen genom att välja File och Save (eller Ctrl+S/⌘ + S).
+* Spara filen genom att välja File och Save (eller Ctrl+S/⌘ + S, beroende på vilket operativsystem du arbetar utifrån).
 
 ![Save File](../assets/images/saveFileVSCode.png){: .styled-image }
 
@@ -49,7 +47,7 @@ Det är viktigt att alltid spara ändringar i sin kod innan man kör koden. Du k
 
 ## Steg 3 - Kör ditt första program
 
-Du kan nu köra din applikation inifrån VS Code. Du gör detta genom att öppna den inbyggda terminalen i VS Code (View -> Terminal).
+Du kan nu köra ditt program från VS Code. Du gör detta genom att öppna den inbyggda terminalen i VS Code (View -> Terminal).
 
 ![Open Terminal](../assets/images/openTerminalVsCode.png){: .styled-image }
 
@@ -60,7 +58,9 @@ Vilket, för denna applikation, ger oss följande resultat:
 
 ![Execute Python](../assets/images/pythonRan2.png){: .styled-image }
 
-Du har nu skapat din första Python-applikation och kört applikationen för att generera en output! För att förstå hur vi kan skriva mer avancera applikationer, exempelvis ett mindre spel, så behöver vi först förstå de olika beståndsdelarna som vi kan arbeta med i Python.
+Du skulle även kunna köra programmet från Run-knappen (som du kan se markerad i det högra övre hörnet i bilden ovan). Du måste således inte köra dina program från terminalen.
+
+Du har nu skapat ditt första Python-program och kört programmet för att generera en output! För att förstå hur vi kan skriva mer avancerade program, exempelvis ett mindre spel, så behöver vi dock först förstå ett flertal olika beståndsdelar och komponenter som tillsammans utgör en del av programmeringsspråket Python.
 
 ## Felsökning
 Felsökning är en kritisk färdighet inom programmering som hjälper dig att identifiera och korrigera fel i din kod, vilket vi kommer att diskutera även i framtida kapitel. Det kan dock redan nu vara relevant att ta följande punkter i beaktande när du stöter på felmeddelanden:

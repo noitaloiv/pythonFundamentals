@@ -59,12 +59,17 @@ Visual Studio Code Extensions-vyn listar installerade tillägg och rekommenderad
 3. Filtrera listan över tillgängliga tillägg genom att ange _"python"_ i sökrutan högst upp i tilläggsvyn.
 4. Välj Python-tillägget publicerat av Microsoft (beskrivs som _IntelliSense (Pylance)_ och listas vanligtvis först i listan). Detaljerna om tillägget visas i en flikpanel till höger när du klickar på det.
 5. Välj "Installera" i panelen Extensions.
-6. När installationen är klar ändras knappen "Installera" till en ikon för "Inställningar ⚙️" i tilläggsvyn. Det här agerar bekräftelse på att du har installerat Python-tillägget.
+
+![Extensions in VSCode](../assets/images/vsCode_python_extension.png){: .styled-image }
+
+6. När installationen är klar ändras knappen "Installera" till en ikon för "Inställningar ⚙️" i tilläggsvyn. Vilket fungerar som en bekräftelse på att du har installerat Python-tillägget i VS Code.
+
+![Extensions in VSCode](../assets/images/python_installed.png){: .styled-image }
 
 {: .warning } 
 Om du arbetar i operativsystemet macOS så kan du se en dialogruta när du installerat tillägget vilken frågar dig om du vill installera kommandoradens utvecklarverktyg. Du bör då välja "Installera". Du måste godkänna licensavtalet för Command Line Tools och installationsprocessen kan ta upp till 20 minuter eller mer, beroende på din internetanslutning. När installationen är klar visas en dialogruta som anger att programvaran är installerad. Välj "Klar" för att fortsätta.
 
 # Sammanfattning
-Det här kapitlet introducerar dig till Python, ett av de mest populära och mångsidiga programmeringsspråken idag. Genom att skapa en interaktiv och engagerande första upplevelse med Python, ger vi dig verktygen och kunskapen att börja din resa inom programmering. Med Python kan du snabbt gå från att skriva enkla kommandon till att utveckla komplexa applikationer, tack vare dess enkla syntax och omfattande standardbibliotek. Genom att sätta upp din utvecklingsmiljö och utforska IDE:s, lägger du grunden för en framgångsrik resa inom programmering med Python.
+Det här kapitlet introducerar dig till Python, ett av de mest populära och mångsidiga programmeringsspråken idag. Med Python kan du snabbt gå från att skriva enkla kommandon till att utveckla komplexa applikationer, tack vare dess enkla syntax och omfattande standardbibliotek. Genom att sätta upp din utvecklingsmiljö och utforska IDE:s, lägger du grunden för en framgångsrik resa inom programmering med Python.
 
 För att utforska ämnet vidare och få praktisk vägledning, besök [Pythons officiella Getting Started-sida](https://www.python.org/about/gettingstarted/).
