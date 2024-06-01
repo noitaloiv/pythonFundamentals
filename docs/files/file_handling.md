@@ -57,7 +57,7 @@ För att läsa en fils innehåll finns det flera metoder, som `read()`, `readlin
 file = open('example.txt', 'r')
 content = file.read()
 print(content)
-fil.close()
+file.close()
 
 # Read file row by row
 file = open('example.txt', 'r')
@@ -65,6 +65,36 @@ for row in file:
     print(row, end='')  # 'end' to avoid double rowbreak
 file.close()
 ```
+
+Funktionen `readline()` kan nyttjas istället för att tillämpa iteration i de fall vi vill läsa in en rad i taget. Exempelvis enligt:
+```python
+# Where example.txt contains the following:
+# Hello world
+# I am programming in Python
+# How are you?
+file = open('example.txt', 'r')
+print(file.readline())
+print(file.readline())
+file.close()
+```
+<div class="code-example" markdown="1">
+<pre><code>Hello world
+I am programming in Python</code> </pre>
+</div>
+
+`readlines()` kan istället nyttja för att läsa in allt innehåll i filen där varje rad i filen utgör ett element i en lista. Exempelvis enligt:
+```python
+# Where example.txt contains the following:
+# Hello world
+# I am programming in Python
+# How are you?
+file = open('example.txt', 'r')
+print(file.readlines())
+file.close()
+```
+<div class="code-example" markdown="1">
+<pre><code>['Hello world\n', 'I am programming in Python\n', 'How are you?']</code> </pre>
+</div>
 
 Notera att vi i ovan kod inte säkerställer att filen existerar innan vi försöker läsa den, vilket kan leda till ett `FileNotFoundError`. För att hantera detta problem så bör vi med andra ord lägga till felhantering, exempelvis enligt:
 ```python
@@ -78,7 +108,7 @@ except FileNotFoundError:
 ```
 
 ## Hantera filvägar med `os.path`
-Modulen `os.path` i Python är en del av det inbyggda os-modulen och erbjuder ett brett spektrum av funktioner för att interagera med filsystemet. Användningen av `os.path` gör det möjligt att konstruera, modifiera och undersöka filvägar på ett sätt som är kompatibelt över olika operativsystem, vilket ökar portabiliteten för din kod.
+Modulen `os.path` i Python är en del av det inbyggda `os`-modulen och erbjuder ett brett spektrum av funktioner för att interagera med filsystemet. Användningen av `os.path` gör det möjligt att konstruera, modifiera och undersöka filvägar på ett sätt som är kompatibelt över olika operativsystem, vilket ökar portabiliteten för din kod.
 
 ### Konstruera filvägar
 För att bygga filvägar på ett säkert sätt som fungerar över olika operativsystem, använd `os.path.join()`. Detta garanterar att rätt typ av skiljetecken används för det specifika operativsystemet.
