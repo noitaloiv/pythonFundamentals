@@ -101,6 +101,31 @@ print(numbers[-1])
 <pre><code>5</code></pre>
 </div>
 
+### Identifiera element i en lista
+Det är möjligt att iterera över innehållet i en lista och på så vis identifiera huruvida ett visst element förekommer i listan eller ej. Exempelvis enligt:
+```python
+numbers = [1,2,3,4,5]
+for i in range(len(numbers))
+    if numbers[i] == 3
+        print(True)
+        break
+```
+<div class="code-example" markdown="1">
+<pre><code>True</code></pre>
+</div>
+
+Det finns dock ett smidigare sätt att uppnå detta på och det är att använda nyckelordet `in`. Exempelvis kan vi identifiera om heltalet 5 förekommer i listan från föregående exempel enligt:
+```python
+numbers = [1,2,3,4,5]
+if 5 in numbers
+    print(True)
+```
+<div class="code-example" markdown="1">
+<pre><code>True</code></pre>
+</div>
+
+Då vi inte aktivt kollar på specifika indexvärden så lider vi heller inte någon risk att stöta på några `IndexError`.
+
 ### "Slicing"
 _Slicing_ är en teknik som använder index för att "skära ut" och komma åt delar av en kollektion. I Python uppnås detta med funktionen `slice()` som kan ta emot ett **startindex** och ett **slutindex**, separerade av ett kolon, där slutindexet är _exklusivt_. Att slutindexet är exklusivt avser - i kontexten av slicing i Python - att det element som motsvarar slutindexet inte inkluderas i den del av samlingen som du skär ut. Med andra ord, när du specifierar ett intervall med start- och slutindex för att göra en slice av en samling, kommer elementet på positionen för slutindexet inte att vara en del av den resulterande delen - likt hur funktionen `range()` hanterar intervall.
 
