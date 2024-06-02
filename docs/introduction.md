@@ -10,8 +10,6 @@ Python fungerar som ett mångsidigt och kraftfullt programmeringsspråk, likt en
 
 Pythons popularitet härstammar från dess breda tillämpningsområde, som sträcker sig från webbutveckling och dataanalys till artificiell intelligens och vetenskaplig databehandling. Denna omfattande användning stöds av ett stort utbud av bibliotek och ramverk, vilket ofta gör Python till ett föredraget val för både nybörjare och erfarna utvecklare.
 
-När det kommer till att skriva och testa Python-kod, spelar integrerade utvecklingsmiljöer (IDEs) en viktig roll. Dessa miljöer erbjuder en omfattande uppsättning verktyg i ett paket, inklusive en kodredigerare, felsökare och kompilator, etc. - vilket påtagligt förenklar utvecklingsprocessen. Oavsett om det handlar om att skapa ett litet skript eller utveckla en komplex applikation, ger en IDE det nödvändiga stödet för att effektivt förverkliga dina idéer.
-
 ## Kom igång med Python
 
 Det första steget när det kommer till programmering är att sätta upp miljön som man kommer att arbeta i, d.v.s. att vi laddar ned och installerar de verktyg som är nödvändiga för att tolka de kommandon vi anger i Python till maskinkod. Maskinkod är kortfattat det språk som datorer nyttjar och består av 1:or och 0:or. Istället för att vi själva ska behöva översätta Python-instruktioner till sådan maskinkod så använder man som programmerare sig utav s.k. kompilatorer - vilka kortfattat översätter våra instruktioner till faktiska kommandon som datorn kan tolka.
