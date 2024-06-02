@@ -158,6 +158,34 @@ print(part_of_numbers)
 [1,2,3]</code></pre>
 </div>
 
+### Kombinera listor
+Det är möjligt att kombinera två listor genom att utöka en lista med en annan genom att nyttja `+` eller funktionen `extend()`. Exempelvis enligt:
+```python
+numbers1 = [1,2,3]
+numbers2 = [4,5,6]
+print(numbers1 + numbers2)
+
+numbers1.extend(numbers2)
+print(numbers1)
+```
+<div class="code-example" markdown="1">
+<pre><code>[1,2,3,4,5,6]
+[1,2,3,4,5,6]</code></pre>
+</div>
+
+Noterbart är att om du använder dig utav funktionen `append()` i ett försök om att kombinera listor så kommer du istället lägga till listan som ett element i den andra listan:
+```python
+numbers1 = [1,2,3]
+numbers2 = [4,5,6]
+numbers1.append(numbers2)
+print(numbers1)
+print(numbers1[3])
+```
+<div class="code-example" markdown="1">
+<pre><code>[1,2,3,[4,5,6]]
+[4,5,6]</code></pre>
+</div>
+
 # Sammanfattning
 Listor är en kraftfull typ av kollektion i Python som gör det möjligt för oss att hantera och manipulera grupper av relaterade data på ett effektivt sätt. Genom att använda listor kan vi enkelt lägga till, ta bort, sortera och iterera över element, vilket förenklar många programmeringsuppgifter.
 
