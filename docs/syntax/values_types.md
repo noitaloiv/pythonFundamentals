@@ -70,7 +70,7 @@ En datatyp som måste _importeras_ och som sedan kan nyttjas för att represente
     ```
     <div class="code-example" markdown="1">
     <pre><code>< class 'module' >
-    2024-03-20 17:00:50.932698</code></pre>
+2024-03-20 17:00:50.932698</code></pre>
     </div>
 
 Det finns självfallet även många andra datatyper som nyttjas i olika avseenden och med olika syften och vi kommer att stöta på flera typer i framtida kapitel.
