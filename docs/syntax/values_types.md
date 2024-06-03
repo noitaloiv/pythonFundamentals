@@ -8,7 +8,7 @@ parent: 4. Syntax
 # Värden och typer
 Ett värde är ett grundläggande ting - såsom en bokstav, ett tecken, eller en siffra - vilket ett program kan manipulera (exempelvis kombinera med andra värden, utföra beräkningar på värdet och dylikt). I föregående kapitel så stötte vi på ett textuellt värde i form av `"Hello, world!"` när vi skrev vårt första program - som utmynnade i att skriva ut texten `"Hello, world!"`.
 
-`"Hello, world!"` är ett exempel på ett textuellt värde, men värden kan även vara av andra typer. Textuella värden, som består av mer än ett tecken, kallas exempelvis för stängar (_strings_) medan heltalet 2 skulle klassificeras som just ett heltal (_integer_). Du (såväl som Python-tolkaren) kan särskilja en sträng från ett heltal baserat på huruvida värdet är omgivet av sitationstecken (`"`).
+`"Hello, world!"` är ett exempel på ett textuellt värde, men värden kan även vara av andra typer. Textuella värden, som består av mer än ett tecken, kallas exempelvis för stängar (_strings_) medan heltalet 2 skulle klassificeras som just ett heltal (_integer_). Du (såväl som Python-tolkaren) kan särskilja en sträng från ett heltal baserat på huruvida värdet är omgivet av citationstecken (`"`).
 
 ## Starkt typat programmeringsspråk
 Python är ett _starkt typat språk_ (strongly typed language) vilket innebär att det spelar roll vilken datatyp en variabel innehåller. Det är exempelvis skillnad på strängen `"1"` och siffran `1`. Vi skulle därför stöta på problem om vi exempelvis försöker utföra en matematisk operation på textuella värden och vice versa.
