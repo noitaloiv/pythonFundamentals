@@ -41,7 +41,7 @@ Exempelvis behandlas decimaltal annorlunda än heltal och klassificeras därför
     <pre><code>< class 'float' ></code></pre>
     </div>
 
-    Vi skulle nu även kunna testa vårt påstående avseende att datorn tolkar strängar som de värden som anges inom situationstecken. Exempelvis kan vi genom `type`-funktionen se att `"3.2"` och `3.2` inte är samma typ:
+    Vi skulle nu även kunna testa vårt påstående avseende att datorn tolkar strängar som de värden som anges inom citationstecken. Exempelvis kan vi genom `type`-funktionen se att `"3.2"` och `3.2` inte är samma typ:
     ``` python
     print(type("3.2"))
     print(type(3.2))
