@@ -48,7 +48,7 @@ Exempelvis behandlas decimaltal annorlunda än heltal och klassificeras därför
     ```
     <div class="code-example" markdown="1">
     <pre><code>< class 'str' >
-    < class 'float' ></code></pre>
+< class 'float' ></code></pre>
     </div>
 
 * Booleans: 
