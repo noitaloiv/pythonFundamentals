@@ -85,7 +85,7 @@ print(bool1 or bool2) # Alt. print(bool1 | bool2)
 
 Utskriften blir `True` trots att `bool2` har värdet `False` då `bool1` har värdet `True`. Om `bool1` samt `bool2` båda haft värdet `False` så hade resultatet alltså blivit `False`. 
 
-## Inte-operatorn
+## INTE-operatorn
 Utvinner det inverterade värdet hos en variabel eller ett uttryck, d.v.s. att vi vill identifiera motsatsen till ett _booleskt uttryck_. Med det sistnämnda menar vi på att operatorn nyttjas för att invertera ett `True`-värde till ett `False`-värde eller vice versa. Vi kan inte nyttja det för att identifiera ett inverterat värde till heltalet `10` eller dylikt.
 ```python
 bool1 = False
@@ -169,7 +169,7 @@ False</code></pre>
 `bool1` och `bool2` evalueras i detta fall till `False` med `and`-operatorn då `bool1` har värdet `True` men `bool2` har värdet `False`. Detsamma gäller för den bitvisa operatorn ``&`` där `bool1` evalueras till `1` och `bool2` evalueras till `False`.
 
 {: .highlight }
-Bitvisa operatorer nyttjas primärt i de fall vi behöver göra bitvisa beräkningar på tal och är således inte lika vanligt förekommande som logiska operatorer. Du kommer med största sannolikhet inte att behöva arbeta med bitvisa operatorer förrän långt in på programmeringsresan, men du kommer implicit och explicit att stöta på logiska operatorer i kontexten av utvärderingar och formulering av villkor.
+Bitvisa operatorer nyttjas primärt i de fall vi behöver göra bitvisa beräkningar på tal och är således inte lika vanligt förekommande som logiska operatorer. Du kommer med största sannolikhet inte att behöva arbeta med bitvisa operatorer förrän långt in på programmeringsresan, men du kommer implicit och explicit ofta att stöta på logiska operatorer i kontexten av utvärderingar och formulering av villkor.
 
 
 ## Kortslutning
