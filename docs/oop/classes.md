@@ -28,7 +28,24 @@ class Car:
         self.model = model
 ```
 
-Det är möjligt att lägga till hur många parametrar du vill till `__init__`-metoden, men den första parametern måste alltid vara nyckelordet `self`.
+Det är möjligt att lägga till hur många parametrar du vill till `__init__`-metoden, men den första parametern måste alltid vara parametern `self`.
+
+### `__init__()` måste inte deklareras
+En klass måste inte nödvändigtvis deklarera och implementera `__init__`-metoden för att det ska vara en fungerande klass från vilken vi kan skapa objekt. Det är exempelvis fullt möjligt att skriva en klass i stil med:
+```python
+class Car:
+    print("This is a car")
+```
+Vilket skulle medföra att varje gång vi instansierar ett objekt av klassen så kommer `This is a car` att skrivas ut:
+```python
+class Car:
+    print("This is a car")
+
+new_car = Car()
+```
+<div class="code-example" markdown="1">
+<pre><code>This is a car</code></pre>
+</div>
 
 ### Nyckelordet `self`
 `self` i Python är en referens till det _aktuella objektet_ som använder klassen. Det används för att komma åt variabler som tillhör klassen och för att anropa andra metoder inom samma klass. Nyckelordet måste specificeras explicit i varje metoddefinition (inkl. `__init__`) för klassen men det behöver __inte__ anges vid metodanrop.
