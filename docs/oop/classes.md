@@ -47,6 +47,8 @@ new_car = Car()
 <pre><code>This is a car</code></pre>
 </div>
 
+I de fall man vill skapa ett initalt tillstånd för sina objekt så görs detta dock genom `__init__`-metoden. Exempelvis kan det tänkas vara relevant att tilldela födelseår och namn på en student i samband med att vi skapar studentobjektet istället för att först skapa objektet och sedan tilldela dessa värden.
+
 ### Nyckelordet `self`
 `self` i Python är en referens till det _aktuella objektet_ som använder klassen. Det används för att komma åt variabler som tillhör klassen och för att anropa andra metoder inom samma klass. Nyckelordet måste specificeras explicit i varje metoddefinition (inkl. `__init__`) för klassen men det behöver __inte__ anges vid metodanrop.
 
