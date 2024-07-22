@@ -48,11 +48,14 @@ Ett `finally`-block kan läggas till efter `except`-blocken. Koden i `finally`-b
 ```python
 try:
     file = open("example.txt", "r")
+    # Your code, working with the opened file goes here
 except FileNotFoundError:
     print("ERROR: File not found!")
+    file = None
 finally:
-    file.close()
-    print("File closed.")
+    if file is not None:
+        file.close()
+        print("File closed.")
 ```
 
 ### "Kasta" exceptions (raising exceptions)
