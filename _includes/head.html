@@ -13,7 +13,6 @@ Should not be cached, because included files depend on page.
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
 
   <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-head-nav.css' | relative_url }}"
@@ -47,64 +46,16 @@ Should not be cached, because included files depend on page.
     }
   </style>
 
-  {% if site.ga_tracking != nil %}
-  {% assign ga_tracking_ids = site.ga_tracking | split: "," %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ ga_tracking_ids.first }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    {% for ga_property in ga_tracking_ids %}
-    gtag('config', '{{ ga_property }}'{% unless site.ga_tracking_anonymize_ip == nil %}, { 'anonymize_ip': true }{% endunless %});
-    {% endfor %}
-  </script>
-  {% endif %}
-
   {% if site.search_enabled != false %}
   <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
   {% endif %}
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const themeToggleBtn = document.getElementById('theme-toggle');
-      const themeIcon = document.getElementById('theme-icon');
-      const mainLogo = document.getElementById('main-logo');
-      initializeTheme();
-
-      themeToggleBtn.addEventListener('click', toggleTheme);
-
-      function setTheme(newTheme) {
-        jtd.setTheme(newTheme);
-        localStorage.setItem('userTheme', newTheme);
-        updateThemeStyles(newTheme);
-      }
-
-      function updateThemeStyles(currentTheme) {
-        themeIcon.src = currentTheme === 'light' ? '/assets/images/moon.svg' : '/assets/images/sun.svg';
-        mainLogo.src = currentTheme === 'light' ? '/assets/images/logo_black.svg' : '/assets/images/logo_white.svg';
-        if(currentTheme === 'light')
-        {
-            themeIcon.style = "filter: none";
-        }
-        else{
-          themeIcon.style = "filter: invert(1)";
-        }
-      }
-
-      function toggleTheme() {
-        const currentTheme = localStorage.getItem('userTheme') === 'light' ? 'dark' : 'light';
-        setTheme(currentTheme);
-      }
-
-      function initializeTheme() {
-        let savedTheme = localStorage.getItem('userTheme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        setTheme(savedTheme);
-      }
-    });
+    if(localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark-mode');
   </script>
-
+  <script type="text/javascript" src="{{ '/assets/js/theme-switch.js' | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-switchable.css' | relative_url }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% include_cached favicon.html %}
