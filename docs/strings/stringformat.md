@@ -15,6 +15,8 @@ print(f"The price for four cups of coffee is: {price*4} which, with the group di
 <pre><code>The price for four cups of coffee is: 80 which, with the group discount, comes out to: 68.0</code></pre>
 </div>
 
+![String formatting](../../assets/images/banners/ch9.png){: .styled-image }
+
 ## `format()` vs `f-strings`
 Formatering av strängar i Python kan göras på flera sätt, men två av de mest användbara och moderna metoderna är `str.format()` metoden och `f-strings` (formatsträngar).
 
@@ -57,6 +59,8 @@ print(f"In five years, {name} will be {age + 5} years old.")
 <div class="code-example" markdown="1">
 <pre><code>In five years, Erik will be 34 years old.</code> </pre>
 </div>
+
+![f vs format](../../assets/images/chapter_images/ch9.png){: .styled-image }
 
 ## Flerradiga strängar
 Flerradiga strängar i Python skapas med hjälp av tre dubbla citattecken (`"""`) eller tre enkla citattecken (`'''`). Detta gör det möjligt att skapa strängar som sträcker sig över flera rader, vilket är användbart för att bevara radbrytningar och annat vitt utrymme inom strängen. Dessa flerradiga strängar kan användas för att formatera text på ett mer överskådligt sätt eller inkludera långa textstycken direkt i en enda variabel.

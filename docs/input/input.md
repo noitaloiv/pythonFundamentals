@@ -10,6 +10,8 @@ Vi har hittills arbetat med olika variabeltyper där vi använt oss av funktione
 
 Det kan exempelvis vara ett namn, en ålder eller dylik information som programmet behöver veta för att fungera som tänkt. Exempelvis har du säkerligen någon gång angett information i en dialogruta eller ett formulär, t.ex. ditt användarnamn och lösenord när du loggar in via Studium. Denna information måste datorn kunna spara, tolka och eventuellt nyttja och Python har därför förprogrammerade funktioner för att på ett enkelt sätt hantera inputs.
 
+![input vs output](../../assets/images/banners/ch10.png){: .styled-image }
+
 ## Hur hanterar man inputs i Python?
 Med funktionen `input()` kan man enkelt mata in värden till programmet. Funktionen fungerar på så vis att när programmet når kodraden som berör `input()`-funktionen så kommer programmet att vänta till dess att användaren anger någon input i terminalen, kommer programmet vänta tills dess att användaren har skrivit in något i konsolen och sedan fortsätta i programmet.
 

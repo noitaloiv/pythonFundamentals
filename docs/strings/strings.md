@@ -32,6 +32,8 @@ print(message_d)
 
 Även operatorn `*` kan appliceras på strängar för att duplicera en sträng ett antal gånger. Exempelvis skulle `print("Python"*3)` resultera i utskriften `PythonPythonPython`.
 
+![Strings](../../assets/images/banners/ch8.png){: .styled-image }
+
 ## Komposition
 Hittills har vi, till merparten, tittat på de olika beståndsdelarna i ett program (variabler, uttryck och påståenden) isolerat utan att prata om hur man kan kombinerar dem, vilket kallas för _komposition_.
 
