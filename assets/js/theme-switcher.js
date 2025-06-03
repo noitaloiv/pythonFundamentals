@@ -25,12 +25,12 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function setTheme(theme) {
     if (theme === "dark") {
-      toggleDarkMode.innerHTML = `<svg width='18px' height='18px'><use href="/assets/images/sun.svg"></use></svg>`;
+      toggleDarkMode.innerHTML = `<img src="/assets/images/sun.svg" width="18" height="18" alt="Sun icon">`;
       mainLogo.src = "/assets/images/logo_white.svg";
       document.documentElement.classList.add("dark-mode");
       document.documentElement.classList.remove("light-mode");
     } else {
-      toggleDarkMode.innerHTML = `<svg width='18px' height='18px'><use href="/assets/images/moon.svg"></use></svg>`;
+      toggleDarkMode.innerHTML = `<img src="/assets/images/moon.svg" width="18" height="18" alt="Moon icon">`;
       mainLogo.src = "/assets/images/logo_black.svg";
       document.documentElement.classList.add("light-mode");
       document.documentElement.classList.remove("dark-mode");
