@@ -8,7 +8,7 @@ nav_order: 13
 Debugging är processen att hitta och åtgärda buggar (fel) i programvaran. Förståelsen av felsökning, eller debugging, är avgörande för varje programmerare och att kunna identifiera och korrigera fel (buggar) i din kod är en viktig färdighet och något som kommer att ligga till grund för en ökad förståelse av den kod du skriver. I det här avsnittet kommer vi att gå igenom grundläggande debuggingtekniker som hjälper dig att snabbt hitta och åtgärda fel i dina Python-program.
 
 ## Vad är en bugg?
-En bugg är ett fel i programmet som orsakar att programmet resulterar i ett oväntat beteende (t.ex. som att fel resultat ges vid summering av två heltal eller dylikt) eller att applikationen till och med avbryts och kraschar. Buggar kan uppstå av många olika skäl, inklusive felaktig kodning, missförstånd av specifikationen, eller oförutsedda användarinteraktioner.
+En bugg är ett fel i programmet som orsakar  att programmet resulterar i ett oväntat beteende (t.ex. som att fel resultat ges vid summering av två heltal eller dylikt) eller att applikationen till och med avbryts och kraschar. Buggar kan uppstå av många olika skäl, inklusive felaktig kodning, missförstånd av specifikationen, eller oförutsedda användarinteraktioner.
 
 ## Grundläggande felsökning
 Ett av de enklaste sätten att debugga är att använda `print()`-funktionen för att visa värden på variabler eller för att bekräfta att exekveringen har nått en viss del av koden. Ponera exempelvis att vi vill undersöka resultatet på en matematisk operation enligt:
