@@ -32,6 +32,8 @@ print(b > a)
 
 Utskriften blir `False` eftersom det är falskt påstående.
 
+![Evaluating operators](../../assets/images/banners/ch14.png){: .styled-image }
+
 Vanligtvis utför man jämförelseoperationer i `if`-satser där man vill att någonting ska utföras beroende på huruvida ett uttryck är sant eller falskt. På så sätt kan vi skapa _villkorsstyrd programmering_, så att vissa operationer enbart utförs om vissa krav är uppfyllda. Exempelvis vill vi bara ta emot biljetten för karusellen **OM** gästen är längre än 160cm.
 
 ## Vanliga sätt att jämföra variabler

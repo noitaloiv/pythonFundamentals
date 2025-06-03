@@ -15,7 +15,7 @@ print(f"The price for four cups of coffee is: {price*4} which, with the group di
 <pre><code>The price for four cups of coffee is: 80 which, with the group discount, comes out to: 68.0</code></pre>
 </div>
 
-![String formatting](../../assets/images/banners/ch9.png){: .styled-image }
+![String formatting](../../assets/images/banners/ch9_wide.png){: .styled-image }
 
 ## `format()` vs `f-strings`
 Formatering av strängar i Python kan göras på flera sätt, men två av de mest användbara och moderna metoderna är `str.format()` metoden och `f-strings` (formatsträngar).

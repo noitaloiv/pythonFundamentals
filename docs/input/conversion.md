@@ -19,7 +19,7 @@ print(number1 + number2 + number3)
 <pre><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'</code> </pre>
 </div>
 
-![Type conversion](../../assets/images/banners/ch11.png){: .styled-image }
+![Type conversion](../../assets/images/banners/ch11_wide.png){: .styled-image }
 
 Föreställ dig att användaren har angivit `30` i terminalen så kommer detta - som tidigare nämnt - ha lagrats som `"30"`. När vi sedan försöker utföra addition för att summera våra numeriska värden så får vi i praktiken något i stil med: `10 + 20 + "30"`, vilket resulterar i ett felmeddelande då enbart numeriska värden kan summeras.
 

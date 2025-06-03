@@ -6,6 +6,9 @@ parent: 13. Operatorer
 ---
 
 # Logiska operatorer i Python
+
+![Logical operators](../../assets/images/banners/ch15.png){: .styled-image }
+
 Det finns även logiska operatorer i Python. Med dessa kan vi avgöra om flera påstående är sanna eller falska samtidigt.
 
 | Operator  | Syntax | Exempel där A = 5, B = 10 | Resultat |

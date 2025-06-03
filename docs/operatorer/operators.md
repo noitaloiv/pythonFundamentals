@@ -8,6 +8,8 @@ has_children: true
 # Operatorer och operander 
 Operatorer är speciella symboler som fungerar likt de nyckelord vi tidigare pratat om - d.v.s. att de representerar viss inbyggd funktionalitet, exempelvis `+` för addition och `*` för multiplikation. De värden som operatören använder kallas för "operander", exempelvis skulle `4` resp. `5` i uttrycket `4 + 5` agera _operander_ för _operationen_ addition.
 
+![Operators](../../assets/images/banners/ch13.png){: .styled-image }
+
 ## Matematiska uttryck
 Samtliga utav nedan matematiska uttryck är giltiga: 
 ```python

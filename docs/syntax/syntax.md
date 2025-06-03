@@ -12,7 +12,7 @@ Utöver syntaxen så finns det även vissa regler och mönster som styr hur ditt
 
 I detta kapitel kommer vi att visa exempel på strukturen för språket Python samt några regler som vi behöver anpassa oss efter.
 
-![Indentation](../../assets/images/banners/ch4.png){: .styled-image }
+![Indentation](../../assets/images/banners/ch4_wide.png){: .styled-image }
 
 ## Att förstå Python-syntaxen
 

@@ -22,7 +22,7 @@ if assignment == "A value":
 This is true</code></pre>
 </div>
 
-![Statements](../assets/images/banners/ch7_statements.png){: .styled-image }
+![Statements](../assets/images/banners/ch7_statements_wide.png){: .styled-image }
 
 När du skriver ett påstående i din Python-fil och sedan kör koden via Visual Studio Code (alt. kör koden direkt genom terminalen) så kommer Python att kompilera koden och visa eventuella resultat. Vi skriver "eventuella resultat" då exempelvis tilldelning i sig självt inte kommer att generera någon output, om inte variabeln efter tilldelningen skrivs ut med hjälp av  t.ex. `print()`-funktionen.
 ```python
