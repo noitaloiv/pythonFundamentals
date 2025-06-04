@@ -8189,8 +8189,12 @@ code.language-mermaid {
 }
 
 @media print {
-    .site-footer,.site-button,#edit-this-page,#back-to-top,.site-nav,.main-header {
-        display: none!important
+    html.dark-mode .site-footer,
+    html.dark-mode .site-button,
+    html.dark-mode #edit-this-page,
+    html.dark-mode #back-to-top,
+    html.dark-mode .site-nav {
+        display: none;
     }
 
     .side-bar {

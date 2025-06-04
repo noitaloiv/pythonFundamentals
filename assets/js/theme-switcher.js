@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", function () {
   const toggleDarkMode = document.getElementById("theme-toggle");
-  //const themeIcon = document.getElementById("theme-icon");
   const mainLogo = document.getElementById("main-logo");
 
   if (localStorage.getItem("theme") === "dark") {
