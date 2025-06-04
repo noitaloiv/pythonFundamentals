@@ -29,6 +29,17 @@ html[data-theme="dark"] {
   } 
 }*/
 
+@media (min-width: 50rem) {
+    .side-bar + .main .main-header {
+        display: flex;
+        background-color: #eeebee;
+    }
+}
+.side-bar + .main .main-header {
+    display: none;
+    background-color: #eeebee;
+}
+
 img{
   display: block;
   margin-left: auto;
