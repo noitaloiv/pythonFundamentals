@@ -29,6 +29,22 @@ html[data-theme="dark"] {
   } 
 }*/
 
+.main-header {
+    z-index: 0;
+    display: none;
+    background-color: #f5f6fa
+}
+
+@media(min-width: 50rem) {
+    .main-header {
+        display:flex;
+        justify-content: space-between;
+        height: 60px;
+        background-color: #fff;
+        border-bottom: 1px solid #eeebee
+    }
+}
+
 img{
   display: block;
   margin-left: auto;
