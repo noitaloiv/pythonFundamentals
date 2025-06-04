@@ -25,7 +25,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function setTheme(theme) {
     if (theme === "dark") {
-      toggleDarkMode.innerHTML = `<img src="/assets/images/sun.svg" width="18" height="18" alt="Sun icon">`;
+      toggleDarkMode.innerHTML = `<img src="/assets/images/white-sun2.svg" width="18" height="18" alt="Sun icon">`;
       mainLogo.src = "/assets/images/logo_white.svg";
       document.documentElement.classList.add("dark-mode");
       document.documentElement.classList.remove("light-mode");
