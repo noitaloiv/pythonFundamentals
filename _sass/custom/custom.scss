@@ -2,26 +2,26 @@
   box-shadow: none;
 }
 
-.light-mode {
+html.light-mode {
 	  $link-color: $purple-000;
   	$body-background-color: $white;
   	$body-text-color: $grey-dk-100;
 }
 
-.dark-mode {
+html.dark-mode {
     $link-color: $blue-000;
     $body-background-color: $grey-dk-300;
     $body-text-color: $grey-lt-300; 
 }
 
 @media (prefers-color-scheme: dark) {
-    .dark-mode {
+    html.dark-mode {
       $link-color: $blue-000;
     	$body-background-color: $grey-dk-300;
     	$body-text-color: $grey-lt-300; 
     }
 
-    .light-mode {
+    html.light-mode {
       $link-color: $purple-000;
       $body-background-color: $white;
       $body-text-color: $grey-dk-100;
