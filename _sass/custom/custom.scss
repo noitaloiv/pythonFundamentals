@@ -2,29 +2,29 @@
   box-shadow: none;
 }
 
-html, html[data-theme="light"] {
-	$link-color: $purple-000;
+html, .light-mode {
+	  $link-color: $purple-000;
   	$body-background-color: $white;
   	$body-text-color: $grey-dk-100;
 }
 
-html[data-theme="dark"] {
+html, .dark-mode {
     $link-color: $blue-000;
     $body-background-color: $grey-dk-300;
     $body-text-color: $grey-lt-300; 
 }
 
 @media (prefers-color-scheme: dark) {
-    html, html[data-theme="dark"] {
+    html, .dark-mode {
       $link-color: $blue-000;
     	$body-background-color: $grey-dk-300;
     	$body-text-color: $grey-lt-300; 
     }
 
-    html[data-theme="light"] {
-	$link-color: $purple-000;
-  	$body-background-color: $white;
-  	$body-text-color: $grey-dk-100;
+    html, .light-mode {
+      $link-color: $purple-000;
+      $body-background-color: $white;
+      $body-text-color: $grey-dk-100;
   } 
 }
 /*
