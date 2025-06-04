@@ -39,6 +39,29 @@ html[data-theme="dark"] {
     background-color: #fff;
 }
 
+@media(min-width: 50rem) {
+    html.dark-mode .main-content-wrap {
+        padding-top:2rem;
+        padding-bottom: 2rem
+    }
+}
+
+html.dark-mode .main-header {
+    z-index: 0;
+    display: none;
+    background-color: #27262b
+}
+
+@media(min-width: 50rem) {
+    html.dark-mode .main-header {
+        display:flex;
+        justify-content: space-between;
+        height: 60px;
+        background-color: #27262b;
+        border-bottom: 1px solid #44434d
+    }
+}
+
 img{
   display: block;
   margin-left: auto;
