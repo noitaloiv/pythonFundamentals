@@ -62,6 +62,13 @@ html.dark-mode .main-header {
     background-color: #fff;
 }
 
+@media(min-width: 50rem) {
+  html.dark-mode .side-bar + .main .main-header {
+    background-color: #27262b !important;
+    border-bottom: 1px solid #44434d !important;
+  }
+}
+
 img{
   display: block;
   margin-left: auto;
@@ -84,4 +91,14 @@ img{
 
 h1 {
   margin-top: 0.5rem;
+}
+
+@media(min-width: 50rem) {
+  html.dark-mode .side-bar + .main .main-header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: #27262b !important;
+    border-bottom: 1px solid #44434d !important;
+  }
 }
