@@ -10,7 +10,9 @@ I Python är en `switch`-sats en annan typ av _villkorssats_. Dessa fungerar på
 
 Även `switch`-satser nyttjas därför för att styra logiken i ett program genom att skapa vägval.
 
-## `switch`-satser i Python
+![Selection](../../assets/images/banners/ch20.png){: .styled-image }
+
+## `switch`-satser i Python 
 `switch`-satser introducerades i Python 10.0 och används genom nyckelorden `match` resp. `case` för att matcha ett värde mot eller flera "fall", vilka i sin tur agerar olika "vägar" i programmet. Om input exempelvis är `Addition` så kan vi etablera ett "fall" för `Addition` där vi sedan kan utföra addition mellan två heltal. Nästa gång applikationen körs så kanske input istället är `Subtraktion` och då utför vi istället subtraktion, osv.
 
 Ponera exempelvis att vi har skrivit en miniräknare och vi vill att användaren inledningsvis ska få välja vilken operation som ska genomföras:
@@ -85,7 +87,7 @@ Division operation selected.
 Invalid operation selected.</code></pre>
 </div>
 
-Genom att matcha flera möjliga värden för varje operation blir koden - i detta fall - mer flexibel och tillgänglig för användaren.
+Genom att matcha flera möjliga värden för varje operation blir koden - i detta fall - mer flexibel och tillgänglig för användaren. 
 
 ## Matcha med mönster
 `match`-satsen stödjer även mer avancerad mönstermatchning, där du kan dekonstruera och matcha komplexa datatyper som listor, tupler och dictionaries (vilka alla är exempel på _kollektioner_, som kommer att introduceras i framtida avsnitt). Detta är en kraftfull funktion som kan användas för att skriva mer uttrycksfull och kondenserad kod, särskilt när du arbetar med datatyper som innehåller flera element.

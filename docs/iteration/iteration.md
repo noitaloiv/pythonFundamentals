@@ -16,6 +16,8 @@ print(3)
 {: .highlight }
 Detta skulle dock vara något tradigt att som utvecklare skriva och det skulle dessutom vara svårt att underhålla och tolka för andra utvecklare. Säg att vi exempelvis vill skriva ut heltalen 1-100 följt av heltalen 75-1000 och sedan 20-30, vi skulle då ha skrivit minst 1035 rader kod!
 
+![Iteration](../../assets/images/banners/ch21.png){: .styled-image }
+
 Det finns således ett bättre tillvägagångssätt i de fall vi vill upprepa en instruktion eller en sekvens av instruktioner - **Iteration**. Iteration är ett grundläggande koncept inom programmering som möjliggör utförandet av en eller flera instruktioner baserat på ett angivet _villkor_. Likt hur vi tidigare har arbetat med `if`-satser och deras villkor, t.ex. i stil med `"OM 5 > 10, gör X"` så kan vi med iteration påtala att något t.ex. ska upprepas `"SÅLÄNGE SOM x < 10"`.
 
 Vi kan exempelvis skriva om våra multipla `print`-operationer från föregående exempel enligt:

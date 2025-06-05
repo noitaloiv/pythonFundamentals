@@ -8,9 +8,11 @@ parent: 16. Selektion
 # `if`-satser i Python
 `if`-satsen används som nämnt för att avgöra om ett villkor uppfylls eller ej för att sedan leda programmet till en eller flera olika "vägar". Om ett villkor exempelvis är sant (`True`), så vill vi utföra den kod som `if`-satsen omsluter och om villkoret är falskt (`False`) så vill vi istället gå en annan väg i programmet. Det är av denna anledning som vi har kompletterande satser i form av `elif`- och `else`-satser.
 
+![Selection](../../assets/images/banners/ch17.png){: .styled-image }
+
 Ponera exempelvis att vi i vårt program vill kontrollera huruvida det finns tillräckligt med täckning på ett transaktionskonto för att genomföra ett köp. Vi kan då nyttja en `if`-sats för att utvärdera detta villkor i stil med:
 ```python
-account_credit = 1500
+account_credit = 1500 
 price_of_product = 1200
 
 if account_credit >= price_of_product:

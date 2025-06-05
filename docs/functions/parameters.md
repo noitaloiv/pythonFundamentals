@@ -109,8 +109,7 @@ user_profile(name="Anna", age=30, profession="Engineer")
 user_profile(name="Erik", age=22)
 ```
 <div class="code-example" markdown="1">
-<pre><code>50
-name: Anna
+<pre><code>name: Anna
 age: 30
 profession: Engineer
 name: Erik

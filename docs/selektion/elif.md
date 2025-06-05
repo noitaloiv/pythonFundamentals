@@ -10,10 +10,12 @@ En `elif`-sats i Python är ett valfritt tillägg som man använder när man vil
 
 Skillnaden mot en `else`-sats är vi att vi med `elif`-satser kan ange _alternativa_ villkor.
 
+![Selection](../../assets/images/banners/ch18.png){: .styled-image }
+
 Låt oss återigen utgå från vårt tidigare exempel avseende transaktionskontot och produktköpet:
 ```python
 if accountCredit >= priceOfProduct:
-  accountCredit = accountCredit - priceOfProduct
+  accountCredit = accountCredit - priceOfProduct 
   print("Transaction successful")
 
 else:

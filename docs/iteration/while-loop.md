@@ -8,6 +8,8 @@ parent: 21. Iteration
 # `while`-loop:en
 En `while-loop` är en alternativ loop till `for-loop` och båda loop:ar har generellt sett sitt eget användningsområde, även om de till stor del är utbytbara. Precis som `for-loop:en` används ett nyckelord (`while`) följt av ett _villkor_. Skillnaden ter sig i hur villkoret uttrycks. För `for-loop:ar` så ter sig villkoret alltid som en _sekvens_, men för `while-loop:ar` ter sig villkoret istället alltid som ett booleskt uttryck - d.v.s. något som kan evalueras till sant ellet falskt. Villkoret för en `while-loop` avser däremot inte ett "vägval" utan istället hur många _iterationer_ som ska utföras, d.v.s. hur många gånger koden som loop:en avser ska utföras. 
 
+![Selection](../../assets/images/banners/ch23.png){: .styled-image }
+
 Istället för villkoret `x in range(1,11)` - vilket kan översättas till `"SÅ LÄNGE SOM x ÄR INOM INTERVALLET 1-11"` - så skulle vi få något i stil med `number < 11` - vilket kan ersättas till `"SÅ LÄNGE SOM number ÄR MINDRE ÄN 11"`:
 ```python
 number = 1          # Declare the iterator variable outside the loop

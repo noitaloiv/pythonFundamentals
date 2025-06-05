@@ -6,7 +6,9 @@ parent: 24. Kollektioner
 ---
 
 # Dictionaries
-Dictionaries är kollektioner som lagrar data i s.k. _key-value-pairs_, vilket gör dem idealiska för att representera _relationer_ mellan data. Varje nyckel i en dictionary är **unik** och används för att hämta det **associerade** **värdet**. Dictionaries skapas med måsvingar `{}`, där varje element består av en nyckel och ett värde, separerade av ett kolon. Likt listor är dictionaries 
+Dictionaries är kollektioner som lagrar data i s.k. _key-value-pairs_, vilket gör dem idealiska för att representera _relationer_ mellan data. Varje nyckel i en dictionary är **unik** och används för att hämta det **associerade** **värdet**. Dictionaries skapas med måsvingar `{}`, där varje element består av en nyckel och ett värde, separerade av ett kolon.
+
+![Dictionaries in Python](../../assets/images/banners/ch27.png){: .styled-image }
 
 Ponera att du vill lagra information om dina avslutade kurser och vilket betyg du förvärvat på kurserna. En dictionary kan då organisera denna information effektivt genom att nyttja en nyckel som representerar kursen och det tillhörande betyget:
 ```python

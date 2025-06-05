@@ -8,6 +8,8 @@ parent: 24. Kollektioner
 # Tuples
 Tuples är en typ av kollektion som liknar listor, men med en viktig distinktion - de är _oföränderliga_. Detta innebär att när en tuple har skapats kan dess innehåll **inte** ändras. Detta innefattar att de fortfarande är _ordnade_ (d.v.s. tillåter för indexering) och tillåter _duplicerade element_, men vi kommer inte att kunna lägga till eller ta bort element från en tuple.
 
+![Tuples in Python](../../assets/images/banners/ch26.png){: .styled-image }
+
 Ponera att du har en kollektion av datum för tentamenstillfällen under terminen. Dessa datum kommer inte att ändras, vilket gör dem till perfekta kandidater för att lagras i en tuple:
 ```python
 important_dates = ("2024-03-01", "2024-04-12", "2024-05-23")

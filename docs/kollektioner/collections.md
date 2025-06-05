@@ -15,6 +15,8 @@ course3 = "Databaser"
 ```
 Men detta tillvägagångssätt skulle snabbt bli ohållbart (eller åtminstone väldigt opraktiskt). Tänk om vi vill lägga till en kurs, `Programmering i Python` som löper samtidigt som `Datastrukturer` (nuvarande `course2`) men långt innan `Databaser` (nuvarande `course3`), ska den då läggas till som `course4` eller behöver vi ändra namnet på våra existerande variabler för att upprätthålla någon form av struktur? Detsamma gäller om vi skulle vilja ta bort en kurs, lista namnet på alla kurser i alfabetisk ordning eller dylikt. Det skulle kräva mycket repeterad och omfattande kod samt att vi eventuellt modifierar existerande kod - vilket vi självfallet vill undvika.
 
+![Collections in Python](../../assets/images/banners/ch24.png){: .styled-image }
+
 Låt oss därför introducera konceptet kollektioner, mer specifikt _listor_, vilket är en typ av kollektion i Python. Vi kan då enkelt gruppera våra deltagare baserat på vilken sträcka de registrerat sig för enligt: 
 ```python
 coursesT1 = ["OOP I", "Datastrukturer", "Programmering i Python"]

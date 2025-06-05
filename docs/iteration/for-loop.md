@@ -8,6 +8,8 @@ parent: 21. Iteration
 # `for`-loop:en
 Nyckelordet `for` används för att deklarera en s.k. `for-loop` och följs alltid av ett _villkor_, likt en `if`-sats. Villkoret för en `for-loop` avser däremot inte ett "vägval" utan istället hur många _iterationer_ som ska utföras, d.v.s. hur många gånger koden som loop:en avser ska utföras. I det föregående exemplet så nyttjades villkoret `x in range(1,11)` - vilket kan översättas till `"SÅ LÄNGE SOM x ÄR INOM INTERVALLET 1-11"`.
 
+![Selection](../../assets/images/banners/ch22.png){: .styled-image }
+
 När vi först utför kodraden där `for-loop:en` är deklarerad så kommer vi att utvärdera om villkoret uppfylls eller ej. För villkoret i det föregående exemplet så kommer vi med andra ord att kontrollera huruvida 1 är mindre än 11 (1 < 11). Nästa gång kollar vi istället om 2 < 11, osv. När vi avslutningsvis når heltalet 11 så kommer villkoret inte att uppfyllas då 11 inte är mindre än 11, vilket medför att loop:en avslutas. Detta kan illustreras på följande vis:
 
 ![for-loop](../../assets/images/for-loop2.png){: .styled-image }

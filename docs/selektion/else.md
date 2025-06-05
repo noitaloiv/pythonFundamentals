@@ -8,13 +8,15 @@ parent: 16. Selektion
 # `else`-satser
 En `else`-sats i Python är ett valfritt tillägg som man använder när man vill att programmet ska utföra en operation i det fall när villkoret i en `if`-sats **inte** uppfylls. D.v.s. vilken kod som ANNARS ska utföras i de fall ett eller flera villkor inte uppfylls.
 
+![Selection](../../assets/images/banners/ch19.png){: .styled-image }
+
 Låt oss återgå till vårt tidigare exempel avseende transaktionskontot och produktköpet. Säg nu att vi vill kunna informera kunden om att transaktionen misslyckades. Vi kan lägga till en `print()` efter `if`-satsen i stil med:
 ```python
 if accountCredit >= priceOfProduct:
   accountCredit = accountCredit - priceOfProduct
   print("Transaction successful")
 
-print("Transaction failed.")
+print("Transaction failed.") 
 ```
 
 Men detta medför att vi i de fall transaktionen lyckas kommer få följande utskrifter:

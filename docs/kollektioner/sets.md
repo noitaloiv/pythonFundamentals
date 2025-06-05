@@ -8,6 +8,8 @@ parent: 24. Kollektioner
 # Mängder (sets)
 Mängder är en annan typ av kollektion som är mycket användbar när du behöver hantera _unika element_ och utföra operationer såsom `union`, `snitt` och `differens`. Mängder skapas med måsvingar `{}` eller med `set()`-funktionen. Till skillnad från listor och tuples är mängder _oordnade_, vilket innebär att de inte har någon bestämd ordning (d.v.s. att indexering inte kan tillämpas) för sina element och tillåter **inte** för duplicerade element. Mängder är även _oföränderliga_ i det avseendet att vi inte kan ändra på existerande element - men vi kan till skillnad mot tuples lägga till eller ta bort element.
 
+![Sets in Python](../../assets/images/banners/ch28.png){: .styled-image }
+
 ## Mängdmetoder
 Vi kan arbeta med mängder på följande vis:
 ```python
