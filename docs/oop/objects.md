@@ -11,6 +11,8 @@ För att kunna arbeta med klasser så måste vi skapa instanser av dessa klasser
 ## Vad är ett objekt?
 Ett objekt är som nämnt en _instans_ av en klass. Samtidigt som en klass definierar attribut och metoder, så skapar objektet en konkret representation av klassen med specifika värden och beteenden. Objektet _inkapslar_ alltså tillstånd (data) och beteende (funktioner/metoder) som definieras i dess klass.
 
+![Objects](../../assets/images/banners/ch42.png){: .styled-image }
+
 ## Skapa objekt från klasser
 För att använda klasser i ditt program måste du alltså skapa _instanser_ (_objekt_) från dem. Detta kallas för "instansiering" av en klass och när en klass instansieras så körs _konstruktorn_ (``__init__``-metoden) i klassen för att ställa in objektets initiala tillstånd - d.v.s. den data som objektet ska innehålla från start.
 

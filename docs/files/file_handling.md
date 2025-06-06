@@ -8,6 +8,8 @@ has_children: True
 # Filhantering
 Att hantera filer är en grundläggande del av många program, och Python erbjuder en enkel syntax för att öppna, läsa, skriva och stänga filer. Genom att förstå och utnyttja Pythons filhanteringsfunktioner kan du enkelt interagera med filsystemet för att lagra och hämta data.
 
+![File handling](../assets/images/banners/ch35.png){: .styled-image }
+
 ## Öppna och stänga filer
 Använd `open()`-funktionen för att öppna en fil. `open()` tar två huvudargument: filens sökväg och öppningsläget, som `'r'` för läsning, `'w'` för skrivning (överskriver filens innehåll), `'a'` för att lägga till (skriver till slutet av filen), och `'b'` för binärt läge.
 

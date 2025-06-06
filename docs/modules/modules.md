@@ -13,6 +13,8 @@ Python har ett rikt ekosystem av standardmoduler som tillhandahåller användbar
 ## Vad är en modul?
 En modul i Python är en fil som innehåller Python-kod. Denna kod kan vara allt från variabler och funktioner till klasser. Moduler används för att organisera kod på ett logiskt sätt och återanvända kod över flera projekt. Tänk på moduler som verktygslådor som innehåller alla verktyg du behöver för ett specifikt jobb.
 
+![Modules in Python](../assets/images/banners/ch37.png){: .styled-image }
+
 ## Importera moduler
 För att använda en modul i ditt Python-skript måste du först 'importera' den med hjälp av nyckelordet `import`. Det finns olika sätt att importera moduler på:
 

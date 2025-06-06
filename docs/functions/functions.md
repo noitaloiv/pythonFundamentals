@@ -23,6 +23,8 @@ print("Hello world!")
 
 Utan att själv behöva skriva implementationen av kod som faktiskt ser till så att texten skrivs ut i terminalen. Det kan dock tänkas vara så att det finns fall där det inte finns någon inbyggd funktion som kan utföra den funktion vi behöver för just vår applikation. Exempelvis en enkel funktion som adderar två heltal för en miniräknar-applikation. I dessa fall behöver vi själva deklarera och implementera funktionen.
 
+![Functions in Python](../../assets/images/banners/ch29.png){: .styled-image }
+
 ## Skapa egna funktioner
 Medan inbyggda funktioner täcker många vanliga behov, kommer du ofta att stöta på situationer där du behöver utföra uppgifter som är specifika för ditt program. Genom att då definiera egna funktioner kan du skapa återanvändbara kodblock som utför specifika uppgifter.
 

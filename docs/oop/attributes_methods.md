@@ -8,6 +8,8 @@ parent: "40. OOP"
 # Attribut och metoder i Python
 Attribut och metoder är centrala komponenter i objektorienterad programmering (OOP) som hjälper till att definiera klassernas data (attribut) och beteende (metoder).
 
+![Attributes](../../assets/images/banners/ch43_attributes.png){: .styled-image }
+
 ## Vad är attribut?
 Attribut är variabler som är bundna till de klasser eller objekt de definieras i och i Python finns det två huvudtyper av attribut: _instansattribut_ och _klassattribut_.
 
@@ -91,6 +93,8 @@ Värdet på `number_of_wheels` ändras enbart för `car_a` i ovan exempel. När 
 
 ## Metoder i klasser
 Metoder är som tidigare nämnt funktioner definierade inom en klass och som används för att definiera objekts beteenden. Precis som attribut kan metoder vara av typen _instansmetoder_ eller _klassmetoder_.
+
+![Methods](../../assets/images/banners/ch43_methods.png){: .styled-image }
 
 * Instansmetoder: <br>
 Dessa kräver en instans av klassen för att kunna anropas och arbetar med data som är specifikt för den instansen. Exempelvis kan vi skapa en metod som skriver ut _information om instansen_ enligt:

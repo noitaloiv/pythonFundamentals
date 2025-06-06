@@ -11,6 +11,8 @@ Klasser är en av de mest grundläggande konstruktionerna i objektorienterad pro
 ## Vad är en klass?
 En klass i Python kan ses som en mall eller ritning för att skapa _objekt (instanser av en klass)_. Klassen definierar vilka attribut (data) och metoder (funktioner) som varje objekt kommer att ha. Detta medför att varje objekt skapat från klassen kommer att vara en unik instans av klassen, men som kan dela viss data eller funktionalitet med andra objekt av klassen. Exempelvis kan två bilar vara av samma modell och ha samma färg, men den ena kan vara konstruerad 2014 och den andra 2018. Alternativt så kan de vara identiska sett till respektive bils egenskaper, men det kommer fortfarande att vara två separata bilar med två olika VIN- och regnummer.
 
+![Classes](../../assets/images/banners/ch41.png){: .styled-image }
+
 ### Klassdefinition
 En klass definieras alltid med nyckelordet `class` följt av ett namn på klassen och ett `:`. Python kommer sedan att tolka all indenterad kod under definitionen som en del av klassen, likt hur det fungerar vid selektion, iteration och funktioner. Exempelvis kan vi skapa klassen `Car` enligt:
 ```python

@@ -7,6 +7,8 @@ nav_order: 35
 # Felhantering
 Att hantera fel och undantag är en central del av att skriva robusta program. I Python används `try` och `except`-block för att fånga och hantera fel som kan uppstå under programmets körning. Detta gör att programmet kan fortsätta att köra eller ge användaren en förståelig felmeddelande istället för att krascha.
 
+![Error handling](../assets/images/banners/ch34.png){: .styled-image }
+
 ## Grundläggande felhantering
 Felhantering i Python börjar med ett `try`-block som innehåller den kod som kan orsaka ett fel. Ett `except`-block följer sedan, som definierar hur programmet ska svara om ett fel uppstår i `try`-blocket.
 ```python

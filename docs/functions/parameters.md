@@ -10,6 +10,8 @@ Parametrar är de variabler som definieras av en funktion, som den förväntas t
 
 Till exempel, i funktionen `def add(a, b):`, är `a` och `b` _parametrar_ för funktionen `add`. De indikerar att funktionen `add` __förväntar__ sig två inputs när den _anropas_.
 
+![Function parameters](../../assets/images/banners/ch30.png){: .styled-image }
+
 ## Argument vs parameter
 Argument är de faktiska värdena eller uttrycken som skickas till funktionen vid funktionsanrop. Dessa värden "fyller i" funktionens parametrar och används sedan inuti funktionen för dess beräkningar eller operationer.
 

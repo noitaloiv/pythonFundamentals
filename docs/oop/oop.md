@@ -8,6 +8,8 @@ has_children: true
 # Introduktion till Objektorienterad Programmering (OOP)
 Objektorienterad Programmering (OOP) är ett programmeringsparadigm som används för att strukturera program som samlingar av _objekt_, vilket tillåter oss att enkelt återanvända kod, bygga applikationer med skalbarhet i åtanke och som gör det enklare att underhålla program på sikt.
 
+![OOP in Python](../../assets/images/banners/ch40.png){: .styled-image }
+
 ## Vad är objektorienterad programmering?
 Objektorienterad programmering är en programmeringsstil som är baserad på konceptet av "objekt" vilka kan innehålla data i form av _fält_ (_fields_) - ofta kallade _attribut_ eller _egenskaper_ - samt kod, i form av procedurer (ofta kallade _metoder_).
 
