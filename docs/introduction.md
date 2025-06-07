@@ -4,11 +4,13 @@ title: "1. Introduktion till Python"
 nav_order: 2
 ---
 
-# Välkommen till Python!
+# Introduktion till Python
 
 Python fungerar som ett mångsidigt och kraftfullt programmeringsspråk, likt en bro som underlättar kommunikation mellan människor och maskiner. Det möjliggör skapandet av läsbar och underhållbar kod som omvandlar abstrakta idéer till exekverbara kommandon, vilka datorer kan förstå och agera på. Detta språk nyttjas med andra ord som en medlare mellan dig och datorn som tar emot dina abstrakta instruktioner och tolkar dem till instruktioner som datorn kan förstå.
 
 Pythons popularitet härstammar från dess breda tillämpningsområde, som sträcker sig från webbutveckling och dataanalys till artificiell intelligens och vetenskaplig databehandling. Denna omfattande användning stöds av ett stort utbud av bibliotek och ramverk, vilket ofta gör Python till ett föredraget val för både nybörjare och erfarna utvecklare.
+
+![Intro](../assets/images/banners/introduction.png){: .styled-image }
 
 ## Kom igång med Python
 

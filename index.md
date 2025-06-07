@@ -5,6 +5,8 @@ layout: default
 # Välkommen till Programmering i Python!
 Denna webbplats är designad för att agera som ett kompendium rörande de koncept och de tekniker du behöver känna till för att förstå grunderna i programmering och, mer specifikt, programmeringsspråket Python. Webbplatsen är strukturerad som en enda lång innehållsförteckning där vi inleder med grunderna i kapitel 1 och avancerar hela vägen till objektorienterad programmering i kapitel 40-45.
 
+![Welcome](assets/images/banners/index.png){: .styled-image }
+
 ## Varför programmering?
 I dagens digitala samhälle är programmering mer än bara en färdighet; det är ett språk för innovation och problemlösning. Att lära sig programmera öppnar dörrar till nya möjligheter - vare sig det handlar om att utveckla en egen app för att lösa ett problem i vardagen, effektivisera sina arbetsrutiner genom att automatisera processer eller bidra till teknologiska framsteg i samhället.
 

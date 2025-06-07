@@ -8,6 +8,8 @@ nav_order: 3
 
 Med Python och Python-verktyg installerade kan du nu skapa din första Python-applikation! Vi gör detta genom att skapa en tom mapp, öppna mappen i Visual Studio Code (eller den utvecklingsmiljö du valt) och skapar sedan ditt första program.
 
+![My first app](../assets/images/banners/ch2.png){: .styled-image }
+
 ## Steg 1 - Skapa en ny projektmapp
 
 Många projekt börjar med en tom mapp och det finns olika tillvägagångssätt för hur man skapar denna mapp och sedan öppnar den i Visual Studio Code. Du kan exempelvis manuellt skapa mappen på ditt skrivbord och dra in den i VS Code:

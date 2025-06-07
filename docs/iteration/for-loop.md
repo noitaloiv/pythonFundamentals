@@ -12,7 +12,7 @@ Nyckelordet `for` används för att deklarera en s.k. `for-loop` och följs allt
 
 När vi först utför kodraden där `for-loop:en` är deklarerad så kommer vi att utvärdera om villkoret uppfylls eller ej. För villkoret i det föregående exemplet så kommer vi med andra ord att kontrollera huruvida 1 är mindre än 11 (1 < 11). Nästa gång kollar vi istället om 2 < 11, osv. När vi avslutningsvis når heltalet 11 så kommer villkoret inte att uppfyllas då 11 inte är mindre än 11, vilket medför att loop:en avslutas. Detta kan illustreras på följande vis:
 
-![for-loop](../../assets/images/for-loop2.png){: .styled-image }
+![for-loop](../../assets/images/f-loop.png){: .styled-image }
 
 ## Syntax för `for`-loop:ar
 `for`-nyckelordet används tillsammans med nyckelordet `in` enligt:

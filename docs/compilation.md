@@ -39,11 +39,33 @@ Efter att koden har kompilerats till _bytecode_, tolkas och exekveras denna _byt
 Till skillnad mot kompilerade språk, där koden kompileras direkt till maskinkod som kan exekveras direkt av datorns CPU, kompileras alltså Python-kod först till en "mellannivå" (_bytecode_) som sedan exekveras av Python-tolken. Detta tillåter Python att vara plattformsoberoende - samma Python-kod kan köras på vilket operativsystem som helst - så länge det finns en Python-tolk installerad - utan att behöva kompileras om för varje plattform.
 
 ### Fördelar och nackdelar
-++ Plattformsoberoende: Python-kod kan köras på alla system där en Python-tolk är installerad utan behov av omkompilering.
+✅ Plattformsoberoende: Python-kod kan köras på alla system där en s.k. Python-tolk är installerad.
 
-++ Flexibilitet och Dynamik: Python tillåter dynamiska datatyper och sena bindningar, vilket gör det enklare att skriva flexibel kod.
+✅ Flexibilitet och dynamik: Python tillåter för dynamiska datatyper och sena bindningar (late bindings), vilket gör det enklare att skriva flexibel kod. D.v.s. att vi t.ex. inte på förhand måste definiera datatypen för en variabel.
 
--- Prestanda: Eftersom Python-kod tolkas vid körning, kan prestandan vara lägre jämfört med kompilerade språk. Detta kan dock ofta mildras genom optimeringar och användning av verktyg som Cython eller PyPy.
+✅ Enkel syntax och läsbarhet: Python har - argumenterbart - ett enkelt, engelskliknande språk vilket gör det lättare att lära sig, läsa och underhålla jämfört mot vissa andra språk
+
+Exempel (i Python):
+```python
+for item in list:
+    ...
+```
+
+Exempel (i C): 
+```c
+for (int i = 0; i < cars.Length; i++) 
+{ ... }
+```
+
+✅ Stort ekosystem och bibliotek: Python har ett stort antal bibliotek och ramverk för allt från dataanalys till webbutveckling och AI/ML. Det gör att man kan utveckla avancerade system snabbt utan att skriva allt från grunden.
+
+❌ Prestanda: Eftersom Python-kod tolkas vid körning kan prestandan vara lägre jämfört mot andra, kompilerade språk.
+
+❌ Mindre kontroll över hårdvara/minne: Python ger mindre låg-nivåkontroll jämfört med språk som C/C++, vilket kan vara en nackdel i system där hårdvaruoptimering är viktigt.
+
+❌ Dynamisk typning kan leda till svårupptäckta fel: Eftersom Python är "dynamiskt typat" kan vissa typer av buggar dyka upp först vid körning av ett program, vilka i andra språk hade fångas upp innan körning.
+
+❌ Distributionsproblem: Python-program kräver att tolken är installerad på maskinen som kör koden, vilket kan skapa hinder jämfört mot en fristående fil.
 
 # Sammanfattning
 Även om Python primärt är ett _tolkat språk_, innefattar dess exekveringsprocess ändå ett steg där källkoden kompileras till _bytecode_. Denna process bidrar till Pythons flexibilitet och plattformsoberoende, samtidigt som den erbjuder en relativt smidig utvecklingscykel. 
