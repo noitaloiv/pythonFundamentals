@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "32. Lambda och anonyma funktioner"
-nav_order: 33
-parent: 30. Funktioner
+title: "33. Lambda och anonyma funktioner"
+nav_order: 34
+parent: 31. Funktioner
 ---
 
 # Anonyma funktioner med lambda

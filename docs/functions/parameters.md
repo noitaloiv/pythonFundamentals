@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "31. Funktionsparametrar"
-nav_order: 32
-parent: 30. Funktioner
+title: "32. Funktionsparametrar"
+nav_order: 33
+parent: 31. Funktioner
 ---
 
 # Parametrar

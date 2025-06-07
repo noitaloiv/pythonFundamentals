@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "41. Klasser"
-nav_order: 42
-parent: "40. OOP"
+title: "42. Klasser"
+nav_order: 43
+parent: "41. OOP"
 ---
 
 # Klasser i Python

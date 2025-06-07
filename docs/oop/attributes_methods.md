@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "43. Attribut och metoder"
-nav_order: 44
-parent: "40. OOP"
+title: "44. Attribut och metoder"
+nav_order: 45
+parent: "41. OOP"
 ---
 
 # Attribut och metoder i Python

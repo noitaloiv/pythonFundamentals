@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "44. Arv"
-nav_order: 45
-parent: "40. OOP"
+title: "45. Arv"
+nav_order: 46
+parent: "41. OOP"
 ---
 
 # Arv i Python

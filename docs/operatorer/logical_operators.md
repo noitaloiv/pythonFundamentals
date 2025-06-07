@@ -69,7 +69,7 @@ Ovanstående kod ger `True` eftersom variablen `number1` **inte** är lika med v
 ```python
 bool1 = True
 bool2 = True
-print(bool1 and bool2) # Alt. print(bool1 & bool2)
+print(bool1 and bool2)
 ```
 <div class="code-example" markdown="1">
 <pre><code>True</code></pre>
@@ -80,7 +80,7 @@ Utskriften blir `True` då både `bool1` och `bool2` har värdet `True`. Om `boo
 ```python
 bool1 = True
 bool2 = False
-print(bool1 or bool2) # Alt. print(bool1 | bool2)
+print(bool1 or bool2)
 ```
 <div class="code-example" markdown="1">
 <pre><code>True</code></pre>

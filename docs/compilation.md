@@ -36,7 +36,7 @@ Efter att koden har kompilerats till _bytecode_, tolkas och exekveras denna _byt
 ![Create folder and drag](../assets/images/chapter_images/ch3.png){: .styled-image }
 
 ### Jämförelse mot kompilerade språk
-Till skillnad mot kompilerade språk, där koden kompileras direkt till maskinkod som kan exekveras direkt av datorns CPU, kompileras alltså Python-kod först till en "mellannivå" (_bytecode_) som sedan exekveras av Python-tolken. Detta tillåter Python att vara plattformsoberoende - samma Python-kod kan köras på vilket operativsystem som helst - så länge det finns en Python-tolk installerad - utan att behöva kompileras om för varje plattform.
+Till skillnad mot kompilerade språk, där koden kompileras direkt till maskinkod som kan exekveras direkt av datorns CPU, kompileras alltså Python-kod först till en "mellannivå" (_bytecode_) som sedan exekveras av Python-tolken. Detta tillåter Python att vara plattformsoberoende - d.v.s. att samma Python-kod kan köras på vilket operativsystem som helst - så länge det finns en Python-tolk installerad på maskinen.
 
 ### Fördelar och nackdelar
 ✅ Plattformsoberoende: Python-kod kan köras på alla system där en s.k. Python-tolk är installerad.

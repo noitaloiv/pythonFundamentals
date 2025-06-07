@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "30. Funktioner"
-nav_order: 31
+title: "31. Funktioner"
+nav_order: 32
 has_children: true
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "33. Rekursion"
-nav_order: 34
-parent: 30. Funktioner
+title: "34. Rekursion"
+nav_order: 35
+parent: 31. Funktioner
 ---
 
 # Rekursiva funktioner

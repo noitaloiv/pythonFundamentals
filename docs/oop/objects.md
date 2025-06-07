@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "42. Objekt"
-nav_order: 43
-parent: "40. OOP"
+title: "43. Objekt"
+nav_order: 44
+parent: "41. OOP"
 ---
 
 # Objekt i Python

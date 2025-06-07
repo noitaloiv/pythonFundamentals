@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "36. Context managers & with"
-nav_order: 37
-parent: "35. Filhantering"
+title: "37. Context managers & with"
+nav_order: 38
+parent: "36. Filhantering"
 ---
 
 # Context Managers och `with`-satsen

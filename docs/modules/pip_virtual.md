@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "38. Virtuella miljöer och pakethantering"
-nav_order: 39
-parent: "37. Moduler"
+title: "39. Virtuella miljöer och pakethantering"
+nav_order: 40
+parent: "38. Moduler"
 ---
 
 # Virtuella miljöer och pakethantering (package management)
