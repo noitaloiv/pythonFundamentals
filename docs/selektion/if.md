@@ -102,7 +102,7 @@ Det finns ingen övre gräns för hur många villkor du kan lägga till, men som
 number = input("Enter a value: ")
 
 # One check per integer
-if int(number) > 1 & int(number) > 2 & int(number) > 3 & int(number) > 4 & ...:
+if int(number) > 1 and int(number) > 2 and int(number) > 3 and int(number) > 4 and ...:
   print("The number is larger than 100!")
 
 # One single check
