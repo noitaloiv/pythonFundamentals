@@ -55,7 +55,6 @@ number = input("Enter a value: ")
 if int(number) > 5:
   # Will only execute if number is greater than 5.
   print(number, " is larger than 5") 
-  # Will only execute if number is greater than 5.
   print("Run the application again to check another number!") 
 
 # Does not belong to the if-statement and will therefore run regardless of whether the if-statement evaluates to True or False.
@@ -65,6 +64,7 @@ print("Run the application to check other numbers!")
 <pre><code>#If the user enters 10
 10 is larger than 5
 Run the application again to check another number!
+Run the application to check other numbers!
 
 #If the user enters 3
 Run the application to check other numbers!</code></pre>
@@ -73,12 +73,13 @@ Run the application to check other numbers!</code></pre>
 ## `if`-satser med flera villkor
 Det är även möjligt att ha flera villkor på samma gång i en `if`-sats genom att nyttja logiska operatorer (`and` och `or`) och jämförelseoperatorer såsom mindre än, större än, osv (`<`, `>`). 
 
-I Python kan man använda nyckelordet `and` (`&`) för att lägga till ett extra villkor. Detta kommer medföra att `if`-satsen kommer att evaluera båda uttryck och enbart utföra de operationer som `if`-satsen avser om båda villkor är sanna.
+I Python kan man använda nyckelordet `and`  för att lägga till ett extra villkor. Detta kommer medföra att `if`-satsen kommer att evaluera båda uttryck och enbart utföra de operationer som `if`-satsen avser om båda villkor är sanna.
 ```python
 number = input("Enter a value: ")
 number2 = 16
 
-if int(number) > 5 & number2 < 15:
+if int(number) > 5 and number2 < 15:
+  # Will execute if number is larger than 5 and number2 is less than 15
   print("Success!")
 ```
 
@@ -87,8 +88,9 @@ Givet att `number2` alltid kommer ha värdet 16 så kommer vi aldrig att kunna u
 number = input("Enter a value: ")
 number2 = 16
 
-if int(number) > 5 & number2 < 15:
-  print("Success!") # Will execute if number > 5
+if int(number) > 5 and number2 < 15:
+  # Will execute if number is larger than 5
+  print("Success!") 
 ```
 <div class="code-example" markdown="1">
 <pre><code>#If the user enters 7
@@ -99,9 +101,11 @@ Det finns ingen övre gräns för hur många villkor du kan lägga till, men som
 ```python
 number = input("Enter a value: ")
 
+# One check per integer
 if int(number) > 1 & int(number) > 2 & int(number) > 3 & int(number) > 4 & ...:
   print("The number is larger than 100!")
 
+# One single check
 if int(number) > 100:
   print("The number is larger than 100!")
 ```
