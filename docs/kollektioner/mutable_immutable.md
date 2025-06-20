@@ -44,7 +44,7 @@ print(number1)
 
 Så har värdet på `number1` inte ändrats trots att vi tidigare har sagt att `number2` ska ges värdet av `number1`. Den här skillnaden i hur många namn kan peka på ett och samma objekt är central för att förstå _mutabla_ (föränderliga) och _immutabla_ (oföränderliga) typer.
 
-{ .highlight }
+{: .highlight}
 Att Python, i syfte om att reducera onödig lagring, i många fall kan återanvända samma objekt internt. Exempelvis kan `x = 10` och `y = 10` avse två referenser för samma dataobjekt, då heltalet `10` alltid kommer vara heltalet `10`.
 
 ## Vad är "minne" i en dator?
@@ -130,7 +130,7 @@ print(copy_of_original)
 [1, 2, 99]</code></pre>
 </div>
 
-{ .highlight }
+{: .highlight}
 Som vi kan se dels från det faktum att `original` och `copy_of_original` innehåller olika värden men också från att de inte längre har samma id så pekar dessa variabler på olika objekt i minnet.
 
 ## Immutabla typer som nycklar
