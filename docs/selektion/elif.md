@@ -27,10 +27,10 @@ Ponera nu att vi vill erbjuda en rabatt om en viss procentsats beroende på olik
 if accountCredit >= priceOfProduct:
   discount = 0
 
-  if priceOfProduct > 500 & priceOfProduct <= 1000:
+  if priceOfProduct > 500 and priceOfProduct <= 1000:
     discount = 0.05
     
-  elif priceOfProduct > 1000 & priceOfProduct <= 1500:
+  elif priceOfProduct > 1000 and priceOfProduct <= 1500:
     discount = 0.10
 
   # Etc. for other price levels.
