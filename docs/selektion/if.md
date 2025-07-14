@@ -83,12 +83,12 @@ if int(number) > 5 and number2 < 15:
   print("Success!")
 ```
 
-Givet att `number2` alltid kommer ha värdet 16 så kommer vi aldrig att kunna utföra den utskrift som `if`-satsen avser. Om vi däremot skulle nyttja operatorn `or` (`|`) så behöver enbart ett villkor uppfyllas.
+Givet att `number2` alltid kommer ha värdet 16 så kommer vi aldrig att kunna utföra den utskrift som `if`-satsen avser. Om vi däremot skulle nyttja operatorn `or` så behöver enbart ett villkor uppfyllas.
 ```python
 number = input("Enter a value: ")
 number2 = 16
 
-if int(number) > 5 and number2 < 15:
+if int(number) > 5 or number2 < 15:
   # Will execute if number is larger than 5
   print("Success!") 
 ```
