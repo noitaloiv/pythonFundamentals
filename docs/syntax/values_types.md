@@ -20,7 +20,7 @@ Det är således viktigt att vi är medvetna om vilken datatyp vi lagrar och/ell
 ## `type()`-funktionen
 Likt hur vi tidigare skrev ut `"Hello, world!"` med hjälp av `print()`-funktionen så skulle vi likväl kunna skriva ut ett heltal med: `print(23)`. Detta då allt som hanteras genom terminalen (d.v.s. input och output) automatiskt kommer att behandlas som textuella värden. 
 
-Om du skulle vara osäker på vilken typ ett värde har så kan kompilatorn berätta det för dig genom användningen av `type()`-funktionen: 
+Om du skulle vara osäker på vilken typ ett värde har så kan funktionen `type()` användas för att rapportera typen för ett värde. Python‑tolken avgör då denna typ dynamiskt och meddelar dig resultatet, exempelvis enligt: 
 
 ``` python
 print(type("Hello, world!"))

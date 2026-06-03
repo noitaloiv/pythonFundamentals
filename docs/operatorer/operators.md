@@ -33,7 +33,7 @@ Varje symbol representerar en operation. `+`-operationen avser addition, `-`-ope
   
 * Operatörer med samma prioritet utvärderas från vänster till höger (förutom exponentiering). Så i uttrycket `grader / 2 * pi` sker divisionen först och resultatet multipliceras sedan med pi. För att dividera med `2π` kan du använda parenteser eller skriva `grader / 2 / pi`.
 
-I det fall vi har lagrat ett värde i en variabel så kommer varibeln att ersättas med dess värde innan operationen utförs. Detta sker automatiskt när koden körs av kompilatorn. 
+I det fall vi har lagrat ett värde i en variabel så kommer varibeln att ersättas med dess värde innan operationen utförs. Detta sker automatiskt när koden tolkas av Python-tolken. 
 
 ## Divisionsberäkning
 Noterbart avseende divisionsberäkning är att Python utför decimaltalsdivision. D.v.s. att även om vi dividerar två heltal som resulterar i en jämn kvot såsom `6 / 2` så skulle resultatet bli `3.0` snarare än `3`. Om man vill utföra heltalsdivision så behöver man istället nyttja operatorn `//`:
@@ -46,7 +46,7 @@ Noterbart avseende divisionsberäkning är att Python utför decimaltalsdivision
 5</code></pre>
 </div>
 
-I det fall man tillämpar heltalsdivision så kommer kompilatorn alltid avrunda resultatet nedåt:
+I det fall man tillämpar heltalsdivision så kommer Python-tolken alltid att avrunda resultatet nedåt:
 ```python
 >>> 10/4
 >>> 10//4

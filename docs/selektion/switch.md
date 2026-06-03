@@ -13,7 +13,7 @@ I Python är en `switch`-sats en annan typ av _villkorssats_. Dessa fungerar på
 ![Selection](../../assets/images/banners/ch20.png){: .styled-image }
 
 ## `switch`-satser i Python 
-`switch`-satser introducerades i Python 10.0 och används genom nyckelorden `match` resp. `case` för att matcha ett värde mot eller flera "fall", vilka i sin tur agerar olika "vägar" i programmet. Om input exempelvis är `Addition` så kan vi etablera ett "fall" för `Addition` där vi sedan kan utföra addition mellan två heltal. Nästa gång applikationen körs så kanske input istället är `Subtraktion` och då utför vi istället subtraktion, osv.
+`switch`-satser introducerades i Python 3.10 och används genom nyckelorden `match` resp. `case` för att matcha ett värde mot eller flera "fall", vilka i sin tur agerar olika "vägar" i programmet. Om input exempelvis är `Addition` så kan vi etablera ett "fall" för `Addition` där vi sedan kan utföra addition mellan två heltal. Nästa gång applikationen körs så kanske input istället är `Subtraktion` och då utför vi istället subtraktion, osv.
 
 Ponera exempelvis att vi har skrivit en miniräknare och vi vill att användaren inledningsvis ska få välja vilken operation som ska genomföras:
 ```python

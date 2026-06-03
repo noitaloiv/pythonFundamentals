@@ -15,7 +15,7 @@ student_age = 22
 pi = 3.14159
 ```
 
-I ovan exempel så ser vi tre olika tilldelningar som resulterar i tre olika variabler. På den första raden så tilldelas variabeln `message` strängen `"Hello, world!"`, på den andra raden tilldelas variabeln `studentAge` heltalet `22` och på den tredje raden tilldelas variabeln `pi` flyttalet `3.14159`.
+I ovan exempel så ser vi tre olika tilldelningar som resulterar i tre olika variabler. På den första raden så tilldelas variabeln `message` strängen `"Hello, world!"`, på den andra raden tilldelas variabeln `student_age` heltalet `22` och på den tredje raden tilldelas variabeln `pi` flyttalet `3.14159`.
 
 Notera att vi för `"Hello, world!"` använder dubbla citationstecken för att omsluta strängen. Generellt sett har `'` och `"` samma funktion i Python, men om en sträng innehåller ett enda `'`-tecken (t.ex. meningen `it's all ogre`) så måste det omslutas av dubbla citationstecken (`"it's all ogre"`) för att tolkas som en sträng.
 

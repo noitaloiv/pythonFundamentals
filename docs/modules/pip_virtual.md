@@ -11,7 +11,7 @@ När du arbetar med Python-projekt, särskilt de som inkluderar externa bibliote
 ## Virtuella miljöer
 _Virtuella miljöer_ i Python tillhandahåller en isolerad miljö för Python-projekt. Detta innebär att varje projekt kan ha sina egna beroenden, oavsett andra projektens beroenden. Det är särskilt användbart när två eller fler projekt kräver olika versioner av samma paket. D.v.s. att vi kan lägga till bibliotek och moduler för ett enda Python-projekt utan att riskera att vi påverkar andra Python-projekt på samma dator.
 
-För att skapa en virtuell miljö kan du använda kommandot `python venv` i terminalen från den mapp där du vill skapa den virtuella mappen. Om du t.ex. befinner dig i mappen Desktop i din terminal så kommer du att skapa den virtuella miljön där. som kommer förinstallerad med Python 3.3 och senare. Här är ett grundläggande exempel på hur du skapar och aktiverar en virtuell miljö:
+För att skapa en virtuell miljö kan du använda kommandot `python -m venv <folder_name>` i terminalen från den mapp där du vill skapa den virtuella mappen. Om du t.ex. befinner dig i mappen Desktop i din terminal så kommer du att skapa den virtuella miljön där. som kommer förinstallerad med Python 3.3 och senare. Här är ett grundläggande exempel på hur du skapar och aktiverar en virtuell miljö:
 ```python
 # Create a virtual environment in the folder 'my_project_env'
 python -m venv my_project_env
@@ -44,7 +44,7 @@ pip install package_name==1.2.3
 ```
 
 ### Paketberoenden och requirements.txt
-För större projekt där du vill hålla reda på alla beroenden är requirements.txt-filen standard. Den innehåller en lista över alla paket som ditt projekt är beroende av, ofta med specifika versioner för att säkerställa kompatibilitet.
+För större projekt där du vill hålla reda på alla beroenden är `requirements.txt`-filen standard. Den innehåller en lista över alla paket som ditt projekt är beroende av, ofta med specifika versioner för att säkerställa kompatibilitet.
 
 En requirements.txt kan se ut så här:
 ```python
@@ -52,7 +52,7 @@ flask==1.1.2
 requests==2.24.0
 ```
 
-D.v.s. att projektet är beroende utav `flask` och `requests`. Denna information lagras i filen requirements.txt (som du själv skapar och fyller i). Denna fil tillåter oss sedan att installera alla beroenden från ett projekt enligt:
+D.v.s. att projektet är beroende utav `flask` och `requests`. Denna information lagras i filen `requirements.txt` (som du själv skapar och fyller i). Denna fil tillåter oss sedan att installera alla beroenden från ett projekt enligt:
 ```python
 pip install -r requirements.txt
 ```
@@ -80,8 +80,8 @@ pip uninstall package_name
 ## Vanliga Python-paket och deras användningsområden
 Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar språkets funktionalitet. Nedan är några populära paket som ofta används inom olika områden:
 
-* `requests`: Enkla HTTP-förfrågningar <br>
-`requests` är ett populärt paket för att göra HTTP-förfrågningar. Det är känt för sin enkelhet och användarvänlighet jämfört med den inbyggda `urllib`.
+* `Requests`: Enkla HTTP-förfrågningar <br>
+`Requests` är ett populärt paket för att göra HTTP-förfrågningar. Det är känt för sin enkelhet och användarvänlighet jämfört med den inbyggda `urllib`.
     ```python
     import requests
 
@@ -93,8 +93,8 @@ Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar spr
     <pre><code>{'page': 1, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 1, 'email': 'george.bluth@reqres.in', 'first_name': 'George', 'last_name': 'Bluth', 'avatar': 'https://reqres.in/img/faces/1-image.jpg'}, {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://reqres.in/img/faces/2-image.jpg'}, {'id': 3, 'email': 'emma.wong@reqres.in', 'first_name': 'Emma', 'last_name': 'Wong', 'avatar': 'https://reqres.in/img/faces/3-image.jpg'}, {'id': 4, 'email': 'eve.holt@reqres.in', 'first_name': 'Eve', 'last_name': 'Holt', 'avatar': 'https://reqres.in/img/faces/4-image.jpg'}, {'id': 5, 'email': 'charles.morris@reqres.in', 'first_name': 'Charles', 'last_name': 'Morris', 'avatar': 'https://reqres.in/img/faces/5-image.jpg'}, {'id': 6, 'email': 'tracey.ramos@reqres.in', 'first_name': 'Tracey', 'last_name': 'Ramos', 'avatar': 'https://reqres.in/img/faces/6-image.jpg'}], 'support': {'url': 'https://reqres.in/#support-heading', 'text': 'To keep ReqRes free, contributions towards server costs are appreciated!'}}</code></pre>
     </div>
 
-* `pandas`: Kraftfull dataanalys och manipulation <br>
-`pandas` är ett viktigt paket för dataanalys i Python och används för att hantera och analysera strukturerad data.
+* `Pandas`: Kraftfull dataanalys och manipulation <br>
+`Pandas` är ett viktigt paket för dataanalys i Python och används för att hantera och analysera strukturerad data.
     ```python
     import pandas as pd
 
@@ -104,8 +104,8 @@ Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar spr
     print(df.head())
     ```
 
-* `numPy`: Vetenskaplig beräkning <br>
-`numPy` erbjuder stöd för stora, flerdimensionella arrayer och matriser, tillsammans med en samling av matematiska funktioner för att arbeta med dessa arrayer.
+* `NumPy`: Vetenskaplig beräkning <br>
+`NumPy` erbjuder stöd för stora, flerdimensionella arrayer och matriser, tillsammans med en samling av matematiska funktioner för att arbeta med dessa arrayer.
     ```python
     import numpy as np
 
@@ -118,8 +118,8 @@ Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar spr
     <pre><code>-2.0000000000000004</code></pre>
     </div>
 
-* `matplotlib`: Plottingbibliotek <br>
-`matplotlib` är sannolikt det mest använda Python-biblioteket för att skapa 2D-plotter och diagram. Det kan bl.a. användas för att visualisera data och resultat av en analys.
+* `Matplotlib`: Plottingbibliotek <br>
+`Matplotlib` är sannolikt det mest använda Python-biblioteket för att skapa 2D-plotter och diagram. Det kan bl.a. användas för att visualisera data och resultat av en analys.
     ```python
     import matplotlib.pyplot as plt
 
@@ -133,8 +133,8 @@ Python-communityt har utvecklat ett stort antal kraftfulla paket som utökar spr
     <pre><code><img src="../../assets/images/matplotlib.png" alt="plot example"></code></pre>
     </div>
 
-* `flask`: Webbutveckling <br>
-`flask` är ett mikroramverk för webbutveckling i Python. Det är enkelt att komma igång med och kraftfullt nog för att bygga komplexa webbapplikationer.
+* `Flask`: Webbutveckling <br>
+`Flask` är ett mikroramverk för webbutveckling i Python. Det är enkelt att komma igång med och kraftfullt nog för att bygga komplexa webbapplikationer.
     ```python
     from flask import Flask
 

@@ -15,7 +15,7 @@ message_two = message + 1
 <pre><code>TypeError: can only concatenate str (not "int") to str</code></pre>
 </div>
 
-Som vi ser från felmeddelandet så reagerar kompilatorn inte på operatorn, `+`, utan på att vi försöker använda den med två olika datatyper (`str` + `int`). Vi tillåts nämligen att använda `+`-operatorn mellan två strängar för att konkatenera dem. Strängkonkatenering innefattar att vi slår ihop två strängar:
+Som vi ser från felmeddelandet så reagerar tolken inte på operatorn, `+`, utan på att vi försöker använda den med två olika datatyper (`str` + `int`). Vi tillåts nämligen att använda `+`-operatorn mellan två strängar för att konkatenera dem. Strängkonkatenering innefattar att vi slår ihop två strängar:
 ```python
 message_a = "Heya"
 message_b = ", Chris!"

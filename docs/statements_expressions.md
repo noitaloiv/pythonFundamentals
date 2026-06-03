@@ -24,7 +24,7 @@ This is true</code></pre>
 
 ![Statements](../assets/images/banners/ch7_statements_wide.png){: .styled-image }
 
-När du skriver ett påstående i din Python-fil och sedan kör koden via Visual Studio Code (alt. kör koden direkt genom terminalen) så kommer Python att kompilera koden och visa eventuella resultat. Vi skriver "eventuella resultat" då exempelvis tilldelning i sig självt inte kommer att generera någon output, om inte variabeln efter tilldelningen skrivs ut med hjälp av  t.ex. `print()`-funktionen.
+När du skriver ett påstående i din Python-fil och sedan kör koden via Visual Studio Code (alt. kör koden direkt genom terminalen) så kommer Python att tolka koden och visa eventuella resultat. Vi skriver "eventuella resultat" då exempelvis tilldelning i sig självt inte kommer att generera någon output, om inte variabeln efter tilldelningen skrivs ut med hjälp av  t.ex. `print()`-funktionen.
 ```python
 assignment = "A value"  # Nothing happens, in terms of output
 
@@ -34,7 +34,7 @@ print(assignment)       # The value of 'assignment' is printed
 <pre><code>A value</code></pre>
 </div>
 
-Ett Python-skript innehåller generellt sett en _sekvens av påståenden_. Om det finns mer än ett påstående (med tillhörande utskrift) så kommer resultaten att visas ett i taget allteftersom att resp. påstående kompileras/körs - vilket alltid sker i en hierarkisk ordning (d.v.s. från påståendet på den första kodraden till påståendet på den sista kodraden).
+Ett Python-skript innehåller generellt sett en _sekvens av påståenden_. Om det finns mer än ett påstående (med tillhörande utskrift) så kommer resultaten att visas ett i taget allteftersom att resp. påstående tolkas/körs - vilket alltid sker i en hierarkisk ordning (d.v.s. från påståendet på den första kodraden till påståendet på den sista kodraden).
 ```python
 number = 10
 print(number)
@@ -48,7 +48,7 @@ print(number)           # Will not print 20 since we've overwritten that value
 </div>
 
 # "Uttryck" (expressions)
-Ett uttryck är en kombination av värden, variabler, operatorer (exempelvis matematiska operatorer såsom `+`, `-`, etc.) och vissa funktionsanrop (de som resulterar i att något utvärderas) som kan __utvärderas__ till ett enskilt värde. Detta innebär att varje uttryck har ett värde, vilket skiljer det från ett påstående som inte nödvändigtvis måste generera ett värde. Om du exempelvis skriver uttrycket `2 + 2` så kommer kompilatorn att tolka och visa resultatet:
+Ett uttryck är en kombination av värden, variabler, operatorer (exempelvis matematiska operatorer såsom `+`, `-`, etc.) och vissa funktionsanrop (de som resulterar i att något utvärderas) som kan __utvärderas__ till ett enskilt värde. Detta innebär att varje uttryck har ett värde, vilket skiljer det från ett påstående som inte nödvändigtvis måste generera ett värde. Om du exempelvis skriver uttrycket `2 + 2` så kommer tolken att tolka och visa resultatet:
 ```python
 >>> 2 + 2
 ```
