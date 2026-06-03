@@ -63,5 +63,10 @@ the second row will print <class 'str'>
 {: .highlight }
 **TIPS:** I Visual Studio Code kan du markera den kod du vill kommentera och ange tangentbordskommandot `SHIFT + ALT + A` (i Windows OS) eller `SHIFT + OPTION(⌥) + A` (i Mac OS) för att kommentera ut det du markerat. För att sedan ta bort kommentaren så kan du markera koden på nytt och ange samma kommando. Detta underlättar mycket när man vill exkludera viss kod i testsyfte.
 
+## Syntax vs stil
+Det är också bra att skilja mellan _syntax_ och _stil_. Syntax är sådant som __måste__ vara korrekt för att programmet ska fungera, till exempel att lägga till kolon efter `if` och att tillämpa korrekta indrag/korrekt indentering.
+
+Stil handlar mer om _läsbarhet_, till exempel att lägga till mellanrum runt operatorer och använda tydliga variabelnamn.
+
 # Sammanfattning
 I detta kapitel har vi utforskat de grundläggande syntaxelementen i Python, inklusive vikten av korrekt indentering samt hur man använder kommentarer för att öka kodens läsbarhet. Dessa koncept - tillsammans med värden, datatyper och variabler - är avgörande för att skriva korrekt och lättförståelig Python-kod. Att behärska dessa grundläggande principer kommer att lägga en stabil grund för vidare lärande och utforskning av Python.

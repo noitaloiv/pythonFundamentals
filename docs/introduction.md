@@ -6,9 +6,21 @@ nav_order: 2
 
 # Introduktion till Python
 
-Python fungerar som ett mångsidigt och kraftfullt programmeringsspråk, likt en bro som underlättar kommunikation mellan människor och maskiner. Det möjliggör skapandet av läsbar och underhållbar kod som omvandlar abstrakta idéer till exekverbara kommandon, vilka datorer kan förstå och agera på. Detta språk nyttjas med andra ord som en medlare mellan dig och datorn som tar emot dina abstrakta instruktioner och tolkar dem till instruktioner som datorn kan förstå.
+Python fungerar som ett mångsidigt och kraftfullt programmeringsspråk, likt en bro som underlättar kommunikation mellan människor och maskiner. Det möjliggör skapandet av läsbar och underhållbar kod som omvandlar abstrakta idéer till exekverbara kommandon, vilka datorer kan förstå och agera på. 
 
-Pythons popularitet härstammar från dess breda tillämpningsområde, som sträcker sig från webbutveckling och dataanalys till artificiell intelligens och vetenskaplig databehandling. Denna omfattande användning stöds av ett stort utbud av bibliotek och ramverk, vilket ofta gör Python till ett föredraget val för både nybörjare och erfarna utvecklare.
+För att programmera i Python behöver du i praktiken två saker:
+
+1. en installation av Python, och
+
+2. ett sätt att skriva och köra din kod, till exempel Visual Studio Code.
+
+När du skriver kod i Python arbetar du i ett programmeringsspråk som är utformat för att vara _läsbart för människor_. Datorn kör däremot inte Python-kod direkt på samma sätt som vi läser text. I stället används Python-tolken för att _läsa_, _bearbeta_ och _köra_ den kod du skriver.
+
+Det viktiga här är alltså inte att tänka att du "översätter till maskinkod" manuellt, utan att du skriver Python-kod som Python-miljön sedan kör åt dig.
+
+I det här kompendiet kommer vi steg för steg att gå från att skriva vårt första program till att förstå centrala begrepp som variabler, villkor, loopar, funktioner och objektorientering.
+
+Pythons popularitet härstammar från dess breda tillämpningsområde, som sträcker sig från webbutveckling och dataanalys till artificiell intelligens och vetenskaplig databehandling.
 
 ![Intro](../assets/images/banners/introduction.png){: .styled-image }
 
@@ -34,7 +46,7 @@ Som nämnt behöver du installera ett par verktyg på din dator:
 1. Besök [Pythons officiella webbplats](https://www.python.org/).
 2. Klicka på "Downloads"-fliken och välj den senaste versionen av Python (Python 3) för operativsystemet på din dator (Windows, macOS eller Linux).
 3. Dubbelklicka på den nedladdade filen och följ installationsguiden. För Windows-användare, var noga med att markera rutan _"Add Python 3.x to PATH"_ under installationen för att göra Python lättillgängligt från kommandotolken.
-4. Verifiera installationen genom att öppna kommandotolken (CMD på Windows, Terminal på macOS och Linux) och skriv `python --version` (eller `python3 --version` på vissa Linux-distributioner). Du bör se Python-versionen som svar, vilket bekräftar att installationen var framgångsrik.
+4. Verifiera installationen genom att öppna kommandotolken (CMD på Windows, Terminal på macOS och Linux) och skriv `python --version` (eller `python3 --version` i vissa operativsystem). Om Python är korrekt installerat visas versionsnumret. Då är du redo att börja skriva och köra program.
 
 Med Python installerat på ditt system kan du rikta uppmärksamheten mot att installera utvecklingsmiljön. När du arbetar med Python så skrivs kod i en Python-syntax inuti en textfil som sedan kan lagras på exempelvis din lokala hårddisk. Det är således tekniskt sett möjligt att skriva Python-kod i en textredigerare såsom Microsoft Word, men det avråds starkt. Detta då dessa textredigerare generellt tillämpar formateringsalternativ som kan leda till att den Python-kod du skriver inte kan tolkas av datorn när du kör dina program.
 
