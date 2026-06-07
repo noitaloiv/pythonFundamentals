@@ -12,8 +12,8 @@ I Python är en `switch`-sats en annan typ av _villkorssats_. Dessa fungerar på
 
 ![Selection](../../assets/images/banners/ch20.png){: .styled-image }
 
-## `switch`-satser i Python 
-`switch`-satser introducerades i Python 3.10 och används genom nyckelorden `match` resp. `case` för att matcha ett värde mot eller flera "fall", vilka i sin tur agerar olika "vägar" i programmet. Om input exempelvis är `Addition` så kan vi etablera ett "fall" för `Addition` där vi sedan kan utföra addition mellan två heltal. Nästa gång applikationen körs så kanske input istället är `Subtraktion` och då utför vi istället subtraktion, osv.
+## `match`-satsen: `match` & `case` 
+Python har ingen traditionell `switch`-sats i samma mening som exempelvis C, Java eller JavaScript. Från och med Python 3.10 finns däremot `match` och `case`, som används för strukturell mönstermatchning. D.v.s. där vi kan matcha ett värde mot eller flera "fall", vilka i sin tur agerar olika "vägar" i programmet. Om input exempelvis är `Addition` så kan vi etablera ett "fall" för `Addition` där vi sedan kan utföra addition mellan två heltal. Nästa gång applikationen körs så kanske input istället är `Subtraktion` och då utför vi istället subtraktion, osv.
 
 Ponera exempelvis att vi har skrivit en miniräknare och vi vill att användaren inledningsvis ska få välja vilken operation som ska genomföras:
 ```python
@@ -116,7 +116,7 @@ Om `point` istället hade haft värdena `(0, 3)` så hade vi fått utskriften `T
 Vi anger inte ett "default" fall i detta kodexempel. Detta är tillåts i Python och kan tänkas vara relevant i kontexter där vi på förhand kan avgöra alla möjliga utfall. I detta scenario kan exempelvis en punkt i ett tvådimensionellt koordinatsystem enbart förhålla sig till de fall vi etablerat. I tidigare kodexempel har vi istället försökt matcha baserat på användarens input, vilket kan tänkas vara allt möjligt. Praxis kan dock tänkas vara att alltid nyttja `case _:`.
 
 # Sammanfattning
-`switch`-satser, introducerade i Python 10.0 genom `match`- och `case`- nyckelorden, erbjuder en mer strömlinjeformad och lättläst syntax för att hantera flervägs beslutsfattande jämfört med traditionella `if-elif`-kedjor. 
+`match` resp. `case` introducerades i Python 3.1 och kan användas för flervalslogik, och avser Pythons syntax för mönstermatchning. Detta erbjuder - argumenterbart - en mer strömlinjeformad och lättläst syntax för att hantera flervägs-beslutsfattande jämfört mot traditionella `if-elif`-kedjor. 
 
 Genom att matcha ett inmatningsvärde mot fördefinierade "fall" kan `match`-satsen leda programflödet på ett sätt som är enkelt att följa och underhålla. Dessutom möjliggör Python's `match`-sats avancerad mönstermatchning, vilket utökar dess användbarhet till mer komplexa scenarier än enkel värdejämförelse. 
 

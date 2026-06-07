@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "46. Polymorfism och komposition"
-nav_order: 47
-parent: "41. OOP"
+title: "49. Polymorfism och komposition"
+nav_order: 50
+parent: "44. OOP"
 ---
 
 # Polymorfism

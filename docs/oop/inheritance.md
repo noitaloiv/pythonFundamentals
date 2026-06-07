@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "45. Arv"
-nav_order: 46
-parent: "41. OOP"
+title: "48. Arv"
+nav_order: 49
+parent: "44. OOP"
 ---
 
 # Arv i Python
@@ -61,11 +61,11 @@ Utöver grundläggande arv kan klasshierarkier i Python sträcka sig över flera
 En klass kan ärva från en annan klass, som i sin tur ärver från en annan klass, och så vidare. Detta skapar en kedja av arv som kan användas för att _specialisera_ funktioner eller attribut i olika steg. Exempelvis kan det tänkas vara relevant att särskilja en elbil från en "vanlig" bil enligt:
 ```python
 class Vehicle:
-    def __init__(self, marke):
-        self.marke = marke
+    def __init__(self, make):
+        self.make = make
 
     def display_info(self):
-        print(f"The vehicle is a: {self.marke}")
+        print(f"The vehicle is a: {self.make}")
 
 class Car(Vehicle):
     def __init__(self, make, model):

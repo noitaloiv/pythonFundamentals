@@ -13,7 +13,7 @@ En `while-loop` är en alternativ loop till `for-loop` och båda loop:ar har gen
 Istället för villkoret `x in range(1,11)` - vilket kan översättas till `"SÅ LÄNGE SOM x ÄR INOM INTERVALLET 1-11"` - så skulle vi få något i stil med `number < 11` - vilket kan ersättas till `"SÅ LÄNGE SOM number ÄR MINDRE ÄN 11"`:
 ```python
 number = 1          # Declare the iterator variable outside the loop
-while number < 11   # Use the keyword and set a condition
+while number < 11:  # Use the keyword and set a condition
   print(number)     # Execute operation(s)
   number += 1       # Update the value of the iterator variable
 ```
@@ -121,7 +121,7 @@ while line:
 Loop:ar kan användas för att be användaren om input upprepade gånger tills giltig input mottas eller användaren väljer att avsluta.
 ```python
 answer = input("Do you wish to continue? (Y/N): ")
-while answer.lower() != "N":
+while answer.lower() != "n":
     # Execute an operation
     answer = input("Do you wish to continue? (Y/N): ")
 ```

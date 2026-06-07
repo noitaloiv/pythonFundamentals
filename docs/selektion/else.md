@@ -73,12 +73,12 @@ if 10 > 5:
 
 if 10 > 5:    # Acceptable syntax
   Operation1
-else
+else:
   Operation2
 
 else:         # Non-acceptable syntax as we're missing an if
 ```
-Avslutningsvis så är det heller inte möjligt att nästla `else`-satser.
+En `else` tillhör alltid en specifik `if`- eller `elif`-struktur på samma indenteringsnivå. Däremot kan ett `else`-block innehålla en ny `if`-sats med en tillhörande `else`-sats. Det är med andra ord inte möjligt att nästla `else`-satser, men det är möjligt att etablera en ny `if`-struktur inuti en `else`.
 
 {: .highlight }
 En `else`-sats representerar ett **ANNARS**-fall i vårt program, d.v.s. det som ska ske om inget villkor uppfylls. Det är således omöjligt att nästla `else`-satser eller ange dem utan tillhörande `if`-satser.

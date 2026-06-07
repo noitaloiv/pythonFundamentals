@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "44. Attribut och metoder"
-nav_order: 45
-parent: "41. OOP"
+title: "47. Attribut och metoder"
+nav_order: 48
+parent: "44. OOP"
 ---
 
 # Attribut och metoder i Python
@@ -66,25 +66,23 @@ print(car_a.number_of_wheels)
 4</code></pre>
 </div>
 
-Det är dessutom, i Python, möjligt att manipulera klassvariabler som om de vore instansvariabler då objekt är föränderliga (mutable). Exempelvis är följande giltig Python-kod:
+Om man tilldelar ett värde till `car_a.number_of_wheels` skapas eller ändras ett instansattribut på just `car_a`. Klassattributet `Car.number_of_wheels` ändras dock inte. Det som händer i nedan fall är att instansattributet "skuggar" klassattributet när man läser värdet via `car_a`.
 ```python
 class Car:
-    number_of_wheels = 4        
+    number_of_wheels = 4
 
-    def __init__(self, make, model):
-        self.make = make        
-        self.model = model    
+car_a = Car()
+car_b = Car()
 
-print(Car.number_of_wheels)  
-car_a = Car("Volvo", "XC90")
 car_a.number_of_wheels = 6
-car_b = Car("Toyota", "Corolla")
-print(car_a.number_of_wheels)  
-print(car_b.number_of_wheels)  
+
+print(car_a.number_of_wheels)
+print(car_b.number_of_wheels)
+print(Car.number_of_wheels)
 ```
 <div class="code-example" markdown="1">
-<pre><code>4
-6
+<pre><code>6
+4
 4</code></pre>
 </div>
 
@@ -123,28 +121,30 @@ Dessa metoder är istället bundna till klassen snarare än instanser av klassen
     ```python
     class Car:
         number_of_wheels = 4
-        number_of_cars_created = 0  
+        number_of_cars_created = 0
 
         def __init__(self, make, model):
             self.make = make
             self.model = model
-            number_of_cars_created += 1
-        
+            type(self).number_of_cars_created += 1
+
         def display_info(self):
             print(f"This car is a: {self.make} {self.model}")
-        
+
         @classmethod
         def number_of_cars(cls):
             print(f"The number of car objects is: {cls.number_of_cars_created}")
 
     Car.number_of_cars()
-    car_a = Car("Volvo", "S60")   
-    car_b = Car("Toyota", "Corolla")      
+
+    car_a = Car("Volvo", "S60")
+    car_b = Car("Toyota", "Corolla")
+
     Car.number_of_cars()
     ```
     <div class="code-example" markdown="1">
-    <pre><code>0
-2</code></pre></div>
+    <pre><code>The number of car objects is: 0
+The number of car objects is: 2</code></pre></div>
 
 ### `cls` och `@classmethod`
 För att deklarera en klassmetod så anger man dekoratorn `@classmethod` över metoddeklarationen. Vi måste göra detta för att särskilja en klassmetod från en instansmetod, annars kommer Pythontolkaren inte att förstå att vi försöker deklarera funktionalitet på klassnivå.

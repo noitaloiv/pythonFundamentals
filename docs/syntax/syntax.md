@@ -50,13 +50,15 @@ Utöver faktiska felmeddelanden i form av `IndentationError` så kan felaktig in
 ## Kommentarer
 Notera att `#`-symbolen indikerar startpunkten för en kommentar. En kommentar kan vara körbar kod, fritext eller principiellt vad du än kan tänkas vilja skriva. Kommentarer är något som kompilatorn kommer att ignorera när koden körs, d.v.s. att det enbart är till för dig och andra utvecklare - exempelvis för att tillhandahålla beskrivande text för den kod du skrivit.
 
-Det är möjligt att skriva kommentarer över en eller flera rader där `#`-symbolen nyttjas för enradiga kommentarer och `'''` kan nyttjas för att skriva kommentarer över flera rader, t.ex. enligt: 
+Kommentarer i Python skrivs med `#` där all text efter `#` på samma rad ignoreras när programmet körs. För att skriva längre kommentarer så kan man alltså skriva inleda flera rader efter varandra med `#`.
+
+Det finns däremot även trippelciterade strängar, exempelvis i stil med: `'''text'''` vilka inte är kommentarer i egentlig mening, men används ofta som "dokumentationssträngar" (docstrings) i moduler, funktioner och klasser. Dessa tillåter alltså för att exempelvis kommentera en hel funktion eller modul utan att inleda varje rad med `#`.
 ```python
-print(type("Hello, world!"))
-print(type(23))
+print(type("Hello, world!")) # <class 'str'>
+print(type(23))              # <class 'int'>
 '''
-the first row will print <class 'int'> and
-the second row will print <class 'str'>
+the first row will print <class 'str'> and
+the second row will print <class 'int'>
 '''
 ```
 
@@ -67,6 +69,9 @@ the second row will print <class 'str'>
 Det är också bra att skilja mellan _syntax_ och _stil_. Syntax är sådant som __måste__ vara korrekt för att programmet ska fungera, till exempel att lägga till kolon efter `if` och att tillämpa korrekta indrag/korrekt indentering.
 
 Stil handlar mer om _läsbarhet_, till exempel att lägga till mellanrum runt operatorer och använda tydliga variabelnamn.
+
+{: .highlight }
+I detta kapitel introducerar vi enbart grundläggande kommentarer  och stil. Senare i detta kompendium så kommer vi att återkomma till hur kommentarer, docstrings, kodstil och typmarkeringar kan användas för att göra större program mer läsbara och underhållbara.
 
 # Sammanfattning
 I detta kapitel har vi utforskat de grundläggande syntaxelementen i Python, inklusive vikten av korrekt indentering samt hur man använder kommentarer för att öka kodens läsbarhet. Dessa koncept - tillsammans med värden, datatyper och variabler - är avgörande för att skriva korrekt och lättförståelig Python-kod. Att behärska dessa grundläggande principer kommer att lägga en stabil grund för vidare lärande och utforskning av Python.

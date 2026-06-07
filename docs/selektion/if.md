@@ -40,13 +40,16 @@ if villkor:
 
 Man deklarerar alltså inledningsvis en `if`-sats med nyckelordet `if` och ett tillhörande villkor. Detta villkor måste vara av en boolesk natur, d.v.s. att det måste vara något som kan evalueras till `True` eller `False`:
 ```python
-if 10: # An unacceptable condition
+if 10:     # Technically an acceptable condition
 
-if 10 > 5: # An acceptable condition
+if 10 > 5: # A more common approach for an acceptable condition
 
-if True: # Another acceptable condition
+if True:   # Another acceptable condition
 ```
 Det är således vanligt förekommande att vi nyttjar jämförande operatorer i kontexten av `if`- och `elif`-satser.
+
+{: .highlight }
+`if 10:` är tekniskt sett något som kan tolkas som ett booleskt värde (då `10` är `10`), men det är argumenterbart mer otydligt än att då använda `if True:`.
 
 Alla rader som är indenterade efter `if`-satsen representerar sedan den operation/de operationer som tillhör `if`-satsen - d.v.s. den kod som ska utföras om villkoret uppfylls. `if`-satsen och dess operationer avslutas på den rad man slutar indentera koden:
 ```python
@@ -121,7 +124,7 @@ if not hasVoted(userName):
   if isEligible(voteResult):
     print("Thank you for your vote!")
 ```
-I ovan scenario kontrollerar vi först och främst att en användare inte redan har röstat genom `!hasVoted(userName)` där vårt villkor avser att vi vill ha värdet `False` från funktionen `hasVoted()`. OBS! Detta är inte en inbyggd funktion i Python likt `input()` eller `print()` utan avser istället en _egendefinierad funktion_ vars syfte är att kontrollera om en användare har röstat eller ej.
+I ovan scenario kontrollerar vi först och främst att en användare inte redan har röstat genom `hasVoted(userName)` där vårt villkor avser att vi vill ha värdet `False` från funktionen `hasVoted()`. **OBS!** Detta är inte en inbyggd funktion i Python likt `input()` eller `print()` utan avser istället en _egendefinierad funktion_ vars syfte är att kontrollera om en användare har röstat eller ej.
 
 Om användaren inte har röstat, d.v.s. att funktionen `hasVoted()` skickar tillbaka `False`, så utför vi en annan egendefinierad funktion - `allowVote()` - som i sin tur skickar tillbaka användarens röstning. I den inre `if`-satsen kontrolleras sedan villkoret `isEligible(voteResult)`, som i sin tur är ytterligare en egendefinierad funktion vars syfte är att kontrollera om en röst är legitim eller ej.
 

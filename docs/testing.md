@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "40. Testning"
-nav_order: 41
+title: "42. Testning"
+nav_order: 43
 ---
 
 # Testning
@@ -86,6 +86,22 @@ def test_divide():
 
 Så kan vi testa att implementationen inte hanterar division med 0:
 ![pytest_error](../assets/images/divideByZero_pytest.png){: .styled-image }
+
+### Testa för undantag
+Noterbart är att det sista testet i föregående delkapitel är problematiskt då funktionen kastar ett felmeddelande innan jämförelsen mot `ZeroDivisionError` kan göras (d.v.s. att programmet kraschar när det försöker utföra operationen `5/0` snarare än när det försöker avgöra om kvoten resulterar i ett `ZeroDivisionError`).
+
+När vi vill testa att ett undantag uppstår kan det istället tänkas vara fördelaktigt att nyttja `pytest.raises()`, där testet istället lyckas om `divide(5, 0)` leder till ett `ZeroDivisionError`:
+```python
+def divide(x, y):
+    return x / y
+
+def test_divide():
+    assert divide(5, 2) == 2.5
+
+def test_divide_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        divide(5, 0)
+```
 
 ## Testdriven utveckling (TDD)
 Testdriven utveckling är en metodik där testfallen skapas innan själva koden skrivs. Detta uppmuntrar till en genomtänkt design och säkerställer att koden testas grundligt. Processen följer en cykel av att först skriva ett test som misslyckas, sedan skriva kod för att få testet att lyckas, och slutligen refaktorera koden (d.v.s. revidera koden) för att förbättra dess struktur och klarhet.

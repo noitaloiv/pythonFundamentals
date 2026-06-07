@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "42. Klasser"
-nav_order: 43
-parent: "41. OOP"
+title: "45. Klasser"
+nav_order: 46
+parent: "44. OOP"
 ---
 
 # Klasser i Python
@@ -33,23 +33,32 @@ class Car:
 Det är möjligt att lägga till hur många parametrar du vill till `__init__`-metoden, men den första parametern måste alltid vara parametern `self`.
 
 ### `__init__()` måste inte deklareras
-En klass måste inte nödvändigtvis deklarera och implementera `__init__`-metoden för att det ska vara en fungerande klass från vilken vi kan skapa objekt. Det är exempelvis fullt möjligt att skriva en klass i stil med:
+En klass måste inte nödvändigtvis definiera `__init__` för att det ska vara en fungerande klass, från vilken objekt ska kunna skapas. Däremot körs kod som står direkt i klasskroppen när klassen definieras - __inte__ varje gång ett objekt skapas.
 ```python
 class Car:
-    print("This is a car")
-```
-Vilket skulle medföra att varje gång vi instansierar ett objekt av klassen så kommer `This is a car` att skrivas ut:
-```python
-class Car:
-    print("This is a car")
+    print("Class Car is being defined")
 
 new_car = Car()
+another_car = Car()
 ```
 <div class="code-example" markdown="1">
-<pre><code>This is a car</code></pre>
+<pre><code>Class Car is being defined</code></pre>
 </div>
 
-I de fall man vill skapa ett initalt tillstånd för sina objekt så görs detta dock genom `__init__`-metoden. Exempelvis kan det tänkas vara relevant att tilldela födelseår och namn på en student i samband med att vi skapar studentobjektet istället för att först skapa objektet och sedan tilldela dessa värden.
+I de fall man vill skapa ett initalt tillstånd för sina objekt så görs detta dock genom `__init__`-metoden. Exempelvis kan det tänkas vara relevant att tilldela födelseår och namn på en student i samband med att vi skapar studentobjektet istället för att först skapa objektet och sedan tilldela dessa värden. För att utgå från samma exempel som tidigare skulle vi alltså skriva något i stil med:
+```python
+class Car:
+    def __init__(self):
+        print("A car object was created")
+
+new_car = Car()
+another_car = Car()
+```
+<div class="code-example" markdown="1">
+<pre><code>A car object was created
+A car object was created</code></pre>
+</div>
+
 
 ### Nyckelordet `self`
 `self` i Python är en referens till det _aktuella objektet_ som använder klassen. Det används för att komma åt variabler som tillhör klassen och för att anropa andra metoder inom samma klass. Nyckelordet måste specificeras explicit i varje metoddefinition (inkl. `__init__`) för klassen men det behöver __inte__ anges vid metodanrop.

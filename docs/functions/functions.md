@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "31. Funktioner"
-nav_order: 32
+title: "32. Funktioner"
+nav_order: 33
 has_children: true
 ---
 
@@ -72,8 +72,8 @@ Hi Max, welcome back!</code> </pre>
 
 Detta är enormt fördelaktigt om vi vet att vi kommer vilja utföra samma funktion flera gånger i vår applikation. Exempelvis kan vi istället för att skriva en separat loop för varje utskrift av elementen i en sträng definiera detta som en funktion och anropa den vid behov. Vi behöver m.a.o. bara skriva en enda loop för att kunna hantera utskriften för elementen i ___alla strängar___.
 ```python
-def print_chars_in_string(input):
-    for c in input:
+def print_chars_in_string(text):
+    for c in text:
         print(c)
 
 print_chars_in_string("Hello")

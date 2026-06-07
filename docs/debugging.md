@@ -67,6 +67,67 @@ Debugging-verktyget nyttjas enligt följande steg:
 
 Detta är ett extremt värdefullt verktyg när man försöker identifiera eventuella fel eller oväntade resultat som har uppstått i koden. Exempelvis kan vi gå igenom varje iteration av en loop steg-för-steg för att identifiera varför ett specifikt felmeddelande dyker upp vid körning av koden. Du kan läsa mer om hur man använder verktyget här: [VS Code - Debugging](https://code.visualstudio.com/docs/python/debugging#_basic-debugging)
 
+## Debugging med `breakpoint()` och `pdb`
+Utöver att felsöka med `print()` och Visual Studio Codes inbyggda debugger kan vi även använda Pythons egen debugger, `pdb`.
+
+`pdb` står för just "Python Debugger" och låter oss pausa programmet under körning, undersöka variabler samt köra programmet steg för steg. Det kan vara särskilt användbart när vi vill förstå exakt vad som händer i ett program, exempelvis i en loop eller i en funktion som inte returnerar det värde vi förväntar oss.
+
+### `breakpoint()`
+Det enklaste sättet att starta Pythons debugger är att skriva `breakpoint()` på den rad där vi vill pausa programmet.
+
+```python
+def calculate_total(price, quantity): 
+    breakpoint() 
+    total = price * quantity 
+    return total 
+
+result = calculate_total(50, 3) 
+print(result)
+```
+
+I ovan exempel har vi skrivit en funktion - `calculate_total` - vars syfte är att beräkna ett totalbelopp genom att multiplicera enhetspris mot antalet enheter. I denna funktion har vi sedan lagt till `breakpoint()`, i syfte om att felsöka funktionen.
+
+När koden körs och vi kommer till raden med `breakpoint()` så pausas nämligen körningen och i terminalen visas då en särskild prompt:
+```python
+(Pdb)
+```
+
+Detta innebär att programmet just nu befinner sig i debugläge/felsökningsläge och du kan då skriva olika kommandon för att undersöka programmet.
+
+### Vanliga kommandon i `pdb`
+Några av de vanligaste kommandona är:
+* `p variable_name` – skriver ut värdet på en variabel.
+* `n` – kör nästa rad.
+* `s` – går in i ett funktionsanrop.
+* `c` – fortsätter körningen tills nästa brytpunkt eller tills programmet avslutas.
+* `q` – avslutar debugläget.
+
+Exempelvis enligt:
+```python
+(Pdb) p price 
+50 
+(Pdb) p quantity 
+3 
+(Pdb) n 
+(Pdb) p total 
+150 
+(Pdb) c
+```
+
+Här använder vi `p price` och `p quantity` för att undersöka värdena i variablerna. Därefter kör vi nästa rad med `n`, vilket gör att `total` beräknas. Sedan skriver vi ut `total` och fortsätter programmet med `c`.
+
+### När är `pdb` användbart?
+`pdb` är särskilt användbart när:
+
+* du vill se hur variabler förändras över tid,
+* ett program kraschar men du inte förstår varför,
+* du vill förstå hur en loop eller funktion körs,
+* du inte har tillgång till en grafisk debugger,
+* du vill felsöka direkt i terminalen.
+
+{.highlight }
+För att förtydliga så måste du generellt sett inte arbeta med `pdb` om du använder dig utav en IDE såsom Visual Studio Code eller dylikt. Det är istället ett inbyggt tillvägagångssätt för felsökning i Python.
+
 ## Inbyggd hantering av syntaxfel
 Visual Studio Code hjälper även till med att identifiera syntaxfel och andra problem i din kod med understrykningar och beskrivningar. Exempelvis får vi varningar om vi deklarerar en variabel utan att tilldela den ett värde:
 
@@ -77,4 +138,8 @@ Vid faktiska fel (som medför att programmet dessutom inte är körbart) så få
 ![Extensions in VSCode](../assets/images/debugging/syntaxError.png){: .styled-image }
 
 # Sammanfattning
-Att bemästra debuggingtekniker är avgörande för alla programmerare. Genom att använda Visual Studio Codes inbyggda verktyg och Python-specifika metoder som `print()`, kan du effektivt identifiera och åtgärda problem i dina program. Denna kunskap, tillsammans med en solid förståelse för felhantering, lägger grunden för att skriva robust och pålitlig kod.
+Att bemästra debuggingtekniker är avgörande för alla programmerare. Genom att använda Visual Studio Codes inbyggda verktyg och Python-specifika metoder som `print()`, kan du effektivt identifiera och åtgärda problem i dina program. Pythons inbyggda debugger `pdb` möjliggör också för att pausa program, undersöka variabler och köra kod steg för steg - där funktionen `breakpoint()` är det enklaste sättet att starta debuggern. 
+
+Genom att kombinera `print()`-felsökning, VS Code-debuggern och `pdb` får du flera olika verktyg för att förstå och rätta fel i dina program.
+
+Denna kunskap, tillsammans med en solid förståelse för felhantering, lägger grunden för att skriva robust och pålitlig kod.

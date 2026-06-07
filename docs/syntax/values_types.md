@@ -69,26 +69,40 @@ En binär datatyp som enbart kan ges värdena `True` eller `False`.
 En datatyp som måste _importeras_ och som sedan kan nyttjas för att representera datum eller utvinna datumrelaterad information (såsom dagens datum).
     ```python
     import datetime                 # import is used to import the library 'datetime', which allow us to use datetime objects
-    print(type(datetime))
-    print(datetime.datetime.now())  # The value will differ depending on when you execute the function
+    
+    now = datetime.datetime.now()
+    
+    print(now)                      # The value will differ depending on when you execute the function
+    print(type(now))  
     ```
     <div class="code-example" markdown="1">
-    <pre><code>< class 'module' >
-2024-03-20 17:00:50.932698</code></pre>
+    <pre><code>2024-03-20 17:00:50.932698
+< class 'datetime.datetime' >
+</code></pre>
     </div>
 
 Det finns självfallet även många andra datatyper som nyttjas i olika avseenden och med olika syften och vi kommer att stöta på flera typer i framtida kapitel.
 
 ## Formatet är viktigt!
-Det är även viktigt att ta formatet på värdet i beaktande när man anger det. Exempelvis så skulle `type(1,000,000)` generera ett oförväntat resultat då det inte kan tolkas som ett giltigt heltal p.g.a. de kommatecken som nyttjas. Det skulle istället snarare tolkas som en kommaseparerad lista som innehåller värdena `1 0 0`, vilket vi kan se ett exempel på om vi försöker skriva ut det enligt:
+Det är även viktigt att ta formatet på värdet i beaktande när man anger det. Exempelvis så skulle `type(1,000,000)` eller `type(1.000.000)` generera ett körfel resp. ett syntaxfel då det inte kan tolkas som ett giltigt heltal p.g.a. de kommatecken respektive punkter som nyttjas.
+
+I Python används nämligen inte kommatecken som tusentalsavgränsare i tal utan för att göra stora tal mer läsbara kan man använda understreck:
 ``` python
-print(1,000,000)
+print(1_000_000)
+```
+<div class="code-example" markdown="1">
+<pre><code>1000000</code></pre>
+</div>
+
+Kommatecken har nämligen en annan betydelse i Python, där det för ett _funktionsanrop_ (såsom användningen av `print()`) används för att separera s.k. argument:
+``` python
+print(1, 000, 000)
 ```
 <div class="code-example" markdown="1">
 <pre><code>1 0 0</code></pre>
 </div>
 
-Ovan felaktiga tolkning är ett exempel på ett s.k. _semantiskt fel_, d.v.s. att koden tillåts utföras utan att ett faktiskt felmeddelande genereras, men det kommer att resultera i ett annat värde än vad vi förväntar oss. Om vi istället skulle försöka utföra koden: `type(1.000.000)` så skulle vi få ett s.k. _kompileringsfel_ när vi försöker exekvera koden. Ett kompileringsfel innefattar med andra ord att koden inte är körbar medan semantiska fel istället kan resultera i körbar kod som ger oförväntade resultat.
+I ovan fall skickas tre separata argument till `print()`: `1`, `000` och `000` - där `000` kortfattat översätts till ett strängformat vilket eliminerar de ledande 0:orna. 
 
 # Sammanfattning
 I detta kapitel har vi utforskat Python-syntaxens grundläggande element - värden och datatyper. Vi har sett exempel på olika typer som används i olika syften och hur vi kan använda `type()`-funktionen för att identifiera vilka datatyper vi arbetar med. Vi har även diskuterat implikationerna av att Python är ett _starkt typat språk_, t.ex. att vi måste vara säkra på att det är numeriska värden vi arbetar med om vi ämnar utföra matematiska operationer.

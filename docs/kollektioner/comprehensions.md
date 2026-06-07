@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "29. Kollektionsförståelse (comprehensions)"
-nav_order: 30
+title: "30. Kollektionsförståelse (comprehensions)"
+nav_order: 31
 parent: 24. Kollektioner
 ---
 

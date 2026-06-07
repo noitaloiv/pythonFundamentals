@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "3. Kompilation"
+title: "3. Kompilation/tolkning"
 nav_order: 4
 ---
 
@@ -10,17 +10,13 @@ Du har nu skrivit och kört ditt första program, men du kanske inte har fundera
 ```python
 01001000 01101001
 ```
-Där `01001000` representerar ett `H` och `01101001` representerar ett `i`. För att underlätta vid utveckling av program så kan vi idag istället arbeta med s.k. _högnivåspråk_ som förlitar sig på en s.k. _kompilator_ som översätter dina instruktioner till körbar maskinkod. Denna process utmynnar generellt sett i följande steg:
-* bryta upp koden i mindre delar, 
-* kontrollerar ifall det förekommer några fel i koden, 
-* översätter koden till maskinkod, 
-* producerar en körbar fil som instruerar datorn att utföra/exekvera maskinkoden vilket avslutningsvis leder till att texten `"Hello world!"` visas upp i din terminal.
+Där `01001000` representerar ett `H` och `01101001` representerar ett `i`. 
 
-Detta är något som sker varje gång som man exekverar ett program.
+För att datorer ska kunna köra program måste kod på något sätt översättas till instruktioner som datorn kan utföra. I många programmeringsspråk sker detta genom en s.k. kompilator som översätter källkod till maskinkod eller till en körbar fil innan programmet faktiskt körs. Detta är exempelvis fallet för språk som C och C++.
 
-Avseende felkontrollen så agerar kompilatorn även rollen som korrekturläsare av din kod. De typer av fel som fångas upp av kompilatorn kallas för _kompileringsfel_.
+Python används dock vanligtvis på ett annat sätt. När du skriver ett Python-program i en .py-fil körs programmet nämligen av en s.k. Python-tolk. I den vanligaste implementationen, _CPython_, översätts koden först internt till något som kallas för "bytecode" - vilket är som en mellanform mellan den kod du själv skriver och det som datorn kan tolka/köra. Detta är vad Python-tolken avslutningsvis exekverar. Du behöver med största sannolikhet inte ta detta i beaktande inom ramen för denn kurs utan du kan istället föreställa dig att du skriver källkod och kör den via Python-tolken.
 
-Python är dock ett _tolkat språk_, till skillnad mot kompilerade språk såsom C eller Java. Detta innebär att koden du skriver _tolkas_ och _exekveras_ direkt av Python-tolken istället för att först kompileras till maskinkod. Även i Python sker en form av kompilering, fast i en lite annorlunda bemärkelse. Låt oss utforska detta djupare.
+I de fall Python inte kan förstå källkoden så uppstår ofta ett syntaxfel, exempelvis `SyntaxError`. Om koden däremot är syntaktiskt korrekt men något fortfarande går fel medan programmet körs så kan istället andra fel uppstå - exempelvis `NameError`, `TypeError` eller `ValueError`.
 
 ![Create folder and drag](../assets/images/banners/ch3.png){: .styled-image }
 
@@ -36,7 +32,7 @@ Efter att koden har kompilerats till _bytecode_, tolkas och exekveras denna _byt
 ![Create folder and drag](../assets/images/chapter_images/ch3.png){: .styled-image }
 
 ### Jämförelse mot kompilerade språk
-Till skillnad mot kompilerade språk, där koden kompileras direkt till maskinkod som kan exekveras direkt av datorns CPU, kompileras alltså Python-kod först till en "mellannivå" (_bytecode_) som sedan exekveras av Python-tolken. Detta tillåter Python att vara plattformsoberoende - d.v.s. att samma Python-kod kan köras på vilket operativsystem som helst - så länge det finns en Python-tolk installerad på maskinen.
+Till skillnad mot kompilerade språk, där koden kompileras direkt till maskinkod som kan exekveras direkt av datorns CPU, tolkas alltså Python-kod först till en "mellannivå" (_bytecode_) som sedan exekveras av Python-tolken. Detta tillåter Python att vara plattformsoberoende - d.v.s. att samma Python-kod kan köras på vilket operativsystem som helst - så länge det finns en Python-tolk installerad på maskinen.
 
 ### Fördelar och nackdelar
 ✅ Plattformsoberoende: Python-kod kan köras på alla system där en s.k. Python-tolk är installerad.

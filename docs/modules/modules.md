@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "38. Moduler"
-nav_order: 39
+title: "40. Moduler"
+nav_order: 41
 has_children: True
 ---
 
@@ -36,10 +36,10 @@ Om du bara behöver vissa funktioner eller klasser kan du importera dem direkt. 
 * `math`: <br>
 Denna modul innehåller matematiska funktioner. Förutom `sqrt`, har den funktioner som `sin`, `cos`, `log` och många fler.
     ```python
-    from math
-    print (math.cos(0.00))      # 1.0
-    print (math.cos(-1.23))     # 0.3342377271245026
-    print (math.cos(10))        # -0.8390715290764524
+    from math import cos
+    print (cos(0.00))      # 1.0
+    print (cos(-1.23))     # 0.3342377271245026
+    print (cos(10))        # -0.8390715290764524
     ```
 
 * `datetime`: <br>

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "39. Virtuella miljöer och pakethantering"
-nav_order: 40
-parent: "38. Moduler"
+title: "41. Virtuella miljöer och pakethantering"
+nav_order: 42
+parent: "40. Moduler"
 ---
 
 # Virtuella miljöer och pakethantering (package management)
@@ -11,12 +11,14 @@ När du arbetar med Python-projekt, särskilt de som inkluderar externa bibliote
 ## Virtuella miljöer
 _Virtuella miljöer_ i Python tillhandahåller en isolerad miljö för Python-projekt. Detta innebär att varje projekt kan ha sina egna beroenden, oavsett andra projektens beroenden. Det är särskilt användbart när två eller fler projekt kräver olika versioner av samma paket. D.v.s. att vi kan lägga till bibliotek och moduler för ett enda Python-projekt utan att riskera att vi påverkar andra Python-projekt på samma dator.
 
-För att skapa en virtuell miljö kan du använda kommandot `python -m venv <folder_name>` i terminalen från den mapp där du vill skapa den virtuella mappen. Om du t.ex. befinner dig i mappen Desktop i din terminal så kommer du att skapa den virtuella miljön där. som kommer förinstallerad med Python 3.3 och senare. Här är ett grundläggande exempel på hur du skapar och aktiverar en virtuell miljö:
+För att skapa en virtuell miljö använder du kommandot: `python -m venv my_project_env` i terminalen från den mapp där du vill skapa den virtuella mappen. Om du t.ex. befinner dig i mappen _Desktop_ i din terminal så kommer du att skapa den virtuella miljön där. 
+
+Nedan följer ett grundläggande exempel på hur du skapar och aktiverar en virtuell miljö:
 ```python
 # Create a virtual environment in the folder 'my_project_env'
 python -m venv my_project_env
 ```
-Detta skapar en ny mapp med namnet `my_project_env` som innehåller en kopia av Python-tolkaren, `pip` (Python-pakethanteraren) och en samling standardbibliotek.
+Detta skapar en ny mapp med namnet `my_project_env` som innehåller en virtuell miljö som skapats ovanpå en befintlig Python-installation. Den får en egen plats för installerade paket och innehåller dessutom en Python-exekverare som - beroende på system - kan vara en kopia eller en länk till den Python-version som användes när miljön skapades.
 
 För att sedan aktivera den virtuella miljön så skriver du:
 ```python

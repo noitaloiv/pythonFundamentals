@@ -36,7 +36,7 @@ print(course_grades["Datastrukturer"])
 Vi skulle även kunna vända på det och istället lagra kurser per betyg, för att enklare kunna utvinna vilka kurser vi förvärvat ett VG resp. G på, samt vilka kurser som ev. behöver kompletteras:
 ```python
 course_grades = {
-    "VG": ["Datastrukturer"]
+    "VG": ["Datastrukturer"],
     "G": ["Programmering i Python", "Systemutveckling"]
 }
 

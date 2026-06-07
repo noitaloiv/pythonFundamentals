@@ -6,7 +6,7 @@ has_children: true
 ---
 
 # Selektion
-I Python är exempelvis `if`-satsen en så kallad _villkorssats_. Med detta menas att vi placerar ett villkor på en eller flera rader kod och deklarerar att denna kod enbart ska kompileras OM ett specifikt villkor uppfylls.
+I Python är exempelvis `if`-satsen en så kallad _villkorssats_. Med detta menas att vi placerar ett villkor på en eller flera rader kod och deklarerar att denna kod enbart ska tolkas/köras OM ett specifikt villkor uppfylls.
 
 ![Selection](../../assets/images/banners/ch16.png){: .styled-image }
 

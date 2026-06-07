@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "36. Filhantering"
-nav_order: 37
+title: "38. Filhantering"
+nav_order: 39
 has_children: True
 ---
 
@@ -104,7 +104,7 @@ try:
     file = open('example.txt', 'r')
     content = file.read()
     print(content)
-    fil.close()
+    file.close()
 except FileNotFoundError:
     print("The file does not exist")
 ```

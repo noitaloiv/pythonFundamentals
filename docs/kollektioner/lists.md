@@ -107,8 +107,8 @@ print(numbers[-1])
 Det är möjligt att iterera över innehållet i en lista och på så vis identifiera huruvida ett visst element förekommer i listan eller ej. Exempelvis enligt:
 ```python
 numbers = [1,2,3,4,5]
-for i in range(len(numbers))
-    if numbers[i] == 3
+for i in range(len(numbers)):
+    if numbers[i] == 3:
         print(True)
         break
 ```
@@ -119,7 +119,7 @@ for i in range(len(numbers))
 Det finns dock ett smidigare sätt att uppnå detta på och det är att använda nyckelordet `in`. Exempelvis kan vi identifiera om heltalet 5 förekommer i listan från föregående exempel enligt:
 ```python
 numbers = [1,2,3,4,5]
-if 5 in numbers
+if 5 in numbers:
     print(True)
 ```
 <div class="code-example" markdown="1">
@@ -129,9 +129,9 @@ if 5 in numbers
 Då vi inte aktivt kollar på specifika indexvärden så lider vi heller inte någon risk att stöta på några `IndexError`.
 
 ### "Slicing"
-_Slicing_ är en teknik som använder index för att "skära ut" och komma åt delar av en kollektion. I Python uppnås detta med funktionen `slice()` som kan ta emot ett **startindex** och ett **slutindex**, separerade av ett kolon, där slutindexet är _exklusivt_. Att slutindexet är exklusivt avser - i kontexten av slicing i Python - att det element som motsvarar slutindexet inte inkluderas i den del av samlingen som du skär ut. Med andra ord, när du specifierar ett intervall med start- och slutindex för att göra en slice av en samling, kommer elementet på positionen för slutindexet inte att vara en del av den resulterande delen - likt hur funktionen `range()` hanterar intervall.
+_Slicing_ är en teknik som använder index för att "skära ut" och komma åt delar av en kollektion. I Python uppnås detta generellt sett med hakparentessyntax där man kan ange ett **startindex** och ett **slutindex**, separerade av ett kolon, och där slutindexet är _exklusivt_. Att slutindexet är exklusivt avser - i denna kontext - att det element som motsvarar slutindexet inte inkluderas i den del av samlingen som du skär ut. Med andra ord, när du specifierar ett intervall med start- och slutindex för att göra en slice av en samling, kommer elementet på positionen för slutindexet inte att vara en del av den resulterande delen - likt hur funktionen `range()` hanterar intervall.
 
-Om du exempelvis har en lista och vill skapa en slice av den, kommer du att ange ett start- och slutindex enligt: `lista[start:slut]`. Om du anger `1` som startindex och `4` som slutindex, kommer slicen att inkludera elementen på index `1`, `2` och `3`, men inte elementet på index `4`.
+Om du exempelvis har en lista och vill skapa en slice av den, kommer du att ange ett start- och slutindex enligt: `name_of_list[start_index:end_index]`. Om du anger `1` som startindex och `4` som slutindex, kommer slicen att inkludera elementen på index `1`, `2` och `3` - men inte elementet på index `4`.
 ```python
 numbers = [1,2,3,4,5]
 part_of_numbers = numbers[2:4]
@@ -142,7 +142,7 @@ print(part_of_numbers)
 </div>
 
 {: .highlight }
-Parametrarna för `slice()` är _optional_, d.v.s. att du kan skriva:
+Parametrarna för `slice`-operationen är _optional_, d.v.s. att du också kan skriva:
 ```python
 numbers = [1,2,3,4,5]
 part_of_numbers = numbers[2:]

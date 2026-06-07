@@ -6,7 +6,7 @@ has_children: true
 ---
 
 # Input och output i Python 
-Vi har hittills arbetat med olika variabeltyper där vi använt oss av funktionen `print()` för att generera en _output_, d.v.s. ett utfall av den kompilerade koden som en användare kan se. Det kan dock tänkas vara relevant att tillåta en användare att skicka in värden som programmet sedan kan använda sig utav, s.k. _inputs_.
+Vi har hittills arbetat med olika variabeltyper där vi använt oss av funktionen `print()` för att generera en _output_, d.v.s. det synliga resultat som ett program producerar när det körs - såsom text som skrivs ut i terminalen. Det kan dock tänkas vara relevant att tillåta en användare att skicka in värden som programmet sedan kan använda sig utav, s.k. _inputs_.
 
 Det kan exempelvis vara ett namn, en ålder eller dylik information som programmet behöver veta för att fungera som tänkt. Exempelvis har du säkerligen någon gång angett information i en dialogruta eller ett formulär, t.ex. ditt användarnamn och lösenord när du loggar in via Studium. Denna information måste datorn kunna spara, tolka och eventuellt nyttja och Python har därför förprogrammerade funktioner för att på ett enkelt sätt hantera inputs.
 
@@ -32,7 +32,7 @@ print(string1 + string2 + string3)
 </div>
 
 {: .highlight }
-Observera att det är ett mellanslag i uppmaningen `"Enter a numerical value: "`. Detta är för att få ett mellanrum mellan uppmaningen och värdet som anges, vilket gör programmet lite mer stilrent. 
+`input()` returnerar alltid en sträng. Därför behandlas användarens inmatning här som text - även om användaren skriver siffror. Operatorn `+` gör sedan därför _strängkonkatenering_ snarare än numerisk addition. Notera gärna även mellanslaget i uppmaningen `"Enter a numerical value: "`. Detta är till för att skapa ett mellanrum mellan uppmaningen och värdet som anges, vilket gör programmet lite tydligare för användaren. 
 
 Vi kan i detta fall även se hur programmet stannar upp och väntar på input från användaren innan programmet fortsätter:
 

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "32. Funktionsparametrar"
-nav_order: 33
-parent: 31. Funktioner
+title: "33. Funktionsparametrar"
+nav_order: 34
+parent: 32. Funktioner
 ---
 
 # Parametrar
-Parametrar är de variabler som definieras av en funktion, som den förväntas ta emot när den anropas. De är del av funktionens deklaration och fungerar som "platshållare" för de värden som funktionen ska bearbeta. Parametrar anger vilken typ av data en funktion förväntar sig och hur många dataelement den kan ta emot.
+Parametrar är namn som anges i en funktionsdefinition och fungerar som platshållare för de argument som skickas in när funktionen anropas. Parametrarna anger vilka värden funktionen behöver för att kunna köras, men de kontrollerar *__inte__* automatiskt datatyper i vanlig Python.
 
 Till exempel, i funktionen `def add(a, b):`, är `a` och `b` _parametrar_ för funktionen `add`. De indikerar att funktionen `add` __förväntar__ sig två inputs när den _anropas_.
 
@@ -32,7 +32,7 @@ find_max(10,5)                  # 10 and 5 are arguments
 Parametrar är definierade i _funktionens deklaration_ och används inuti funktionen som variabler. Argument är istället de faktiska värdena som skickas till funktionen vid _anrop_. Ett argument matchar mot en parameter baserat på dess position när funktionen anropas.
 
 ## Matchning av parametrar i anrop och deklaration
-Argument i <u>anropet</u> måste __matcha__ parametrarna i <u>funktionsdeklarationen</u>. D.v.s. att det inte vore möjligt att enbart ange en enda parameter i ett funktionsanrop. Nedan exempel genererar därför ett felmeddelande vid körning.
+Antalet argument i <u>anropet</u> måste normalt __matcha__ antalet parametrar i <u>funktionsdeklarationen</u>. Om funktionen har två obligatoriska parametrar måste anropet alltså innehålla två argument. Nedan exempel genererar därför ett felmeddelande vid körning.
 ```python
 def add(number1, number2):
     sum_numbers = number1 + number2

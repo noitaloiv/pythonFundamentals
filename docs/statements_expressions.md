@@ -89,14 +89,31 @@ Detta kan även förtydligas genom att särskilja utvärderingen av en variabel 
 >>> print(hello)
 ```
 <div class="code-example" markdown="1">
-<pre><code>'Hello world!'
-Hello world!</code></pre>
+<pre><code>'Hello, world!'
+Hello, world!</code></pre>
 </div>
 
 Här ser utskriften annorlunda ut för de två olika tillvägagångssätten då när vi enbart anger variabeln så kommer värdet skrivas ut representerat som den datatyp det lagrats som i variabeln. `print()` kommer istället enbart att skriva ut det faktiska värdet.
 
-### Funktionsanrop kan vara påståenden eller uttryck
-Huruvida ett funktionsanrop är ett påstående eller ett uttryck beror generellt sett på kontexten av hur funktionen nyttjas. Exempelvis skulle funktionen `len()` (som returnerar längden på en kollektion) avse ett uttryck då längden utvärderas vid anropet. `print()` å andra sidan utför något, men utvärderar inget. Exempelvis skickas inte något värde tillbaka, något skrivs istället ut i terminalen.
+### Tydliggörande: Tilldelning som påstående
+Ett tydligt exempel på ett _påstående_ är en tilldelning. Raden nedan utför exempelvis en handling genom att den binder namnet `number` till värdet `10`.
+```python
+number = 10
+```
+
+Själva värdet `10` är dock i sig självt ett _uttryck_, eftersom det kan utvärderas till ett värde. Hela raden `number = 10` är däremot ett _påstående_ - eftersom den utför en instruktion i programmet.
+```python
+number = 10         # the entire row makes up a statement
+print(number + 5)
+```
+<div class="code-example" markdown="1">
+<pre><code>15</code></pre>
+</div>
+
+I raden `print(number + 5)` är `number + 5` ett _uttryck_ som först utvärderas till `15`. Därefter används `print()` för att skriva ut resultatet - på så vis kan _uttryck_ alltså ingå som delar av _påståenden_.
+
+{: .highlight }
+`print()` används primärt för sin effekt - att skriva ut något i terminalen. Funktionen har egentligen också ett returvärde, `None`, men det är normalt inte relevant när vi använder `print()` i början av kursen.
 
 # Sammanfattning
-Förståelsen för påståenden och uttryck är fundamentala för alla som lär sig programmera, eftersom de ligger till grund för hur vi bygger upp och strukturerar vår kod. Korrekt användning av påståenden och uttryck är således avgörande för att skriva tydlig och effektiv kod. Denna distinktion hjälper också programmerare att förstå hur data manipuleras och hanteras genom programmets flöde.
+Förståelsen för _påståenden_ och _uttryck_ är fundamentala för alla som lär sig programmera, eftersom de ligger till grund för hur vi bygger upp och strukturerar vår kod. Korrekt användning av påståenden och uttryck är således avgörande för att skriva tydlig och effektiv kod. Denna distinktion hjälper också programmerare att förstå hur data manipuleras och hanteras genom programmets flöde.

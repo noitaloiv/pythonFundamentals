@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "34. Rekursion"
-nav_order: 35
-parent: 31. Funktioner
+title: "36. Rekursion"
+nav_order: 37
+parent: 32. Funktioner
 ---
 
 # Rekursiva funktioner
@@ -32,7 +32,7 @@ print(factorial(5))
 </div>
 
 {: .warning }
-Rekursion kan göra koden mer intuitiv och lättläst för vissa problemtyper, men det är viktigt att alltid ha ett korrekt och väldefinierat basfall för att förhindra oändlig rekursion, vilket kan leda till ett `stack overflow`-fel - där programmet kraschar på grund av oändliga anrop. Noterbart är även att rekursiva lösningar kan vara mindre effektiva än iterativa lösningar för vissa problem.
+Rekursion kan göra koden mer intuitiv och lättläst för vissa problemtyper, men det är viktigt att alltid ha ett korrekt och väldefinierat basfall för att förhindra oändlig rekursion då Python annars kan komma att avbryta körningen med ett `RecursionError` - vilket innebär att programmet kraschar på grund av oändliga anrop. Noterbart är även att rekursiva lösningar kan vara mindre effektiva än iterativa lösningar för vissa problem.
 
 ## Användningsområden
 Rekursiva funktioner är särskilt användbara i följande scenarier:
@@ -47,4 +47,4 @@ Rekursion kan användas för att dela upp ett problem i mindre delar, vilket är
 Problem som faktorialberäkningar, Fibonacci-sekvenser och tornet i Hanoi är naturligt lämpade för rekursiva lösningar.
 
 # Sammanfattning
-Rekursiva funktioner är ett kraftfullt verktyg i programmering som tillåter dig att lösa problem genom att bryta ner dem i mindre, hanterbara delar. De är särskilt användbara för problem som naturligtvis kan delas upp i liknande subproblem. Det är dock viktigt att ta basfall och rekursionens djup i beaktande då det kan leda till problem såsom `stack overflow`-fel eller påverka applikationens effektivitet negativt.
+Rekursiva funktioner är ett kraftfullt verktyg i programmering som tillåter dig att lösa problem genom att bryta ner dem i mindre, hanterbara delar. De är särskilt användbara för problem som naturligtvis kan delas upp i liknande subproblem. Det är dock viktigt att ta basfall och rekursionens djup i beaktande då det kan leda till problem såsom ett `RecursionError`-fel eller påverka applikationens effektivitet negativt.

@@ -40,7 +40,7 @@ I detta fall blir den första utskriften `False`, eftersom `number1` och `number
 ```python
 bool1 = True
 number1 = 1
-print(a == b)
+print(bool1 == number1)
 ```
 <div class="code-example" markdown="1">
 <pre><code>True</code></pre>
@@ -89,7 +89,7 @@ print(bool1 or bool2)
 Utskriften blir `True` trots att `bool2` har värdet `False` då `bool1` har värdet `True`. Om `bool1` samt `bool2` båda haft värdet `False` så hade resultatet alltså blivit `False`. 
 
 ## INTE-operatorn
-Utvinner det inverterade värdet hos en variabel eller ett uttryck, d.v.s. att vi vill identifiera motsatsen till ett _booleskt uttryck_. Med det sistnämnda menar vi på att operatorn nyttjas för att invertera ett `True`-värde till ett `False`-värde eller vice versa. Vi kan inte nyttja det för att identifiera ett inverterat värde till heltalet `10` eller dylikt.
+Utvinner det inverterade värdet hos en variabel eller ett uttryck, d.v.s. att vi vill identifiera motsatsen till ett _booleskt uttryck_. Med det sistnämnda menar vi på att operatorn nyttjas för att invertera ett `True`-värde till ett `False`-värde eller vice versa.
 ```python
 bool1 = False
 print(not bool1) 
@@ -128,7 +128,7 @@ Utför en _AND_-operation på varje _par av bitar_ (båda delar exempelvis kan v
 Utför istället en _OR_-operation på varje _par av bitar_. En bit i resultatet är 1 (`True`) om minst en av de motsvarande bitarna är 1.
 
 * `~`: <br>
-Utför avslutningsvis en _NOT_-operation på varje _par av bitar_. D.v.s. att alla bitar i ett heltal inverteras (1 blir 0 och 0 blir 1).
+Används på ett enda heltal och inverterar dess bitar. Den fungerar inte som `&`, `|` och `^`, som jämför två operander bit för bit.
 
 Desas kan exempelvis nyttjas enligt:
 ```python
@@ -183,7 +183,29 @@ a = False
 b = print("Hello world!")
 a and b
 ```
-Ingen utskrift kommer att ske då vi först utvärderar `a` och för att vi har använt en `and`-operator. Givet att det första påståendet är falskt så kommer vi alltså inte ens att utvärdera b. Detta kan även tänkas ha implikationer vid användandet av en `or`-operator där ordningen på argumenten kommer att spela roll.
+Med ovan körexempel så kommer ingen utskrift att ske då vi först utvärderar `a` (som är `False`) och då vi använder en `and`-operator. Givet att det första påståendet är falskt så kommer vi nämligen inte ens att utvärdera det andra (värdet hos `b`). 
+
+Detta kan även tänkas ha implikationer vid användandet av en `or`-operator där ordningen på påståendena kommer att spela roll. I nedan fall kommer vi först att utvärdera `a` och sedan `b`:
+```python
+a = False
+b = print("Hello world!")
+a or b
+```
+<div class="code-example" markdown="1">
+<pre><code>Hello world!</code></pre>
+</div>
+
+Om vi vänder på ordningen av dessa påståenden så kommer vi dock enbart utvärdera `b` (då det kommer att resultera i `True`):
+```python
+a = False
+b = print("Hello world!")
+b or a
+```
+<div class="code-example" markdown="1">
+<pre><code>Hello world!</code></pre>
+</div>
+
+Vi behöver med andra ord vara medvetna om att ordningen på hur vi evaluerar påståenden kan ha implikationer på vårt program.
 
 # Sammanfattning
 I detta avsnitt har vi utforskat de logiska operatorerna i Python, som spelar en avgörande roll i att bygga villkorslogik och kontrollstrukturer i programmering. Dessa operatorer - `and`, `or` och `not` - låter oss kombinera, jämföra och invertera Booleska uttryck för att skapa mer komplexa villkor. Vi har även sett hur jämförelseoperatorerna `==` och `!=` används för att jämföra värden, och hur detta kan integreras i logiska uttryck för att göra precisa och meningsfulla beslut i kod.

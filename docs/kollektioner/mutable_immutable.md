@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "30. Mutable & immutable typer"
-nav_order: 31
+title: "31. Mutable & immutable typer"
+nav_order: 32
 parent: 24. Kollektioner
 ---
 
@@ -109,7 +109,7 @@ dict2["example"] = 3
 print(dict1)
 ```
 <div class="code-example" markdown="1">
-<pre><code>3</code></pre>
+<pre><code>{'example': 3}</code></pre>
 </div>
 
 ### Kopiering och sidoeffekter

@@ -35,7 +35,7 @@ Med Visual Studio Code öppet från din tomma mapp skapar du nu en Python-fil f�
 
 ![File Explorer](../assets/images/vsCodeNewFile.png){: .styled-image }
 
-Genom att använda filtillägget _.py_ berättar du för VS Code att det ska tolka den här filen som ett Python-program, så att den utvärderar innehållet med Python-tillägget.
+Filändelsen _.py_ gör att VS Code känner igen filen som en Python-fil och kan aktivera stöd som syntaxmarkering, autokomplettering och körningskommandon. Själva programmet körs däremot av den Python-tolk som är installerad och vald i VS Code.
 
 * Ange följande Python-kod i redigeringspanelen. Detta kommando använder utskriftsfunktionen för att visa texten `Hello, world!` i terminalen när din applikation körs.
 `print('Hello, World!')`
@@ -61,6 +61,9 @@ Vilket, för denna applikation, ger oss följande resultat:
 ![Execute Python](../assets/images/pythonRan2.png){: .styled-image }
 
 Du skulle även kunna köra programmet från Run-knappen (som du kan se markerad i det högra övre hörnet i bilden ovan). Du måste således inte köra dina program från terminalen.
+
+{: .highlight }
+På vissa system heter kommandot `python3` i stället för `python`. Om `python hello.py` inte fungerar bör du därför pröva `python3 hello.py`, `py hello.py`, eller kontrollera vilken Python-tolk som är vald i VS Code.
 
 Du har nu skapat ditt första Python-program och kört programmet för att generera en output! För att förstå hur vi kan skriva mer avancerade program, exempelvis ett mindre spel, så behöver vi dock först förstå ett flertal olika beståndsdelar och komponenter som tillsammans utgör en del av programmeringsspråket Python.
 

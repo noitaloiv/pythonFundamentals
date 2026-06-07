@@ -68,22 +68,21 @@ Men det kan snabbt bli svårt att särskilja en variabel från en annan samt sna
 user_password = "xHyra6h%"
 ```
 
-Variabelnamn som sådana kan vara godtyckligt långa och innehålla bokstäver såväl som siffror (de måste dock inledas med en bokstav). Det finns dock vissa konventioner för namngivning i Python och dessa talar för att vi exempelvis inte nyttjar versaler i variabelnamn, även om Python accepterar sådan namngivning. D.v.s. att `Student_Age` och `student_age` skulle vara två olika variabler.
+Variabelnamn som sådana kan vara godtyckligt långa och innehålla bokstäver såväl som siffror (de måste dock inledas med en bokstav eller ett understreck). Det finns dock vissa konventioner för namngivning i Python och dessa talar för att vi exempelvis inte nyttjar versaler i variabelnamn, även om Python accepterar sådan namngivning. D.v.s. att `Student_Age` och `student_age` skulle vara två olika variabler.
 
-Underscore (`_`) kan förekomma i variabelnamn då vi vill att variabelnamnet ska bestå av flera ord, t.ex. `user_password`, `user_name`, och dylikt.
+Underscore (`_`) kan förekomma i variabelnamn då vi vill att variabelnamnet ska bestå av flera ord, t.ex. `user_password`, `user_name`, `_username` och dylikt.
 
 Du behöver inte vara orolig över att ange otillåtna variabelnamn då du snabbt kommer att bemötas av ett syntaxfel i de fall du har otillåtna namn. Exempelvis enligt:
 ```python
->>> 123 = "test"
->>> a123 = "test"
->>> ab$ = "test"
->>> if = "test"
+>>> name = "Anna"        # valid
+>>> _name = "Anna"       # valid
+>>> a123 = "test"        # valid
+>>> user_name = "Anna"   # valid
+
+>>> ab$ = "test"         # invalid
+>>> 123a = "test"        # invalid
+>>> if = "test"          # invalid
 ```
-<div class="code-example" markdown="1">
-<pre><code>SyntaxError: invalid syntax
-SyntaxError: invalid syntax
-SyntaxError: invalid syntax</code></pre>
-</div>
 
 {: .highlight }
 Du kan skriva Python-kod direkt i terminalen med kommandot `python`, vilket kan tänkas vara relevant i de fall man snabbt vill testa sig på behandling av variabler eller dylikt. Du kommer då att bemötas av gränssnittet som presenteras i bilden nedan. I terminalen kan du sedan skriva din python kod efter `>>>` och som då utförs så fort du trycker på Enter-tangenten.

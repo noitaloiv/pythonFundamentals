@@ -49,7 +49,7 @@ print(number1 + number2 + int(number3))
 Motsvarande operationer går att göra med `str()` som konverterar en variabel till en `string`, eller `float()` som konverterar en variabel till en `float`, osv.
 
 {: .highlight }
-Det är viktigt att hålla koll på vilken typ man försöker konvertera samt typen man försöker konverta till. Detta då alla konverteringar inte kommer att kunna genomföras. Exempelvis kommer vi inte kunna konverta `"11.3"` till ett heltal enligt: `int("11.3")` då `11.3` inte är ett heltal (d.v.s. att `float()` hade behövts istället för `int()`). Vi hade istället behövt konvertera från `str` till `float` och från `float` till `int`. Det är således viktigt att hålla koll på vilken datatyp variabeln representerar när man vill utföra konvertering.
+Det är viktigt att hålla koll på vilken typ man försöker konvertera samt typen man försöker konverta till. Detta då alla konverteringar inte kommer att kunna genomföras. Exempelvis kommer vi inte kunna konvertera `"11.3"` till ett heltal enligt: `int("11.3")` då `11.3` inte är ett heltal (det är en `float`). Vi hade istället först behövt konvertera från `str` till `float` och från `float` till `int`. Det är således viktigt att hålla koll på vilken datatyp variabeln representerar när man vill utföra konvertering.
 
 # Sammanfattning
 I detta avsnitt har vi utforskat hur vi kan hantera input från användaren, som alltid kommer att vara av datatypen `string`, genom att tillämpa typkonvertering. Vi har även pratat om vad man behöver ta i beaktande när konvertering tillämpas, exempelvis att `"2.5"` inte direkt kan översättas till ett heltal då det representerar ett decimaltal. 
